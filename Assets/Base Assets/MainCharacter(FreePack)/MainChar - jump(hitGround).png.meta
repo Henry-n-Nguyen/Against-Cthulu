@@ -95,7 +95,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MainChar - jump(hitGround)_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0347add75b3158c4da184e2aff8c9648
+      internalID: -1933091901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - jump(hitGround)_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f1200f3bad2004eb3277a0e2517eb7
+      internalID: 1110746441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - jump(hitGround)_2
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 32
+        width: 84
+        height: 64
+      alignment: 9
+      pivot: {x: 0.61904764, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb2a72942ce33b43adce3454b9d6b90
+      internalID: -1416447401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - jump(hitGround)_3
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 32
+        width: 84
+        height: 64
+      alignment: 9
+      pivot: {x: 0.61904764, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a3f51b88c4ada498d718cd415eb333
+      internalID: 554039743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - jump(hitGround)_4
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 32
+        width: 84
+        height: 64
+      alignment: 9
+      pivot: {x: 0.61904764, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ed16de992bd224f9ad66356b5df3f5
+      internalID: 691042873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +211,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MainChar - jump(hitGround)_0: -1933091901
+      MainChar - jump(hitGround)_1: 1110746441
+      MainChar - jump(hitGround)_2: -1416447401
+      MainChar - jump(hitGround)_3: 554039743
+      MainChar - jump(hitGround)_4: 691042873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
