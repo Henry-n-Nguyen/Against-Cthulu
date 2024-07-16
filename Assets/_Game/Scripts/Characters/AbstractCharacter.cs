@@ -6,23 +6,37 @@ using UnityEngine.InputSystem;
 public class AbstractCharacter : MonoBehaviour
 {
     // Reference Variables
-    [SerializeField] protected AbstractCharacter characterScript;
-    [SerializeField] protected Transform characterTransform;
+    [SerializeField] public AbstractCharacter characterScript;
+    [SerializeField] public Transform characterTransform;
+
     [SerializeField] protected Transform groundCheck;
     [SerializeField] protected LayerMask groundLayer;
 
     [SerializeField] protected Animator anim;
+    [SerializeField] protected Rigidbody2D rb;
 
     // Private Variables
     private IState<AbstractCharacter> currentState;
     private string currentAnimName;
 
     protected float horizontal;
-    protected float speed = 4f;
-    protected float jumpingPower = 8f;
+    protected float vertical;
+
+    protected float walkSpeed = 2f;
+    protected float runSpeed = 4f;
+    protected float jumpingPower = 5f;
 
     protected bool isAttacked = false;
     protected bool isRunning = false;
+    protected bool isJumping = false;
+
+    //Public Variables
+    [Space(5f)]
+    [Header("public")]
+    public int id;
+    public Magic magic;
+    public Transform shootPoint;
+    public Transform target;
 
     void Start()
     {
@@ -40,6 +54,10 @@ public class AbstractCharacter : MonoBehaviour
     public virtual void OnInit()
     {
         horizontal = 0f;
+
+        vertical = 0f;
+
+        target = GamePlayManager.instance.player.characterTransform;
 
         ChangeState(new IdleState());
     }
@@ -75,47 +93,41 @@ public class AbstractCharacter : MonoBehaviour
     // State Function
     public virtual void Move()
     {
-        isRunning = true;
-        ChangeAnim(Constant.TRIGGER_RUN);
+
     }
 
     public virtual void Idle()
     {
-        isRunning = false;
-        ChangeAnim(Constant.TRIGGER_IDLE);
+
     }
 
-    public void Attack()
+    public virtual void Jump()
     {
-        isAttacked = true;
-        ChangeState(new AttackState());
+
     }
 
-    public void Shoot()
+    public virtual void Attack()
     {
-        isAttacked = true;
-        ChangeState(new ShootState());
+
     }
 
-    public virtual void ActiveAttack()
+    public virtual void ResetState()
     {
-        ChangeAnim(Constant.TRIGGER_ATTACK);
-    }
-
-    public virtual void ActiveShoot()
-    {
-        ChangeAnim(Constant.TRIGGER_SHOOT);
-    }
-
-    public void ResetAttack()
-    {
-        if (isRunning) ChangeState(new PatrolState());
+        if (isRunning) ChangeState(new MoveState());
+        else if (isJumping) ChangeState(new JumpState());
         else ChangeState(new IdleState());
+
+        isAttacked = false;
     }
 
     public virtual void Death()
     {
         ChangeAnim(Constant.TRIGGER_DEATH);
+    }
+
+    public virtual void Hit()
+    {
+        ChangeAnim(Constant.TRIGGER_HIT);
     }
 
     // Protected Function

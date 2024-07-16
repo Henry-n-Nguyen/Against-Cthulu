@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss : Enemy
+public class FlyingEnemies : Enemy
 {
     // Override Function
     public override void OnInit()
@@ -20,14 +20,14 @@ public class Boss : Enemy
         base.Idle();
     }
 
-    public override void ActiveAttack()
+    public override void Attack()
     {
-        base.ActiveAttack();
+        base.Attack();
     }
 
-    public override void ActiveShoot()
+    public void ActiveAttack()
     {
-        base.ActiveShoot();
+        ProjectileManager.instance.Spawn(characterScript);
     }
 
     public override void Death()

@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using HuySpace;
 
-public class PatrolState : IState<AbstractCharacter>
+public class JumpState : IState<AbstractCharacter>
 {
     public void OnEnter(AbstractCharacter t)
     {
@@ -12,12 +11,11 @@ public class PatrolState : IState<AbstractCharacter>
 
     public void OnExecute(AbstractCharacter t)
     {
-        t.Move();
+        t.Jump();
     }
 
     public void OnExit(AbstractCharacter t)
     {
 
     }
-
 }

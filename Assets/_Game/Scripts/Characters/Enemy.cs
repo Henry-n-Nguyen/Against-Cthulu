@@ -20,14 +20,9 @@ public class Enemy : AbstractCharacter
         base.Idle();
     }
 
-    public override void ActiveAttack()
+    public override void Attack()
     {
-        base.ActiveAttack();
-    }
-
-    public override void ActiveShoot()
-    {
-        base.ActiveShoot();
+        base.Attack();
     }
 
     public override void Death()

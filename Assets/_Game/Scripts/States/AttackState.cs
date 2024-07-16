@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HuySpace;
 
 public class AttackState : IState<AbstractCharacter>
 {
-    float timer = 0f;
-
     public void OnEnter(AbstractCharacter t)
     {
 
@@ -13,11 +12,12 @@ public class AttackState : IState<AbstractCharacter>
 
     public void OnExecute(AbstractCharacter t)
     {
-        t.ActiveAttack();
+        t.Attack();
     }
 
     public void OnExit(AbstractCharacter t)
     {
 
     }
+
 }

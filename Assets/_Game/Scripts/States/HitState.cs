@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HuySpace;
 
-public class ShootState : IState<AbstractCharacter>
+public class HitState : IState<AbstractCharacter>
 {
-    float timer = 0f;
-
     public void OnEnter(AbstractCharacter t)
     {
 
     }
+
     public void OnExecute(AbstractCharacter t)
     {
-        t.ActiveShoot();
+        t.Hit();
     }
 
     public void OnExit(AbstractCharacter t)
     {
 
     }
+
 }
