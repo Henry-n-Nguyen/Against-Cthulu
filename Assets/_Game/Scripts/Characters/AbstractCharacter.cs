@@ -57,8 +57,6 @@ public class AbstractCharacter : MonoBehaviour
 
         vertical = 0f;
 
-        target = GamePlayManager.instance.player.characterTransform;
-
         ChangeState(new IdleState());
     }
 
@@ -88,37 +86,19 @@ public class AbstractCharacter : MonoBehaviour
     }
 
     // Private Function
-    
+
 
     // State Function
-    public virtual void Move()
+    public virtual void Move() 
     {
-
+        Flip();
     }
 
-    public virtual void Idle()
-    {
+    public virtual void Idle() { }
 
-    }
+    public virtual void Jump() { }
 
-    public virtual void Jump()
-    {
-
-    }
-
-    public virtual void Attack()
-    {
-
-    }
-
-    public virtual void ResetState()
-    {
-        if (isRunning) ChangeState(new MoveState());
-        else if (isJumping) ChangeState(new JumpState());
-        else ChangeState(new IdleState());
-
-        isAttacked = false;
-    }
+    public virtual void Attack() { }
 
     public virtual void Death()
     {

@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 7500136526630895031}
   - component: {fileID: 8076529226504539764}
   - component: {fileID: 953927250855176786}
-  - component: {fileID: 920046082959452235}
   - component: {fileID: 5345633441149430119}
   - component: {fileID: 9118767155362740736}
   - component: {fileID: 6974265464628697523}
@@ -142,44 +141,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &920046082959452235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3740229879559345047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 7691f3db9007b9c4da94dc56b1b1c5fe, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b1a7b6b9-fe5a-42d3-bfcc-a802ff29549b
-    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ec4b2b82-5e3b-4a59-83d1-807c7506fef9
-    m_ActionName: Player/Attack[/Keyboard/j]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!50 &5345633441149430119
 Rigidbody2D:
   serializedVersion: 4
@@ -275,7 +236,8 @@ MonoBehaviour:
   id: 0
   magic: {fileID: 0}
   shootPoint: {fileID: 0}
-  playerInput: {fileID: 920046082959452235}
+  target: {fileID: 0}
+  playerInput: {fileID: 0}
   moveAction:
     m_Name: Move
     m_Type: 0

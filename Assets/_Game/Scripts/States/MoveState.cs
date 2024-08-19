@@ -7,7 +7,7 @@ public class MoveState : IState<AbstractCharacter>
 {
     public void OnEnter(AbstractCharacter t)
     {
-
+        
     }
 
     public void OnExecute(AbstractCharacter t)
