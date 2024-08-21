@@ -27,14 +27,14 @@ public class MagicBall : Magic
     {
         if (!col.CompareTag(Constant.TAG_PLAYER)) return;
 
-        ballAnim.SetTrigger(Constant.TRIGGER_DESPAWN);
+        ballAnim.SetTrigger(Constant.ANIM_DESPAWN);
     }
 
     private void Fly()
     {
         timer -= Time.deltaTime;
 
-        if (timer < 0f) ballAnim.SetTrigger(Constant.TRIGGER_DESPAWN);
+        if (timer < 0f) ballAnim.SetTrigger(Constant.ANIM_DESPAWN);
 
         float distance = speed * Time.deltaTime;
 
@@ -48,7 +48,7 @@ public class MagicBall : Magic
         ballTransform.position = pos;
         ball.SetActive(true);
 
-        ballAnim.SetTrigger(Constant.TRIGGER_FLY);
+        ballAnim.SetTrigger(Constant.ANIM_FLY);
     }
 
     public override void Despawn()

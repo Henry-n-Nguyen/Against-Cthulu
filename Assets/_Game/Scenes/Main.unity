@@ -501,51 +501,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3740229879559345047, guid: 3f54eb4bc7b35244e8e9fda889d98241, type: 3}
   m_PrefabInstance: {fileID: 3495825265976308712}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1372429291
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1372429292}
-  - component: {fileID: 1372429293}
-  m_Layer: 0
-  m_Name: ProjectileManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1372429292
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372429291}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1554126644}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1372429293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372429291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1930e8770697a4abd58f0d5074061c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holder: {fileID: 1372429292}
 --- !u!1 &1496415945
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,8 +562,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1372429292}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1560181001
@@ -654,7 +608,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1560181001}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5cc631969639bea4f8666f87dfe10334, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -852,7 +806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7500136526630895031, guid: 3f54eb4bc7b35244e8e9fda889d98241, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 5.29
       objectReference: {fileID: 0}
     - target: {fileID: 7500136526630895031, guid: 3f54eb4bc7b35244e8e9fda889d98241, type: 3}
       propertyPath: m_LocalPosition.z

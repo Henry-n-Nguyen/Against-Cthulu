@@ -5,38 +5,38 @@ using UnityEngine.InputSystem;
 
 public class AbstractCharacter : MonoBehaviour
 {
+    // Constant
+    protected static IdleState IDLE_STATE = new IdleState();
+    protected static MoveState MOVE_STATE = new MoveState();
+    protected static OnAirState ON_AIR_STATE = new OnAirState();
+    protected static AttackState ATTACK_STATE = new AttackState();
+    protected static HitState HIT_STATE = new HitState();
+    protected static DeadState DEAD_STATE = new DeadState();
+
     // Reference Variables
     [SerializeField] public AbstractCharacter characterScript;
     [SerializeField] public Transform characterTransform;
 
-    [SerializeField] protected Transform groundCheck;
+    [SerializeField] protected BoxCollider2D groundCheck;
     [SerializeField] protected LayerMask groundLayer;
 
     [SerializeField] protected Animator anim;
-    [SerializeField] protected Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     // Private Variables
     private IState<AbstractCharacter> currentState;
     private string currentAnimName;
 
-    protected float horizontal;
-    protected float vertical;
+    [field: SerializeField] public float horizontal { get; protected set; }
+    [field: SerializeField] public float vertical { get; protected set; }
+    [field: SerializeField] public float walkSpeed { get; protected set; } = 2f;
+    [field: SerializeField] public float runSpeed { get; protected set; } = 4f;
+    [field: SerializeField] public float jumpForce { get; protected set; } = 6f;
 
-    protected float walkSpeed = 2f;
-    protected float runSpeed = 4f;
-    protected float jumpingPower = 5f;
-
-    protected bool isAttacked = false;
-    protected bool isRunning = false;
-    protected bool isJumping = false;
-
-    //Public Variables
-    [Space(5f)]
-    [Header("public")]
-    public int id;
-    public Magic magic;
-    public Transform shootPoint;
-    public Transform target;
+    public bool isGrounded = false;
+    public bool isRunning = false;
+    public bool isJumping = false;
+    public bool isAttacked = false;
 
     void Start()
     {
@@ -45,37 +45,36 @@ public class AbstractCharacter : MonoBehaviour
 
     void Update()
     {
-        if (currentState != null)
-        {
-            currentState.OnExecute(this);
-        }
+        GatherInput();
+
+        currentState?.OnExecute(this);
+    }
+
+    private void GatherInput()
+    {
+        CheckGround();
+
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
     }
 
     public virtual void OnInit()
     {
-        horizontal = 0f;
+        ChangeState(IDLE_STATE);
 
-        vertical = 0f;
-
-        ChangeState(new IdleState());
+        isAttacked = false;
     }
 
     public void ChangeState(IState<AbstractCharacter> state)
     {
-        if (currentState != null)
-        {
-            currentState.OnExit(this);
-        }
+        currentState?.OnExit(this);
 
         currentState = state;
 
-        if (currentState != null)
-        {
-            currentState.OnEnter(this);
-        }
+        currentState?.OnEnter(this);
     }
 
-    protected void ChangeAnim(string animName)
+    public void ChangeAnim(string animName)
     {
         if (currentAnimName != animName)
         {
@@ -89,36 +88,45 @@ public class AbstractCharacter : MonoBehaviour
 
 
     // State Function
+    public virtual void Idle()
+    {
+        Flip();
+
+        //ChangeAnim(Constant.ANIM_IDLE);
+    }
+
     public virtual void Move() 
     {
         Flip();
+
+        ChangeAnim(Constant.ANIM_RUN_LOOP);
     }
 
-    public virtual void Idle() { }
-
-    public virtual void Jump() { }
+    public virtual void OnAir()
+    {
+        Flip();
+    }
 
     public virtual void Attack() { }
 
     public virtual void Death()
     {
-        ChangeAnim(Constant.TRIGGER_DEATH);
+        ChangeAnim(Constant.ANIM_DEATH);
     }
 
     public virtual void Hit()
     {
-        ChangeAnim(Constant.TRIGGER_HIT);
+        ChangeAnim(Constant.ANIM_HIT);
     }
 
     // Protected Function
-    protected bool IsGrounded()
+    protected void CheckGround()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        isGrounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundLayer).Length > 0;
     }
 
     protected void Flip()
     {
-        if (Mathf.Abs(horizontal) > 0.1f) characterTransform.rotation = Quaternion.Euler(new Vector3(0, horizontal > 0.1f ? 0 : 180, 0));
+        if (Mathf.Abs(horizontal) > 0.01f) characterTransform.rotation = Quaternion.Euler(new Vector3(0, horizontal > 0.01f ? 0 : 180, 0));
     }
-
 }

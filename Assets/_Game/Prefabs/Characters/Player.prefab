@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1086962187144956071}
+  - component: {fileID: 6995983577310135175}
   m_Layer: 0
   m_Name: Ground Check
   m_TagString: Untagged
@@ -25,12 +26,57 @@ Transform:
   m_GameObject: {fileID: 1032669472040988973}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.33, z: 0}
+  m_LocalPosition: {x: 0, y: -0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7500136526630895031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &6995983577310135175
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032669472040988973}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.009220108, y: 0.004216316}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1824519, y: 0.01103751}
+  m_EdgeRadius: 0
 --- !u!1 &3740229879559345047
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,9 +210,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &9118767155362740736
 BoxCollider2D:
@@ -200,7 +246,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.026266024, y: -0.015515462}
+  m_Offset: {x: -0.008457951, y: -0.009428561}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -211,7 +257,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14632297, y: 0.6110308}
+  m_Size: {x: 0.18193911, y: 0.59885705}
   m_EdgeRadius: 0
 --- !u!114 &6974265464628697523
 MonoBehaviour:
@@ -227,50 +273,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterScript: {fileID: 6974265464628697523}
   characterTransform: {fileID: 7500136526630895031}
-  groundCheck: {fileID: 1086962187144956071}
+  groundCheck: {fileID: 6995983577310135175}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   anim: {fileID: 953927250855176786}
   rb: {fileID: 5345633441149430119}
-  id: 0
-  magic: {fileID: 0}
-  shootPoint: {fileID: 0}
-  target: {fileID: 0}
-  playerInput: {fileID: 0}
-  moveAction:
-    m_Name: Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6043c62b-db61-409b-a88c-daa2f4627dba
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  attackAction:
-    m_Name: Attack
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9c83acd2-2f54-4076-9129-eec9513380d4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  jumpAction:
-    m_Name: Jump
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 165f6567-08ab-4dac-aa53-f39e2825cee4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  hitAction:
-    m_Name: Hit
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: be2306b3-a73d-4b8e-8d35-3ab3fd77b0a8
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
+  <horizontal>k__BackingField: 0
+  <vertical>k__BackingField: 0
+  <dragMove>k__BackingField: 0.9
+  <walkSpeed>k__BackingField: 2
+  <runSpeed>k__BackingField: 4
+  <jumpForce>k__BackingField: 6
