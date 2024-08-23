@@ -16,7 +16,6 @@ public class Constant
     public const string ANIM_RUN_LOOP = "run(loop)";
     public const string ANIM_RUN_END = "run(end)";
 
-    public const string ANIM_JUMP_ATTACK = "jump(attack)";
     public const string ANIM_JUMP_START = "jump(start)";
     public const string ANIM_JUMP_END = "jump(end)";
     public const string ANIM_JUMP_LANDING = "jump(landing)";

@@ -6,12 +6,12 @@ using UnityEngine.InputSystem;
 public class AbstractCharacter : MonoBehaviour
 {
     // Constant
-    protected static IdleState IDLE_STATE = new IdleState();
-    protected static MoveState MOVE_STATE = new MoveState();
-    protected static OnAirState ON_AIR_STATE = new OnAirState();
-    protected static AttackState ATTACK_STATE = new AttackState();
-    protected static HitState HIT_STATE = new HitState();
-    protected static DeadState DEAD_STATE = new DeadState();
+    public static IdleState IDLE_STATE = new IdleState();
+    public static MoveState MOVE_STATE = new MoveState();
+    public static OnAirState ON_AIR_STATE = new OnAirState();
+    public static AttackState ATTACK_STATE = new AttackState();
+    public static HitState HIT_STATE = new HitState();
+    public static DeadState DEAD_STATE = new DeadState();
 
     // Reference Variables
     [SerializeField] public AbstractCharacter characterScript;
@@ -20,7 +20,7 @@ public class AbstractCharacter : MonoBehaviour
     [SerializeField] protected BoxCollider2D groundCheck;
     [SerializeField] protected LayerMask groundLayer;
 
-    [SerializeField] protected Animator anim;
+    public Animator anim;
     public Rigidbody2D rb;
 
     // Private Variables
@@ -36,7 +36,7 @@ public class AbstractCharacter : MonoBehaviour
     public bool isGrounded = false;
     public bool isRunning = false;
     public bool isJumping = false;
-    public bool isAttacked = false;
+    public bool isAttacking = false;
 
     void Start()
     {
@@ -62,7 +62,7 @@ public class AbstractCharacter : MonoBehaviour
     {
         ChangeState(IDLE_STATE);
 
-        isAttacked = false;
+        isAttacking = false;
     }
 
     public void ChangeState(IState<AbstractCharacter> state)
@@ -118,15 +118,14 @@ public class AbstractCharacter : MonoBehaviour
     {
         ChangeAnim(Constant.ANIM_HIT);
     }
+    public void Flip()
+    {
+        if (Mathf.Abs(horizontal) > 0.01f) characterTransform.rotation = Quaternion.Euler(new Vector3(0, horizontal > 0.01f ? 0 : 180, 0));
+    }
 
     // Protected Function
     protected void CheckGround()
     {
         isGrounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundLayer).Length > 0;
-    }
-
-    protected void Flip()
-    {
-        if (Mathf.Abs(horizontal) > 0.01f) characterTransform.rotation = Quaternion.Euler(new Vector3(0, horizontal > 0.01f ? 0 : 180, 0));
     }
 }
