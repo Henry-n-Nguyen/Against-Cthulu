@@ -43,8 +43,7 @@ GameObject:
   - component: {fileID: 1146668952618043876}
   - component: {fileID: 2422692668746267855}
   - component: {fileID: 3599124813284023425}
-  - component: {fileID: 450363729251758447}
-  - component: {fileID: 2628552763201485290}
+  - component: {fileID: 900194195612451108}
   m_Layer: 0
   m_Name: Flying Eye
   m_TagString: Enemy
@@ -168,8 +167,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &450363729251758447
-BoxCollider2D:
+--- !u!70 &900194195612451108
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -200,39 +199,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.016775269, y: 0.036600843}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.64, y: 0.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.14893788, y: 0.19468927}
-  m_EdgeRadius: 0
---- !u!114 &2628552763201485290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3671955092722811127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da55854f680d4eb4eaebf9f4955c6361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterScript: {fileID: 2628552763201485290}
-  characterTransform: {fileID: 3182007724413611229}
-  groundCheck: {fileID: 0}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  anim: {fileID: 2422692668746267855}
-  rb: {fileID: 3599124813284023425}
-  id: 1
-  magic: {fileID: 6742414189366080860, guid: de4deecb017f79c41b0ecf57ebf2c210, type: 3}
-  shootPoint: {fileID: 2297803008359331399}
+  m_Offset: {x: 0.018916845, y: 0.029557735}
+  m_Size: {x: 0.18126392, y: 0.18835777}
+  m_Direction: 0

@@ -1,22 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class MagicBall : Magic
 {
-    [SerializeField] private GameObject ball;
-    [SerializeField] private Transform ballTransform;
     [SerializeField] private Animator ballAnim;
-
     [SerializeField] private float speed = 4f;
-
-    private float timer = 2.5f;
-
-    private void Update()
-    {
-        Fly();
-    }
+    [SerializeField] private float existTime = 2.5f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,35 +17,33 @@ public class MagicBall : Magic
 
     private void CollideWithPlayer(Collider2D col)
     {
-        if (!col.CompareTag(Constant.TAG_PLAYER)) return;
+        if (!col.CompareTag(S_Constant.TAG_PLAYER)) return;
 
-        ballAnim.SetTrigger(Constant.ANIM_DESPAWN);
+        Despawn();
     }
 
-    private void Fly()
+    public override void Launch()
     {
-        timer -= Time.deltaTime;
+        existTime -= Time.deltaTime;
 
-        if (timer < 0f) ballAnim.SetTrigger(Constant.ANIM_DESPAWN);
+        if (existTime < 0f) Despawn();
 
         float distance = speed * Time.deltaTime;
 
-        ballTransform.position += ballTransform.right * distance;
+        magicTF.position += magicTF.right * distance;
     }
 
-    public override void Spawn(Vector3 pos)
+    public override void Spawn(Transform parent)
     {
-        timer = 2.5f;
-
-        ballTransform.position = pos;
-        ball.SetActive(true);
-
-        ballAnim.SetTrigger(Constant.ANIM_FLY);
+        ballAnim.SetTrigger(S_Constant.ANIM_TRIGGER);
+        
+        base.Spawn(parent);
     }
 
     public override void Despawn()
     {
-        ball.SetActive(false);
-        ballTransform.localPosition = Vector3.zero;
+        ballAnim.SetTrigger(S_Constant.ANIM_DESPAWN);
+
+        base.Despawn();
     }
 }

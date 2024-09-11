@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1527744983263679229
 Transform:
   m_ObjectHideFlags: 0
@@ -119,7 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5de10f899e55b142aa356ba9a9affec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 4436522083933086080}
-  ballTransform: {fileID: 1527744983263679229}
+  magic: {fileID: 4436522083933086080}
+  magicTF: {fileID: 1527744983263679229}
   ballAnim: {fileID: 2179698116175554595}
-  speed: 4
+  speed: 7
+  existTime: 2.5
