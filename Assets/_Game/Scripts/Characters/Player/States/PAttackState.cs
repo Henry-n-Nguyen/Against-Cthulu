@@ -3,31 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using HuySpace;
 
-public class PAttackState : IState<AbstractCharacter>
+public class PAttackState : IState<Player>
 {
     private int comboPhase = 1;
 
     private float timer;
-    public void OnEnter(AbstractCharacter t)
+    public void OnEnter(Player t)
     {
         timer = 0f;
         comboPhase = 1;
 
-        if (t.IsGrounded && !t.IsJumping)
+        if (!t.IsJumping)
         {
-            t.Flip();
-            t.ChangeAnim(S_Constant.ANIM_ATTACK_FIRST);
-            t.SetMove(Vector2.zero);
+            t.ChangeAnimDirectly(S_Constant.ANIM_ATTACK_FIRST);
+            t.SetMove(Vector2.zero + Vector2.up * t.RbVelocity.y);
         }
-
-        if (t.IsJumping)
+        else
         {
-            t.Flip();
-            t.ChangeAnim(S_Constant.ANIM_JUMP_UP_ATTACK);
+            t.ChangeAnimDirectly(S_Constant.ANIM_JUMP_UP_ATTACK);
         }
     }
 
-    public void OnExecute(AbstractCharacter t)
+    public void OnExecute(Player t)
     {
         timer += Time.deltaTime;
 
@@ -42,7 +39,7 @@ public class PAttackState : IState<AbstractCharacter>
 
             if (timer > 1f)
             {
-                t.ChangeState(AbstractCharacter.IDLE_STATE);
+                t.ChangeState(Player.IDLE_STATE);
             }
         }
         else
@@ -51,7 +48,7 @@ public class PAttackState : IState<AbstractCharacter>
             {
                 if (!t.IsGrounded)
                 {
-                    t.ChangeState(AbstractCharacter.ON_AIR_STATE);
+                    t.ChangeState(Player.ON_AIR_STATE);
                 }
             }
         }
@@ -59,20 +56,20 @@ public class PAttackState : IState<AbstractCharacter>
         GatherAttackInput(t);
     }
 
-    public void OnExit(AbstractCharacter t)
+    public void OnExit(Player t)
     {
-        
+        t.SetBool(CharacterState.Attack, false);
     }
 
     // Unique function
-    private void GatherAttackInput(AbstractCharacter t)
+    private void GatherAttackInput(Player t)
     {
         // Change to idle
-        if (t.IsJumping && t.IsGrounded && t.rbVelocity.y < 0.1f)
+        if (t.IsJumping && t.IsGrounded && t.RbVelocity.y < 0.1f)
         {
             t.SetBool(CharacterState.Jump, false);
             t.ChangeAnim(S_Constant.ANIM_JUMP_LANDING);
-            t.ChangeState(AbstractCharacter.IDLE_STATE);
+            t.ChangeState(Player.IDLE_STATE);
         }
 
         // Trigger another attack
@@ -81,8 +78,8 @@ public class PAttackState : IState<AbstractCharacter>
             comboPhase = 2;
 
             t.Flip();
-            t.ChangeAnim(S_Constant.ANIM_ATTACK_SECOND);
-            t.SetMove(Vector2.zero);
+            t.ChangeAnimDirectly(S_Constant.ANIM_ATTACK_SECOND);
+            t.SetMove(Vector2.zero + Vector2.up * t.RbVelocity.y);
         }
     }
 }

@@ -6,12 +6,12 @@ public class EAttackState : IState<AbstractEnemy>
 {
     public void OnEnter(AbstractEnemy t)
     {
-
+        t.PreAttack();
     }
 
     public void OnExecute(AbstractEnemy t)
     {
-        t.PreAttack();
+        
     }
 
     public void OnExit(AbstractEnemy t)

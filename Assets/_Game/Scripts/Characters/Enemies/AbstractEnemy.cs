@@ -1,3 +1,4 @@
+using HuySpace;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,13 @@ public class AbstractEnemy : AbstractCharacter
     public static EIdleState E_IDLE_STATE = new EIdleState();
     public static EMoveState E_MOVE_STATE = new EMoveState();
     public static EAttackState E_ATTACK_STATE = new EAttackState();
+    public static ECastMagicState E_CAST_MAGIC_STATE = new ECastMagicState();
     public static EHitState E_HIT_STATE = new EHitState();
     public static EDeadState E_DEAD_STATE = new EDeadState();
+
+    // private variable
+    private IState<AbstractEnemy> currentState;
+    private IState<AbstractEnemy> prevState;
 
     // Reference Variables
     [Header("Character References")]
@@ -20,9 +26,6 @@ public class AbstractEnemy : AbstractCharacter
 
     public bool DetectedTarget { get { return detectZone.HasTargetInRange; } protected set { } }
     public bool HasEnemyInAttackRange { get { return attackZone.HasTargetInRange; } protected set { } }
-
-    // Private Variables
-    private IState<AbstractEnemy> currentState;
 
     [field: Header("Boolean")]
     [field: SerializeField] public bool isTouchingWall { get; protected set; } = false;
@@ -45,24 +48,46 @@ public class AbstractEnemy : AbstractCharacter
         ChangeState(E_IDLE_STATE);
     }
 
-    public void ChangeState(IState<AbstractEnemy> state)
+    public override void ChangeState<T>(IState<T> state)
     {
         currentState?.OnExit(this);
 
-        currentState = state;
+        if (currentState != null) prevState = currentState;
+
+        currentState = state as IState<AbstractEnemy>;
 
         currentState?.OnEnter(this);
     }
 
+    // State Function
+    public override void Idle()
+    {
+        Flip();
+        ChangeAnim(S_Constant.ANIM_IDLE);
+    }
+
+    public override void Move()
+    {
+        Flip();
+        ChangeAnim(S_Constant.ANIM_RUN);
+    }
+
+    public override void PreAttack() { }
+
     public override void Hit()
     {
-        anim.SetTrigger(S_Constant.ANIM_HIT);
+        SetBool(CharacterState.Hit, true);
         ChangeState(E_HIT_STATE);
     }
 
     public override void Die()
     {
         ChangeState(E_DEAD_STATE);
+    }
+
+    public override void CallBackState()
+    {
+        ChangeState(prevState);
     }
 
     // Check Function
@@ -74,9 +99,16 @@ public class AbstractEnemy : AbstractCharacter
         {
             isTouchingWall = false;
 
-            horizontal = -horizontal;
+            Horizontal = -Horizontal;
 
             Flip();
+
+            SetMove(characterTF.right * WalkSpeed + Vector3.up * RbVelocity.y);
         }
+    }
+
+    protected void CheckCliff()
+    {
+        // TEST
     }
 }

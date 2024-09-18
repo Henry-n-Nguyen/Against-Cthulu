@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using HuySpace;
 
-public class PHitState : IState<AbstractCharacter>
+public class PHitState : IState<Player>
 {
-    public void OnEnter(AbstractCharacter t)
+    public void OnEnter(Player t)
     {
+        t.ChangeAnimDirectly(S_Constant.ANIM_HIT);
+
         t.SetMove(Vector2.zero);
-        t.ChangeState(AbstractCharacter.IDLE_STATE);
     }
 
-    public void OnExecute(AbstractCharacter t)
+    public void OnExecute(Player t)
     {
 
     }
 
-    public void OnExit(AbstractCharacter t)
+    public void OnExit(Player t)
     {
-
+        t.SetBool(CharacterState.Hit, false);
     }
 
 }

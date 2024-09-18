@@ -2,43 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using HuySpace;
 
-public class PCastMagicState : IState<AbstractCharacter>
+public class PCastMagicState : IState<Player>
 {
-    private float timer;
-
-    public void OnEnter(AbstractCharacter t)
+    public void OnEnter(Player t)
     {
-        timer = 0f;
-
         if (t.IsJumping)
         {
-            t.ChangeAnim(S_Constant.ANIM_JUMP_CAST_MAGIC);
-            t.CastMagic();
-            t.ChangeState(AbstractCharacter.ON_AIR_STATE);
+            t.ChangeAnimDirectly(S_Constant.ANIM_JUMP_CAST_MAGIC);
         }
         else
         {
-            t.SetMove(Vector2.zero);
-            t.ChangeAnim(S_Constant.ANIM_CAST_MAGIC);
-            t.CastMagic();
-            t.ChangeState(AbstractCharacter.IDLE_STATE);
+            t.SetMove(Vector2.zero + Vector2.up * t.RbVelocity.y);
+            t.ChangeAnimDirectly(S_Constant.ANIM_CAST_MAGIC);
         }
+
+        t.CastMagic();
     }
 
-    public void OnExecute(AbstractCharacter t)
+    public void OnExecute(Player t)
     {
-        timer += Time.deltaTime;
 
-        if (timer > 0.5f)
-        {
-            if (t.IsJumping) t.ChangeState(AbstractCharacter.ON_AIR_STATE);
-            else t.ChangeState(AbstractCharacter.IDLE_STATE);
-        }
     }
 
-    public void OnExit(AbstractCharacter t)
+    public void OnExit(Player t)
     {
-
+        t.SetBool(CharacterState.Attack, false);
     }
 }

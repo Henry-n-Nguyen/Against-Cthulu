@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Ground
+  - Wall
+  - Magic
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - Enemy
   - PlayerHitBox
   - EnemyHitBox
-  - 
+  - Magic
   - 
   - 
   - 

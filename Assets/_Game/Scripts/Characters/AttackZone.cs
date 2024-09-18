@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class AttackZone : MonoBehaviour
 {
-    [SerializeField] private List<Damageable> detectedTarget = new List<Damageable>();
+    [SerializeField] private List<Damageable> detectedTargetList = new List<Damageable>();
     [SerializeField] private Collider2D col;
 
     public bool HasTargetInRange
     {
         get
         {
-            return detectedTarget.Count > 0;
+            int i = 0;
+
+            while (i < detectedTargetList.Count)
+            {
+                if (!detectedTargetList[i].IsAlive) detectedTargetList.Remove(detectedTargetList[i]);
+                else i++;
+            }
+
+            return detectedTargetList.Count > 0;
         }
         private set
         {
@@ -21,18 +29,18 @@ public class AttackZone : MonoBehaviour
 
     public List<Damageable> GetTargetList()
     {
-        return detectedTarget;
+        return detectedTargetList;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Damageable target = collision.GetComponent<Damageable>();
-        detectedTarget.Add(target);
+        detectedTargetList.Add(target);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         Damageable target = collision.GetComponent<Damageable>();
-        detectedTarget.Remove(target);
+        detectedTargetList.Remove(target);
     }
 }

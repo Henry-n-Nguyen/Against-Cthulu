@@ -30,7 +30,7 @@ public class Damageable : MonoBehaviour
     [SerializeField] private float timer = 0f;
     [SerializeField] private float timer1 = 0f;
 
-    public float invincibleTime { get; private set; } = 0.25f;
+    public float invincibleTime { get; private set; } = 1f;
 
     // Max HP
     [SerializeField] private float _maxHP = 100f;
@@ -64,6 +64,11 @@ public class Damageable : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            Hit(0);
+        }
+
         CheckInvincibleState();
     }
 
@@ -78,11 +83,12 @@ public class Damageable : MonoBehaviour
             if (_HP <= 0)
             {
                 IsAlive = false;
+                character.CallBackState();
                 character.Die();
             }
             else
             {
-                character.Hit();
+                if (!character.IsAttacking) character.Hit();
             }
         }
     }
