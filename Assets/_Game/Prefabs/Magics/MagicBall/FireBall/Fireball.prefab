@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -5983695956316894292}
   - component: {fileID: 3806144912616469125}
   - component: {fileID: 6742414189366080860}
-  m_Layer: 12
+  m_Layer: 3
   m_Name: Fireball
   m_TagString: Magic
   m_Icon: {fileID: 0}
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5de10f899e55b142aa356ba9a9affec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poolType: 0
   owner: {fileID: 0}
   magicTF: {fileID: 1527744983263679229}
   damage: 0

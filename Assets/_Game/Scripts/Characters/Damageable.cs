@@ -28,7 +28,6 @@ public class Damageable : MonoBehaviour
 
     [Header("Float")]
     [SerializeField] private float timer = 0f;
-    [SerializeField] private float timer1 = 0f;
 
     public float invincibleTime { get; private set; } = 1f;
 

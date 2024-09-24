@@ -3,19 +3,29 @@ using UnityEngine;
 using HuySpace;
 using UnityEngine.UIElements;
 using static UnityEngine.ParticleSystem;
+using JetBrains.Annotations;
 
 public class PoolController : MonoBehaviour
 {
     [Header("Pool")]
-    public List<PoolAmount> PoolWithRoot;
+    public List<PoolAmountGroup> poolGroups;
 
     void Awake()
     {
-        for (int i = 0; i < PoolWithRoot.Count; i++)
-        {
-            SimplePool.Preload(PoolWithRoot[i].prefab, PoolWithRoot[i].amount, PoolWithRoot[i].root);
+        foreach (PoolAmountGroup poolGroup in poolGroups) {
+            for (int i = 0; i < poolGroup.poolWithRoot.Count; i++)
+            {
+                SimplePool.Preload(poolGroup.poolWithRoot[i].prefab, poolGroup.poolWithRoot[i].amount, poolGroup.poolWithRoot[i].root);
+            }
         }
     }
+}
+
+[System.Serializable]
+public class PoolAmountGroup
+{
+    public string name;
+    public List<PoolAmount> poolWithRoot;
 }
 
 [System.Serializable]

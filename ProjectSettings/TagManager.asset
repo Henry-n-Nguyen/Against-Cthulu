@@ -8,20 +8,21 @@ TagManager:
   - Ground
   - Wall
   - Magic
+  - Floating
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - Ground
-  - Wall
   - Player
   - Enemy
   - PlayerHitBox
   - EnemyHitBox
+  - Effect
   - Magic
+  - Environment
   - 
   - 
   - 
@@ -44,4 +45,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 3380526521
+    locked: 0
+  - name: Player
+    uniqueID: 2025110535
     locked: 0

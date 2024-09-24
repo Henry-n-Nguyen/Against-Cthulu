@@ -29,7 +29,8 @@ public class Magic : GameUnit
 
     public virtual void CollideWithEnvironment(Collider2D col)
     {
-        if (!col.CompareTag(S_Constant.TAG_GROUND) && !col.CompareTag(S_Constant.TAG_WALL)) return;
+        //if (!col.CompareTag(S_Constant.TAG_GROUND) && !col.CompareTag(S_Constant.TAG_FLOATING)) return;
+        if (!col.CompareTag(S_Constant.TAG_GROUND)) return;
     }
 
     public void Init(AbstractCharacter caster)

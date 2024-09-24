@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2822739662715634914}
   - component: {fileID: 2808232053244064177}
   - component: {fileID: 403473921381760879}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Attack Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 6014860979830132206}
   - component: {fileID: 5672190539341212257}
   - component: {fileID: 2170564808445591461}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Detection Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,10 +350,10 @@ GameObject:
   - component: {fileID: 4681727126058426308}
   - component: {fileID: 7274414184632459441}
   - component: {fileID: 6258319310815693473}
-  - component: {fileID: 141340950237876875}
+  - component: {fileID: 2058596637061671196}
   - component: {fileID: 1420343458966984514}
   - component: {fileID: 8499506980009356202}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Warrior Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -479,8 +479,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &141340950237876875
-CapsuleCollider2D:
+--- !u!61 &2058596637061671196
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -511,9 +511,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.007535696, y: 0.014002621}
-  m_Size: {x: 0.34509087, y: 0.9176954}
-  m_Direction: 0
+  m_Offset: {x: -0.012411833, y: 0.01392746}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.4, y: 0.4}
+    oldSize: {x: 1.5, y: 1.5}
+    newSize: {x: 1.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3829217, y: 0.9044676}
+  m_EdgeRadius: 0
 --- !u!114 &1420343458966984514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,6 +538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolType: 2
   characterTF: {fileID: 6923445916467170945}
+  characterCollide: {fileID: 2058596637061671196}
   anim: {fileID: 7274414184632459441}
   rb: {fileID: 6258319310815693473}
   shootTF: {fileID: 0}
@@ -543,12 +554,11 @@ MonoBehaviour:
   <IsGrounded>k__BackingField: 0
   <IsRunning>k__BackingField: 0
   <IsJumping>k__BackingField: 0
+  <IsDoubleJumping>k__BackingField: 0
   <IsAttacking>k__BackingField: 0
   <IsSliding>k__BackingField: 0
   <IsHit>k__BackingField: 0
   prefab: {fileID: 0}
-  ghostEffect: {fileID: 0}
-  effectSpawned: {fileID: 0}
   wallCheck: {fileID: 3724838787908361222}
   detectZone: {fileID: 2170564808445591461}
   <isTouchingWall>k__BackingField: 0

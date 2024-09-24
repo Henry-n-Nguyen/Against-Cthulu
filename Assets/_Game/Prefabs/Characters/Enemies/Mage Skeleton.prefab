@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5037982955551821388}
   - component: {fileID: 7796889990104957248}
   - component: {fileID: 8389172410953491187}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Attack Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3987572472046877715}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Shoot Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 2830981636122760381}
   - component: {fileID: 746739051604566844}
   - component: {fileID: 7798183842692297317}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Detection Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,10 +381,10 @@ GameObject:
   - component: {fileID: 8976677829603770214}
   - component: {fileID: 7485375233873104496}
   - component: {fileID: 5906396541254760971}
-  - component: {fileID: 914427097373183409}
+  - component: {fileID: 4141061708732119763}
   - component: {fileID: 1008491138144470477}
   - component: {fileID: 951931773171294965}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Mage Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -511,8 +511,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &914427097373183409
-CapsuleCollider2D:
+--- !u!61 &4141061708732119763
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -543,9 +543,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.007535696, y: 0.014002621}
-  m_Size: {x: 0.34509087, y: 0.9176954}
-  m_Direction: 0
+  m_Offset: {x: -0.008663237, y: -0.027362525}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.4, y: 0.4}
+    oldSize: {x: 1.5, y: 1.5}
+    newSize: {x: 1.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3761226, y: 0.81769407}
+  m_EdgeRadius: 0
 --- !u!114 &1008491138144470477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,6 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolType: 2
   characterTF: {fileID: 6776011936999703298}
+  characterCollide: {fileID: 4141061708732119763}
   anim: {fileID: 7485375233873104496}
   rb: {fileID: 5906396541254760971}
   shootTF: {fileID: 3987572472046877715}
@@ -575,12 +586,11 @@ MonoBehaviour:
   <IsGrounded>k__BackingField: 0
   <IsRunning>k__BackingField: 0
   <IsJumping>k__BackingField: 0
+  <IsDoubleJumping>k__BackingField: 0
   <IsAttacking>k__BackingField: 0
   <IsSliding>k__BackingField: 0
   <IsHit>k__BackingField: 0
   prefab: {fileID: 6742414189366080860, guid: de4deecb017f79c41b0ecf57ebf2c210, type: 3}
-  ghostEffect: {fileID: 0}
-  effectSpawned: {fileID: 0}
   wallCheck: {fileID: 7140024005642860254}
   detectZone: {fileID: 7798183842692297317}
   <isTouchingWall>k__BackingField: 0

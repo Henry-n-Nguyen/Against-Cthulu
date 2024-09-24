@@ -5,12 +5,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 public class AbstractCharacter : GameUnit
 {
     // Reference Variables
     [Header("Character References")]
-    [SerializeField] protected Transform characterTF;
+    [SerializeField] public Transform characterTF;
+
+    [SerializeField] protected BoxCollider2D characterCollide;
     [SerializeField] protected Animator anim;
     [SerializeField] protected Rigidbody2D rb;
     [SerializeField] protected Transform shootTF;
@@ -21,7 +24,10 @@ public class AbstractCharacter : GameUnit
 
     // Private Variables
     private string currentAnimName;
+    private bool facingRight = true;
+    private GameObject currentFloatingPlatform;
 
+    // Bool Variables
     [field: Header("Basic Stats")]
     [field: SerializeField] public float Horizontal { get; protected set; }
     [field: SerializeField] public float Vertical { get; protected set; }
@@ -33,18 +39,17 @@ public class AbstractCharacter : GameUnit
     
     [HideInInspector] public Vector2 RbVelocity { get { return rb.velocity; } protected set { RbVelocity = value; } }
 
-    [field: Header("Boolean")]
+    [field: Header("Boolean For Check")]
     [field: SerializeField] public bool IsGrounded { get; private set; } = false;
     [field: SerializeField] public bool IsRunning { get; private set; } = false;
     [field: SerializeField] public bool IsJumping { get; private set; } = false;
+    [field: SerializeField] public bool IsDoubleJumping { get; private set; } = false;
     [field: SerializeField] public bool IsAttacking { get; private set; } = false;
     [field: SerializeField] public bool IsSliding { get; private set; } = false;
     [field: SerializeField] public bool IsHit { get; private set; } = false;
 
-    [Header("Magic,Effect")]
+    [Header("Magic")]
     public Magic prefab;
-    public CharacterEffect ghostEffect;
-    public CharacterEffect effectSpawned;
 
     void Start()
     {
@@ -72,6 +77,32 @@ public class AbstractCharacter : GameUnit
         anim.SetTrigger(currentAnimName);
     }
 
+    // Collider Function
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(S_Constant.TAG_FLOATING))
+        {
+            currentFloatingPlatform = collision.gameObject;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(S_Constant.TAG_FLOATING))
+        {
+            currentFloatingPlatform = null;
+        }
+    }
+
+    protected IEnumerator DisableCollision()
+    {
+        CompositeCollider2D platformCollide = currentFloatingPlatform.GetComponent<CompositeCollider2D>();
+
+        Physics2D.IgnoreCollision(characterCollide, platformCollide);
+        yield return new WaitForSeconds(0.75f);
+        Physics2D.IgnoreCollision(characterCollide, platformCollide, false);
+    }
+
     // State Function
     public virtual void Idle() { }
 
@@ -89,9 +120,24 @@ public class AbstractCharacter : GameUnit
 
     public virtual void Hit() { }
 
-    public void Flip()
+    public void CheckIfShouldFlip()
     {
-        if (Mathf.Abs(Horizontal) > 0.01f) characterTF.rotation = Quaternion.Euler(new Vector3(0, Horizontal > 0.01f ? 0 : 180, 0));
+        if (Mathf.Abs(Horizontal) < 0.01f) return;
+        if ((Horizontal > 0.01f && !facingRight))
+        {
+            facingRight = true;
+            Flip();
+        }
+        else if ((Horizontal < -0.01f && facingRight))
+        {
+            facingRight = false;
+            Flip();
+        }
+    }
+
+    public virtual void Flip()
+    {
+        characterTF.rotation = Quaternion.Euler(new Vector3(0, Horizontal > 0.01f ? 0 : 180, 0));
     }
 
     public virtual void Attack()
@@ -109,22 +155,17 @@ public class AbstractCharacter : GameUnit
         magic.Init(this);
         magic.Spawn(shootTF);
     }
-
-    public virtual void SpawnEffect()
-    {
-        effectSpawned = Instantiate(ghostEffect, characterTF);
-        effectSpawned.Init(this);
-        effectSpawned.Spawn(characterTF);
-    }
-
-    public virtual void DeSpawnEffect()
-    {
-        Destroy(effectSpawned.gameObject);
-    }
-
     public void Jump(Vector2 jumpVector)
     {
         rb.velocity = Vector2.up * jumpVector.y * JumpForce + Vector2.right * jumpVector.x;
+    }
+
+    public void FallFromPlatform()
+    {
+        if (currentFloatingPlatform != null)
+        {
+            StartCoroutine(DisableCollision());
+        }
     }
 
     public virtual void Die() { }
@@ -148,6 +189,9 @@ public class AbstractCharacter : GameUnit
                 break;
             case CharacterState.Jump:
                 IsJumping = value;
+                break;
+            case CharacterState.DoubleJump:
+                IsDoubleJumping = value;
                 break;
             case CharacterState.Hit:
                 IsHit = value;

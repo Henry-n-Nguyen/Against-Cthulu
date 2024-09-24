@@ -16,6 +16,16 @@ public class Player : AbstractCharacter
     public static PHitState HIT_STATE = new PHitState();
     public static PDeadState DEAD_STATE = new PDeadState();
 
+    [Header("Effect")]
+    public CharacterEffect dustEffect;
+    public CharacterEffect ghostEffect;
+
+    // Bool Variables
+    [field: Header("Boolean For Cooldown")]
+    [field: SerializeField] public bool CanSpecial_01 { get; private set; } = true;
+    [field: SerializeField] public bool CanSpecial_02 { get; private set; } = true;
+    [field: SerializeField] public bool CanSlide { get; private set; } = true;
+
     // private variable
     private IState<Player> currentState;
     private IState<Player> prevState;
@@ -42,8 +52,6 @@ public class Player : AbstractCharacter
 
     public override void ChangeState<T>(IState<T> state)
     {
-        Debug.Log(state);
-
         currentState?.OnExit(this);
 
         if (currentState != null) prevState = currentState;
@@ -56,23 +64,23 @@ public class Player : AbstractCharacter
     // State Function
     public override void Idle()
     {
-        Flip();
+        CheckIfShouldFlip();
     }
 
     public override void Move()
     {
-        Flip();
+        CheckIfShouldFlip();
         ChangeAnim(S_Constant.ANIM_RUN_LOOP);
     }
 
     public override void OnAir()
     {
-        Flip();
+        CheckIfShouldFlip();
     }
 
     public override void PreAttack()
     {
-        Flip();
+        CheckIfShouldFlip();
     }
 
     public override void Death()
@@ -97,13 +105,62 @@ public class Player : AbstractCharacter
         ChangeState(prevState);
     }
 
+    public override void Flip()
+    {
+        base.Flip();
+        if (IsGrounded) SpawnDustEffect();
+    }
+
     public void Slide()
     {
         rb.velocity = characterTF.right * SlideForce;
+        StartCoroutine(SetCooldown(CooldownState.Slide, 2f));
     }
 
-    public void BackEffect()
+    public void SpawnGhostEffect()
     {
+        ghostEffect = SimplePool.Spawn<CharacterEffect>(PoolType.GhostEffect);
+        ghostEffect.Init(this);
+        ghostEffect.Spawn(characterTF);
+    }
 
+    public void SpawnDustEffect()
+    {
+        dustEffect = SimplePool.Spawn<CharacterEffect>(PoolType.DustEffect, characterTF);
+        dustEffect.Init(this);
+        dustEffect.Spawn(characterTF);
+    }
+
+    public IEnumerator SetCooldown(CooldownState state, float time)
+    {
+        switch (state)
+        {
+            case CooldownState.Special_01:
+                CanSpecial_01 = false;
+                break;
+            case CooldownState.Special_02:
+                CanSpecial_02 = false;
+                break;
+            case CooldownState.Slide:
+                CanSlide = false;
+                break;
+            default: break;
+        }
+
+        yield return new WaitForSeconds(time);
+
+        switch (state)
+        {
+            case CooldownState.Special_01:
+                CanSpecial_01 = true;
+                break;
+            case CooldownState.Special_02:
+                CanSpecial_02 = true;
+                break;
+            case CooldownState.Slide:
+                CanSlide = true;
+                break;
+            default: break;
+        }
     }
 }

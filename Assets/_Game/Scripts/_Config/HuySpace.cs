@@ -10,9 +10,17 @@ namespace HuySpace
         Idle = 1,
         Run = 2,
         Jump = 3,
-        Attack = 4,
-        Hit = 5,
-        Slide = 6,
+        DoubleJump = 4,
+        Attack = 5,
+        Hit = 6,
+        Slide = 7,
+    }
+
+    public enum CooldownState
+    {
+        Special_01 = 0,
+        Special_02 = 1,
+        Slide = 2,
     }
 
     public enum PoolType
@@ -20,8 +28,19 @@ namespace HuySpace
         None = 0,
 
         Player = 1,
-        Enemy = 2,
-        Effect = 3,
-        Magic = 4,
+
+        Enemy = 10,
+
+        GhostEffect = 40,
+        DustEffect = 41,
+
+        Magic = 50,
+    }
+
+    public enum TextPosition
+    {
+        Top,
+        Middle,
+        Bottom,
     }
 }

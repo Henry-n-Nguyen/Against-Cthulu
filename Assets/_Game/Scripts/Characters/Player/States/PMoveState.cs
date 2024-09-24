@@ -62,10 +62,18 @@ public class PMoveState : IState<Player>
             t.ChangeState(Player.IDLE_STATE);
         }
 
+        // Fall from floating platform
+        if (t.IsGrounded && Input.GetButtonDown("FallPlatform"))
+        {
+            t.FallFromPlatform();
+        }
+
         // Change to jump
         if (!t.IsJumping && Input.GetButtonDown("Jump"))
         {
             t.SetBool(CharacterState.Jump, true);
+
+            t.SpawnDustEffect();
 
             Vector2 jumpVector = (Vector2.up + Vector2.right * t.Horizontal * 0.3f).normalized;
             t.Jump(jumpVector);
@@ -80,7 +88,7 @@ public class PMoveState : IState<Player>
         }
 
         // Change to Slide
-        if (!t.IsSliding && Input.GetButtonDown("Slide"))
+        if (t.CanSlide && !t.IsSliding && Input.GetButtonDown("Slide"))
         {
             t.SetBool(CharacterState.Slide, true);
             t.ChangeState(Player.SLIDE_STATE);

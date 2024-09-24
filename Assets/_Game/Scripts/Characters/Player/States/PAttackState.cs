@@ -13,6 +13,8 @@ public class PAttackState : IState<Player>
         timer = 0f;
         comboPhase = 1;
 
+        t.PreAttack();
+
         if (!t.IsJumping)
         {
             t.ChangeAnimDirectly(S_Constant.ANIM_ATTACK_FIRST);
@@ -27,8 +29,6 @@ public class PAttackState : IState<Player>
     public void OnExecute(Player t)
     {
         timer += Time.deltaTime;
-
-        t.PreAttack();
 
         if (!t.IsJumping)
         {
@@ -77,7 +77,8 @@ public class PAttackState : IState<Player>
         {
             comboPhase = 2;
 
-            t.Flip();
+            t.PreAttack();
+
             t.ChangeAnimDirectly(S_Constant.ANIM_ATTACK_SECOND);
             t.SetMove(Vector2.zero + Vector2.up * t.RbVelocity.y);
         }

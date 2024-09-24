@@ -5,6 +5,7 @@ using UnityEngine;
 public class GhostEffect : CharacterEffect
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] protected Animator effectAnim;
 
     private void SetSprite()
     {
@@ -18,12 +19,13 @@ public class GhostEffect : CharacterEffect
 
         effectAnim.SetTrigger(S_Constant.ANIM_TRIGGER);
 
+        effectTF.rotation = tf.rotation;
+
         effectTF.position = tf.position - owner.transform.right * 0.2f;
-        gameObject.SetActive(true);
     }
 
     public override void Despawn()
     {
-        Destroy(gameObject);
+        SimplePool.Despawn(this);
     }
 }

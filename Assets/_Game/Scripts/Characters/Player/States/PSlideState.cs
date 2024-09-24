@@ -5,6 +5,8 @@ using HuySpace;
 
 public class PSlideState : IState<Player>
 {
+    private float timer;
+
     public void OnEnter(Player t)
     {
         if (t.IsJumping)
@@ -19,7 +21,16 @@ public class PSlideState : IState<Player>
 
     public void OnExecute(Player t)
     {
+        timer += Time.deltaTime;
+
         t.SetMove(Vector2.right * t.RbVelocity.x);
+        
+        if (timer > 0.1f)
+        {
+            timer = 0f;
+            t.SpawnGhostEffect();
+            if (t.IsGrounded) t.SpawnDustEffect();
+        }
     }
 
     public void OnExit(Player t)
