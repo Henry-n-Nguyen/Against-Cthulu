@@ -17,6 +17,7 @@ public class AbstractCharacter : GameUnit
     [SerializeField] protected Animator anim;
     [SerializeField] protected Rigidbody2D rb;
     [SerializeField] protected Transform shootTF;
+    [SerializeField] protected Transform inGroundShootTF;
     [SerializeField] protected BoxCollider2D groundCheck;
 
     [Header("Detection Zones")]
@@ -151,9 +152,19 @@ public class AbstractCharacter : GameUnit
 
     public virtual void CastMagic() 
     {
-        Magic magic = Instantiate(prefab);
+        Magic magic = SimplePool.Spawn<Magic>(prefab.poolType);
         magic.Init(this);
-        magic.Spawn(shootTF);
+        
+        switch (magic.magicDeployType)
+        {
+            case MagicDeployType.Floating:
+                magic.Spawn(shootTF);
+                break;
+            case MagicDeployType.InGround:
+                magic.Spawn(inGroundShootTF);
+                break;
+        }
+
     }
     public void Jump(Vector2 jumpVector)
     {
@@ -201,6 +212,11 @@ public class AbstractCharacter : GameUnit
                 break;
             default: break;
         }
+    }
+
+    public void TeleportTo(Vector3 desPoint)
+    {
+        characterTF.position = desPoint;
     }
 
     // Protected Function

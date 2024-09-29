@@ -1,24 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HuySpace;
 
 public class CSE_FocusCamera : CutSceneElementBase
 {
-    [SerializeField] private GameObject focusPanel;
-    [SerializeField] private Animator anim;
-
     private Coroutine focusCameraCoroutine;
 
-    public override void Excecute()
+    public override void Execute()
     {
-        focusPanel.SetActive(true);
-        anim.Play("Execute");
+        CutSceneUIManager.Ins.Execute(CS_UIType.FocusCam);
         focusCameraCoroutine = StartCoroutine(WaitAndAdvance());
     }
 
     public override void Release()
     {
         StopCoroutine(focusCameraCoroutine);
-        anim.Play("Release");
+        CutSceneUIManager.Ins.Release(CS_UIType.FocusCam);
     }
 }

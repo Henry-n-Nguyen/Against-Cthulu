@@ -73,7 +73,7 @@ public class Damageable : MonoBehaviour
 
     public void Hit(int damage)
     {
-        if (IsAlive && !isInvincible)
+        if (IsAlive && !character.IsSliding && !isInvincible)
         {
             _HP -= damage;
             isInvincible = true;

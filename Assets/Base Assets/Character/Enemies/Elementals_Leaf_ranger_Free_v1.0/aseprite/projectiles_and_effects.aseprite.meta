@@ -1,0 +1,1791 @@
+fileFormatVersion: 2
+guid: 9fc650d967231924abfe330645f1a821
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: projectiles_and_effects_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -21}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 1014
+      width: 32
+      height: 3
+    spriteID: 290c667702b51774880a8ac2197d6b0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 1014}
+  - name: projectiles_and_effects_Frame_1
+    originalName: 
+    pivot: {x: 0.4814815, y: -5.5454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 147
+      y: 942
+      width: 27
+      height: 11
+    spriteID: 86e3546225f319e4dad0f4b5aa52d341
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 147, y: 942}
+  - name: projectiles_and_effects_Frame_2
+    originalName: 
+    pivot: {x: 0.4814815, y: -7.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 962
+      width: 27
+      height: 8
+    spriteID: 3f9e1b2996387664896e7aea7f53982f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 962}
+  - name: projectiles_and_effects_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -8.714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 999
+      width: 28
+      height: 7
+    spriteID: 8a68d74de50a8074f9d4ed1f3b888cec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 999}
+  - name: projectiles_and_effects_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -8.714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 999
+      width: 28
+      height: 7
+    spriteID: 0d39c13446d09c04bb4199e2104a55cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 999}
+  - name: projectiles_and_effects_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -8.714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 57
+      width: 28
+      height: 7
+    spriteID: a2ef68c2291f5df46ab458fb72f64786
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 57}
+  - name: projectiles_and_effects_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -8.714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 72
+      width: 28
+      height: 7
+    spriteID: 43c3eff3d9cad6141ab185211584119d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 72}
+  - name: projectiles_and_effects_Frame_7
+    originalName: 
+    pivot: {x: 0.4814815, y: -5.5454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 980
+      width: 27
+      height: 11
+    spriteID: 9d8ea0c8093b9684fad7b148efc25dd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 980}
+  - name: projectiles_and_effects_Frame_8
+    originalName: 
+    pivot: {x: 0.32500002, y: -3.9285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 453
+      y: 4
+      width: 40
+      height: 14
+    spriteID: e81c27a9bf75ba444995055ffd68cd34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 453, y: 4}
+  - name: projectiles_and_effects_Frame_9
+    originalName: 
+    pivot: {x: 0.24561404, y: -1.0285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 623
+      width: 57
+      height: 35
+    spriteID: 5cf1aa9d0138b024ba9123b0de63a818
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 623}
+  - name: projectiles_and_effects_Frame_10
+    originalName: 
+    pivot: {x: 0.1891892, y: -0.81578946}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 477
+      width: 74
+      height: 38
+    spriteID: 30a45c6c1b4c1c14bbf891244062fc01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 477}
+  - name: projectiles_and_effects_Frame_11
+    originalName: 
+    pivot: {x: 0.18181819, y: -0.81578946}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 431
+      width: 77
+      height: 38
+    spriteID: 91f75c9f9cd2c9a4c9e3f179001450df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 431}
+  - name: projectiles_and_effects_Frame_12
+    originalName: 
+    pivot: {x: 0.17721519, y: -0.77500004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 975
+      width: 79
+      height: 40
+    spriteID: 0f951a6219283a94a85fcc9fddc1ceb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 975}
+  - name: projectiles_and_effects_Frame_13
+    originalName: 
+    pivot: {x: 0.17721519, y: -0.77500004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 335
+      width: 79
+      height: 40
+    spriteID: 2523e72bbfe88054db3a9bf0116ee72c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 335}
+  - name: projectiles_and_effects_Frame_14
+    originalName: 
+    pivot: {x: 0.17721519, y: -0.77500004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 383
+      width: 79
+      height: 40
+    spriteID: 6491232b2c13fea4f999199cf06fba20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 383}
+  - name: projectiles_and_effects_Frame_15
+    originalName: 
+    pivot: {x: 0.4814815, y: -5.5454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 980
+      width: 27
+      height: 11
+    spriteID: 6728768a65b6cea49a50db3953750085
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 980}
+  - name: projectiles_and_effects_Frame_16
+    originalName: 
+    pivot: {x: 0.35135135, y: -5.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 962
+      width: 37
+      height: 10
+    spriteID: 32f775111d8e22f4e9022e658a23129b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 962}
+  - name: projectiles_and_effects_Frame_17
+    originalName: 
+    pivot: {x: 0.33333334, y: -2.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 861
+      width: 42
+      height: 22
+    spriteID: 3c0ae0f423bea304d8a7fe52f1aa86f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 861}
+  - name: projectiles_and_effects_Frame_18
+    originalName: 
+    pivot: {x: 0.24561404, y: -1.2105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 577
+      width: 57
+      height: 38
+    spriteID: c80108b1c62fb1a4f8322080b24be745
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 577}
+  - name: projectiles_and_effects_Frame_19
+    originalName: 
+    pivot: {x: 0.24561404, y: -0.95652175}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 523
+      width: 57
+      height: 46
+    spriteID: 5cb27edb995a41849aa3b92380306dcd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 523}
+  - name: projectiles_and_effects_Frame_20
+    originalName: 
+    pivot: {x: 0.22950819, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 273
+      width: 61
+      height: 54
+    spriteID: 403cf2007cada5941b4326df49c061e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 273}
+  - name: projectiles_and_effects_Frame_21
+    originalName: 
+    pivot: {x: 0.21875, y: -0.6451613}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 905
+      width: 64
+      height: 62
+    spriteID: 0961434f896fe454c97a2a9aadbf9d9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 905}
+  - name: projectiles_and_effects_Frame_22
+    originalName: 
+    pivot: {x: 0.33333334, y: -2.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 891
+      width: 42
+      height: 22
+    spriteID: 6924ef5bc0b6e0e4e9acfbaa112c8885
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 891}
+  - name: projectiles_and_effects_Frame_23
+    originalName: 
+    pivot: {x: 0.5185185, y: -1.888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 666
+      width: 27
+      height: 27
+    spriteID: 22dbdfe844b2221469c8b2a42bfec648
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 666}
+  - name: projectiles_and_effects_Frame_24
+    originalName: 
+    pivot: {x: 0.1764706, y: -2.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 623
+      width: 17
+      height: 24
+    spriteID: 75d8dded6062af347ab8a91bd65dcb54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 623}
+  - name: projectiles_and_effects_Frame_25
+    originalName: 
+    pivot: {x: 0.4615385, y: -3.6000001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 243
+      width: 26
+      height: 15
+    spriteID: a04eb3be4643bae4ca5a0f776b85d009
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 243}
+  - name: projectiles_and_effects_Frame_26
+    originalName: 
+    pivot: {x: 0.36363637, y: -2.5714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 191
+      width: 22
+      height: 21
+    spriteID: 42a693c80a0803a49a338e71b1e91f21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 191}
+  - name: projectiles_and_effects_Frame_27
+    originalName: 
+    pivot: {x: 0.4615385, y: -2.8421054}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 792
+      width: 26
+      height: 19
+    spriteID: db9bf60166329684a86b125f9b7e4434
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 792}
+  - name: projectiles_and_effects_Frame_28
+    originalName: 
+    pivot: {x: 0.44, y: -2.5714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 708
+      width: 25
+      height: 21
+    spriteID: 7278cff7ec0d4a84982b13155830f68d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 708}
+  - name: projectiles_and_effects_Frame_29
+    originalName: 
+    pivot: {x: 0.44, y: -2.5714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 750
+      width: 25
+      height: 21
+    spriteID: 6b5d191cda549c247b52884c63f1349a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 750}
+  - name: projectiles_and_effects_Frame_30
+    originalName: 
+    pivot: {x: 0.1764706, y: -2.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 577
+      width: 17
+      height: 24
+    spriteID: 6e6e9f2ba5dff5e4c86415b87578c65f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 577}
+  - name: projectiles_and_effects_Frame_31
+    originalName: 
+    pivot: {x: 0.42857146, y: -3.6000001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 220
+      width: 28
+      height: 15
+    spriteID: 8cd724cd1a3eb124e85b4b7deb4939e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 220}
+  - name: projectiles_and_effects_Frame_32
+    originalName: 
+    pivot: {x: 0.30769232, y: -2.5714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 146
+      y: 891
+      width: 26
+      height: 21
+    spriteID: 5dd3ee7f44b1d004fbe2ec7e68cb6ba2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 891}
+  - name: projectiles_and_effects_Frame_33
+    originalName: 
+    pivot: {x: 0.3529412, y: -2.8421054}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 146
+      y: 861
+      width: 34
+      height: 19
+    spriteID: 05d4e6b0bd5c7fe469e7996245e8927b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 861}
+  - name: projectiles_and_effects_Frame_34
+    originalName: 
+    pivot: {x: 0.26, y: -1.5882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 666
+      width: 50
+      height: 34
+    spriteID: fb7ceb5b7a47d124682fb0894b2573c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 666}
+  - name: projectiles_and_effects_Frame_35
+    originalName: 
+    pivot: {x: 0.26, y: -1.5882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 708
+      width: 50
+      height: 34
+    spriteID: fec2c0865c0e7e843a34eb717979ed5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 708}
+  - name: projectiles_and_effects_Frame_36
+    originalName: 
+    pivot: {x: 0.26, y: -1.5882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 750
+      width: 50
+      height: 34
+    spriteID: d701cc3372557584f9f3d9c6be495a88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 750}
+  - name: projectiles_and_effects_Frame_37
+    originalName: 
+    pivot: {x: 0.26, y: -1.5882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 792
+      width: 50
+      height: 34
+    spriteID: 17e62a9284613d54e9dfa6464ab00168
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 792}
+  - name: projectiles_and_effects_Frame_38
+    originalName: 
+    pivot: {x: 0.34042552, y: -0.6216216}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 191
+      width: 47
+      height: 74
+    spriteID: 6ca9b5cb424048246a286a6ecc75858e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 191}
+  - name: projectiles_and_effects_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: -0.008196721}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 520
+      width: 68
+      height: 122
+    spriteID: 1a6dce31d7343bc4e923d994eaf5c95e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 520}
+  - name: projectiles_and_effects_Frame_40
+    originalName: 
+    pivot: {x: 0.4848485, y: -0.008333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 777
+      width: 66
+      height: 120
+    spriteID: 0e167162c516b8a4b9e74399fd067475
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 777}
+  - name: projectiles_and_effects_Frame_41
+    originalName: 
+    pivot: {x: 0.4925373, y: -0.008403362}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 650
+      width: 67
+      height: 119
+    spriteID: 3a5c3e7fa450d9442a5d0bc7aba4bd73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 650}
+  - name: projectiles_and_effects_Frame_42
+    originalName: 
+    pivot: {x: 0.6, y: -0.008474576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 4
+      width: 85
+      height: 118
+    spriteID: a36c172478041a64082f13a25bd7e8a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 4}
+  - name: projectiles_and_effects_Frame_43
+    originalName: 
+    pivot: {x: 0.5595238, y: -0.008196721}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 84
+      height: 122
+    spriteID: 6d86901095901d240ae6cf56b653cc8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: projectiles_and_effects_Frame_44
+    originalName: 
+    pivot: {x: 0.45714286, y: -0.008196721}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 390
+      width: 70
+      height: 122
+    spriteID: 2e3ecb7af1337dd4d992a1b53e5f54d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 390}
+  - name: projectiles_and_effects_Frame_45
+    originalName: 
+    pivot: {x: 0.43037975, y: -0.008333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 134
+      width: 79
+      height: 120
+    spriteID: bfa06a106c8bf924995b4375a978178a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 134}
+  - name: projectiles_and_effects_Frame_46
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.008333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 262
+      width: 72
+      height: 120
+    spriteID: 6ea41d55eff0dba46a8aee64073f2b0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 262}
+  - name: projectiles_and_effects_Frame_47
+    originalName: 
+    pivot: {x: 0.48529413, y: -0.018867925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 130
+      width: 68
+      height: 53
+    spriteID: c51e91fa6bbca0944a10f4dcacca595d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 130}
+  - name: projectiles_and_effects_Frame_48
+    originalName: 
+    pivot: {x: 0.47058824, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 921
+      width: 68
+      height: 13
+    spriteID: 57f606ed115a7f74488d6372ba663123
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 921}
+  - name: projectiles_and_effects_Frame_49
+    originalName: 
+    pivot: {x: 0.5081967, y: -0.05263158}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 834
+      width: 61
+      height: 19
+    spriteID: f13a135e72d424e48ab9bad09fb059fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 834}
+  - name: projectiles_and_effects_Frame_50
+    originalName: 
+    pivot: {x: 0.76744187, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 942
+      width: 43
+      height: 12
+    spriteID: f92609b4b2e8d3349b8d724dbb567fb5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 942}
+  - name: projectiles_and_effects_Frame_51
+    originalName: 
+    pivot: {x: 1.5714287, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 980
+      width: 14
+      height: 9
+    spriteID: c1c0e932625e92845afe1204e9cc2514
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 980}
+  - name: projectiles_and_effects_Frame_52
+    originalName: 
+    pivot: {x: 2.857143, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 999
+      width: 7
+      height: 7
+    spriteID: 728c57e1ba7771e478d630eb299e8ad9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 999}
+  - name: projectiles_and_effects_Frame_53
+    originalName: 
+    pivot: {x: 2.625, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1014
+      width: 8
+      height: 3
+    spriteID: 0b6db3c1d951d5f4fbd6bbd183743f3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1014}
+  - name: projectiles_and_effects_Frame_54
+    originalName: 
+    pivot: {x: 4, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 962
+      width: 5
+      height: 1
+    spriteID: 9cb278232da9cd942bb20dc08eaeeaed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 962}
+  - name: projectiles_and_effects_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: -3.8000002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 4
+      width: 256
+      height: 15
+    spriteID: 2967b466d4a39934e91e6154ca21f774
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 4}
+  - name: projectiles_and_effects_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: -15.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 27
+      width: 256
+      height: 4
+    spriteID: aaa3e10f9998208449392a9e8918154c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 27}
+  - name: projectiles_and_effects_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: -64}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 39
+      width: 256
+      height: 1
+    spriteID: 798e0ecf06e87184e977c24110eb84cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 39}
+  - name: projectiles_and_effects_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: -64}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 48
+      width: 256
+      height: 1
+    spriteID: e817abada756db9478a3ee2f99bf65dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 48}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -363727035
+    name: projectiles_and_effects
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: projectiles_and_effects_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 112
+        y: 63
+        width: 32
+        height: 3
+      spriteId: 290c667702b51774880a8ac2197d6b0a
+    - name: projectiles_and_effects_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 115
+        y: 61
+        width: 27
+        height: 11
+      spriteId: 86e3546225f319e4dad0f4b5aa52d341
+    - name: projectiles_and_effects_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 115
+        y: 60
+        width: 27
+        height: 8
+      spriteId: 3f9e1b2996387664896e7aea7f53982f
+    - name: projectiles_and_effects_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 114
+        y: 61
+        width: 28
+        height: 7
+      spriteId: 8a68d74de50a8074f9d4ed1f3b888cec
+    - name: projectiles_and_effects_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 114
+        y: 61
+        width: 28
+        height: 7
+      spriteId: 0d39c13446d09c04bb4199e2104a55cd
+    - name: projectiles_and_effects_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 114
+        y: 61
+        width: 28
+        height: 7
+      spriteId: a2ef68c2291f5df46ab458fb72f64786
+    - name: projectiles_and_effects_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 114
+        y: 61
+        width: 28
+        height: 7
+      spriteId: 43c3eff3d9cad6141ab185211584119d
+    - name: projectiles_and_effects_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 115
+        y: 61
+        width: 27
+        height: 11
+      spriteId: 9d8ea0c8093b9684fad7b148efc25dd0
+    - name: projectiles_and_effects_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 115
+        y: 55
+        width: 40
+        height: 14
+      spriteId: e81c27a9bf75ba444995055ffd68cd34
+    - name: projectiles_and_effects_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 114
+        y: 36
+        width: 57
+        height: 35
+      spriteId: 5cf1aa9d0138b024ba9123b0de63a818
+    - name: projectiles_and_effects_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 114
+        y: 31
+        width: 74
+        height: 38
+      spriteId: 30a45c6c1b4c1c14bbf891244062fc01
+    - name: projectiles_and_effects_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 114
+        y: 31
+        width: 77
+        height: 38
+      spriteId: 91f75c9f9cd2c9a4c9e3f179001450df
+    - name: projectiles_and_effects_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 114
+        y: 31
+        width: 79
+        height: 40
+      spriteId: 0f951a6219283a94a85fcc9fddc1ceb0
+    - name: projectiles_and_effects_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 114
+        y: 31
+        width: 79
+        height: 40
+      spriteId: 2523e72bbfe88054db3a9bf0116ee72c
+    - name: projectiles_and_effects_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 114
+        y: 31
+        width: 79
+        height: 40
+      spriteId: 6491232b2c13fea4f999199cf06fba20
+    - name: projectiles_and_effects_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 115
+        y: 61
+        width: 27
+        height: 11
+      spriteId: 6728768a65b6cea49a50db3953750085
+    - name: projectiles_and_effects_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 115
+        y: 59
+        width: 37
+        height: 10
+      spriteId: 32f775111d8e22f4e9022e658a23129b
+    - name: projectiles_and_effects_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 114
+        y: 54
+        width: 42
+        height: 22
+      spriteId: 3c0ae0f423bea304d8a7fe52f1aa86f7
+    - name: projectiles_and_effects_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 114
+        y: 46
+        width: 57
+        height: 38
+      spriteId: c80108b1c62fb1a4f8322080b24be745
+    - name: projectiles_and_effects_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 114
+        y: 44
+        width: 57
+        height: 46
+      spriteId: 5cb27edb995a41849aa3b92380306dcd
+    - name: projectiles_and_effects_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 114
+        y: 42
+        width: 61
+        height: 54
+      spriteId: 403cf2007cada5941b4326df49c061e2
+    - name: projectiles_and_effects_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 114
+        y: 40
+        width: 64
+        height: 62
+      spriteId: 0961434f896fe454c97a2a9aadbf9d9c
+    - name: projectiles_and_effects_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 114
+        y: 54
+        width: 42
+        height: 22
+      spriteId: 6924ef5bc0b6e0e4e9acfbaa112c8885
+    - name: projectiles_and_effects_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 114
+        y: 51
+        width: 27
+        height: 27
+      spriteId: 22dbdfe844b2221469c8b2a42bfec648
+    - name: projectiles_and_effects_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 125
+        y: 54
+        width: 17
+        height: 24
+      spriteId: 75d8dded6062af347ab8a91bd65dcb54
+    - name: projectiles_and_effects_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 116
+        y: 54
+        width: 26
+        height: 15
+      spriteId: a04eb3be4643bae4ca5a0f776b85d009
+    - name: projectiles_and_effects_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 120
+        y: 54
+        width: 22
+        height: 21
+      spriteId: 42a693c80a0803a49a338e71b1e91f21
+    - name: projectiles_and_effects_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 116
+        y: 54
+        width: 26
+        height: 19
+      spriteId: db9bf60166329684a86b125f9b7e4434
+    - name: projectiles_and_effects_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 117
+        y: 54
+        width: 25
+        height: 21
+      spriteId: 7278cff7ec0d4a84982b13155830f68d
+    - name: projectiles_and_effects_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 117
+        y: 54
+        width: 25
+        height: 21
+      spriteId: 6b5d191cda549c247b52884c63f1349a
+    - name: projectiles_and_effects_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 125
+        y: 54
+        width: 17
+        height: 24
+      spriteId: 6e6e9f2ba5dff5e4c86415b87578c65f
+    - name: projectiles_and_effects_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 116
+        y: 54
+        width: 28
+        height: 15
+      spriteId: 8cd724cd1a3eb124e85b4b7deb4939e3
+    - name: projectiles_and_effects_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 120
+        y: 54
+        width: 26
+        height: 21
+      spriteId: 5dd3ee7f44b1d004fbe2ec7e68cb6ba2
+    - name: projectiles_and_effects_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 116
+        y: 54
+        width: 34
+        height: 19
+      spriteId: 05d4e6b0bd5c7fe469e7996245e8927b
+    - name: projectiles_and_effects_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 115
+        y: 54
+        width: 50
+        height: 34
+      spriteId: fb7ceb5b7a47d124682fb0894b2573c9
+    - name: projectiles_and_effects_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 115
+        y: 54
+        width: 50
+        height: 34
+      spriteId: fec2c0865c0e7e843a34eb717979ed5f
+    - name: projectiles_and_effects_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 115
+        y: 54
+        width: 50
+        height: 34
+      spriteId: d701cc3372557584f9f3d9c6be495a88
+    - name: projectiles_and_effects_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 115
+        y: 54
+        width: 50
+        height: 34
+      spriteId: 17e62a9284613d54e9dfa6464ab00168
+    - name: projectiles_and_effects_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 112
+        y: 46
+        width: 47
+        height: 74
+      spriteId: 6ca9b5cb424048246a286a6ecc75858e
+    - name: projectiles_and_effects_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 94
+        y: 1
+        width: 68
+        height: 122
+      spriteId: 1a6dce31d7343bc4e923d994eaf5c95e
+    - name: projectiles_and_effects_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 96
+        y: 1
+        width: 66
+        height: 120
+      spriteId: 0e167162c516b8a4b9e74399fd067475
+    - name: projectiles_and_effects_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 95
+        y: 1
+        width: 67
+        height: 119
+      spriteId: 3a5c3e7fa450d9442a5d0bc7aba4bd73
+    - name: projectiles_and_effects_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 77
+        y: 1
+        width: 85
+        height: 118
+      spriteId: a36c172478041a64082f13a25bd7e8a2
+    - name: projectiles_and_effects_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 81
+        y: 1
+        width: 84
+        height: 122
+      spriteId: 6d86901095901d240ae6cf56b653cc8b
+    - name: projectiles_and_effects_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 96
+        y: 1
+        width: 70
+        height: 122
+      spriteId: 2e3ecb7af1337dd4d992a1b53e5f54d5
+    - name: projectiles_and_effects_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 94
+        y: 1
+        width: 79
+        height: 120
+      spriteId: bfa06a106c8bf924995b4375a978178a
+    - name: projectiles_and_effects_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 96
+        y: 1
+        width: 72
+        height: 120
+      spriteId: 6ea41d55eff0dba46a8aee64073f2b0d
+    - name: projectiles_and_effects_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 95
+        y: 1
+        width: 68
+        height: 53
+      spriteId: c51e91fa6bbca0944a10f4dcacca595d
+    - name: projectiles_and_effects_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 96
+        y: 1
+        width: 68
+        height: 13
+      spriteId: 57f606ed115a7f74488d6372ba663123
+    - name: projectiles_and_effects_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 97
+        y: 1
+        width: 61
+        height: 19
+      spriteId: f13a135e72d424e48ab9bad09fb059fd
+    - name: projectiles_and_effects_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 95
+        y: 1
+        width: 43
+        height: 12
+      spriteId: f92609b4b2e8d3349b8d724dbb567fb5
+    - name: projectiles_and_effects_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 106
+        y: 1
+        width: 14
+        height: 9
+      spriteId: c1c0e932625e92845afe1204e9cc2514
+    - name: projectiles_and_effects_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 108
+        y: 1
+        width: 7
+        height: 7
+      spriteId: 728c57e1ba7771e478d630eb299e8ad9
+    - name: projectiles_and_effects_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 107
+        y: 1
+        width: 8
+        height: 3
+      spriteId: 0b6db3c1d951d5f4fbd6bbd183743f3c
+    - name: projectiles_and_effects_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 108
+        y: 1
+        width: 5
+        height: 1
+      spriteId: 9cb278232da9cd942bb20dc08eaeeaed
+    - name: projectiles_and_effects_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 0
+        y: 57
+        width: 256
+        height: 15
+      spriteId: 2967b466d4a39934e91e6154ca21f774
+    - name: projectiles_and_effects_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 0
+        y: 63
+        width: 256
+        height: 4
+      spriteId: aaa3e10f9998208449392a9e8918154c
+    - name: projectiles_and_effects_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 0
+        y: 64
+        width: 256
+        height: 1
+      spriteId: 798e0ecf06e87184e977c24110eb84cf
+    - name: projectiles_and_effects_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 0
+        y: 64
+        width: 256
+        height: 1
+      spriteId: e817abada756db9478a3ee2f99bf65dd
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 256, y: 128}

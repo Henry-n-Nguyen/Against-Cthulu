@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using HuySpace;
+using UnityEngine.XR;
 
 public class PAttackState : IState<Player>
 {
@@ -64,6 +65,13 @@ public class PAttackState : IState<Player>
     // Unique function
     private void GatherAttackInput(Player t)
     {
+        // Check when player is freezing
+        if (!t.CanMove)
+        {
+            t.SetMove(Vector2.up * t.RbVelocity.y);
+            t.ChangeState(Player.IDLE_STATE);
+        }
+
         // Change to idle
         if (t.IsJumping && t.IsGrounded && t.RbVelocity.y < 0.1f)
         {

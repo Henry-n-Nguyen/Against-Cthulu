@@ -15,7 +15,6 @@ public class AbstractEnemy : AbstractCharacter
 
     // private variable
     private IState<AbstractEnemy> currentState;
-    private IState<AbstractEnemy> prevState;
 
     // Reference Variables
     [Header("Character References")]
@@ -52,8 +51,6 @@ public class AbstractEnemy : AbstractCharacter
     {
         currentState?.OnExit(this);
 
-        if (currentState != null) prevState = currentState;
-
         currentState = state as IState<AbstractEnemy>;
 
         currentState?.OnEnter(this);
@@ -77,6 +74,7 @@ public class AbstractEnemy : AbstractCharacter
     public override void Hit()
     {
         SetBool(CharacterState.Hit, true);
+        ChangeAnim(S_Constant.ANIM_HIT);
         ChangeState(E_HIT_STATE);
     }
 
@@ -87,7 +85,7 @@ public class AbstractEnemy : AbstractCharacter
 
     public override void CallBackState()
     {
-        ChangeState(prevState);
+        ChangeState(E_IDLE_STATE);
     }
 
     // Check Function

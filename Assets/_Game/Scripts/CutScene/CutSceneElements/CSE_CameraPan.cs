@@ -13,7 +13,7 @@ public class CSE_CameraPan : CutSceneElementBase
     private Vector3 originalPosition;
     private Vector3 targetPosition;
 
-    public override void Excecute()
+    public override void Execute()
     {
         vCam = cutsceneHandler.vCam;
         vCam.Follow = null;
@@ -45,7 +45,7 @@ public class CSE_CameraPan : CutSceneElementBase
 
     public override void Release()
     {
-        vCam.Follow = GamePlayManager.instance.player.characterTF;
+        vCam.Follow = GamePlayManager.Ins.player.characterTF;
         if (panCameraCoroutine != null) StopCoroutine(panCameraCoroutine);
     }
 }

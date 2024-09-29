@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CSE_Test : CutSceneElementBase
 {
-    public override void Excecute()
+    public override void Execute()
     {
         StartCoroutine(WaitAndAdvance());
-        Debug.Log("Excecute CS...");
+        Debug.Log("Execute CS...");
     }
 
     public override void Release()
     {
-        Debug.Log("Excecute CS...");
+        Debug.Log("Execute CS...");
     }
 }

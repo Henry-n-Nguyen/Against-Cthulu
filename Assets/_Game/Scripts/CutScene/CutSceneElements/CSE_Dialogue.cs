@@ -14,14 +14,14 @@ public class CSE_Dialogue : CutSceneElementBase
     [SerializeField] private GameObject endSentenceSign;
     [SerializeField] private float writingSpeed;
 
-    [TextArea][SerializeField] private List<string> dialogues;
+    [TextArea][SerializeField] private List<string> dialogues = new List<string>();
 
     [SerializeField] private bool isCanInteract;
 
     private Coroutine writingCoroutine;
 
     private int index = 0;
-    private int charIndex;
+    private int charIndex = 0;
 
     private bool started;
     private bool waitForNext;
@@ -33,18 +33,29 @@ public class CSE_Dialogue : CutSceneElementBase
 
     private void GatherInput()
     {
-        if (!started)
+        if (!cutsceneHandler.isDetectedPlayer)
         {
-            if (!isCanInteract) return;
-
-            if (Input.GetButtonDown("Interact")) StartDialogue();
+            return;
         }
 
-        endSentenceSign.SetActive(waitForNext);
+        if (!started)
+        {
+            if (!isCanInteract)
+            {
+                return;
+            }
+
+            if (isCanInteract && Input.GetButtonDown("Interact"))
+            {
+                StartDialogue();
+            }
+        }
 
         if (waitForNext && Input.GetButtonDown("Interact"))
         {
             waitForNext = false;
+            endSentenceSign.SetActive(waitForNext);
+
             index++;
 
             //Check if we are in the scope fo dialogues List
@@ -58,21 +69,30 @@ public class CSE_Dialogue : CutSceneElementBase
                 //If not end the dialogue process
                 if (isCanInteract) ToggleIndicator(true);
                 EndDialogue();
+                
+                if (!isCanInteract)
+                {
+                    cutsceneHandler.ReleaseAllElement();
+                }
+                
+                cutsceneHandler.PlayNextElement();
             }
         }
     }
 
-    public override void Excecute()
+    public override void Execute()
     {
-        ToggleWindow(false);
-        ToggleIndicator(false);
+        waitForNext = false;
 
         nameTag.text = name;
+
         if (isCanInteract) ToggleIndicator(true);
+        else StartDialogue();
     }
 
     public override void Release()
     {
+        if (writingCoroutine != null) StopCoroutine(writingCoroutine);
         ToggleIndicator(false);
     }
 
@@ -80,20 +100,24 @@ public class CSE_Dialogue : CutSceneElementBase
     {
         window.SetActive(show);
     }
-    public void ToggleIndicator(bool show)
+    private void ToggleIndicator(bool show)
     {
         indicator.SetActive(show);
     }
 
     //Start Dialogue
-    public void StartDialogue()
+    private void StartDialogue()
     {
         if (started)
+        {
             return;
+        }
 
         started = true;
+
         ToggleWindow(true);
         ToggleIndicator(false);
+
         GetDialogue(0);
     }
 
@@ -102,44 +126,40 @@ public class CSE_Dialogue : CutSceneElementBase
         index = i;
         charIndex = 0;
         dialogueText.text = string.Empty;
+
+        if (writingCoroutine != null) StopCoroutine(writingCoroutine);
         writingCoroutine = StartCoroutine(Writing());
     }
 
     //End Dialogue
-    public void EndDialogue()
+    private void EndDialogue()
     {
         started = false;
         waitForNext = false;
 
-        StopCoroutine(writingCoroutine);
-
         ToggleWindow(false);
-
-        cutsceneHandler.PlayNextElement();
     }
 
     //Writing logic
-    IEnumerator Writing()
+    private IEnumerator Writing()
     {
-        yield return new WaitForSeconds(writingSpeed);
+        waitForNext = false;
 
         string currentDialogue = dialogues[index];
-        //Write the character
-        dialogueText.text += currentDialogue[charIndex];
-        //increase the character index
-        charIndex++;
+        
         //Make sure you have reached the end of the sentence
-        if (charIndex < currentDialogue.Length)
+        while (charIndex < currentDialogue.Length)
         {
             //Wait x seconds 
             yield return new WaitForSeconds(writingSpeed);
-            //Restart the same process
-            StartCoroutine(Writing());
+            //Write the character
+            dialogueText.text += currentDialogue[charIndex];
+            //increase the character index
+            charIndex++;
         }
-        else
-        {
-            //End this sentence and wait for the next one
-            waitForNext = true;
-        }
+
+        //End this sentence and wait for the next one
+        endSentenceSign.SetActive(waitForNext);
+        waitForNext = true;
     }
 }

@@ -9,6 +9,8 @@ public class Magic : GameUnit
     [SerializeField] protected Transform magicTF;
     [SerializeField] protected int damage;
 
+    public MagicDeployType magicDeployType;
+
     private void Update()
     {
         Launch();
@@ -19,18 +21,17 @@ public class Magic : GameUnit
         if (collision.CompareTag(owner.tag)) return;
 
         CollideWithCharacter(collision);
-        CollideWithEnvironment(collision);
     }
 
     public virtual void CollideWithCharacter(Collider2D col)
     {
-        if (!col.CompareTag(S_Constant.TAG_PLAYER) && !col.CompareTag(S_Constant.TAG_ENEMY)) return;
+        if (!col.gameObject.CompareTag(S_Constant.TAG_PLAYER) && !col.gameObject.CompareTag(S_Constant.TAG_ENEMY) ) return;
     }
 
     public virtual void CollideWithEnvironment(Collider2D col)
     {
         //if (!col.CompareTag(S_Constant.TAG_GROUND) && !col.CompareTag(S_Constant.TAG_FLOATING)) return;
-        if (!col.CompareTag(S_Constant.TAG_GROUND)) return;
+        if (!col.gameObject.CompareTag(S_Constant.TAG_GROUND)) return;
     }
 
     public void Init(AbstractCharacter caster)
@@ -48,12 +49,11 @@ public class Magic : GameUnit
     {
         magicTF.position = tf.position;
         magicTF.right = tf.right;
-
         gameObject.SetActive(true);
     }
 
     public virtual void Despawn()
     {
-        Destroy(gameObject);
+        SimplePool.Despawn(this);
     }
 }

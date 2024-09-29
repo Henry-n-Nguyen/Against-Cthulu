@@ -53,6 +53,9 @@ public class POnAirState : IState<Player>
 
     public void GatherOnAirInput(Player t)
     {
+        // Check when player is freezing
+        if (!t.CanMove) t.SetMove(Vector2.up * t.RbVelocity.y);
+
         // Make stop on air when release jump button (Jump Cutting)
         if (!isFalling && Input.GetButtonUp("Jump"))
         {

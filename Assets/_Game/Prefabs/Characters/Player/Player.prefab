@@ -1,5 +1,82 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &536325428597707137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5159626420555437160}
+  - component: {fileID: 1033863560190706301}
+  m_Layer: 0
+  m_Name: InGround Shoot Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5159626420555437160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536325428597707137}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.261, y: -0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7500136526630895031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1033863560190706301
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536325428597707137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1}
+  m_EdgeRadius: 0
 --- !u!1 &1032669472040988973
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +268,7 @@ Transform:
   m_Children:
   - {fileID: 1086962187144956071}
   - {fileID: 8774178371670622557}
+  - {fileID: 5159626420555437160}
   - {fileID: 950525082818135325}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -357,6 +435,7 @@ MonoBehaviour:
   anim: {fileID: 953927250855176786}
   rb: {fileID: 5345633441149430119}
   shootTF: {fileID: 8774178371670622557}
+  inGroundShootTF: {fileID: 5159626420555437160}
   groundCheck: {fileID: 6995983577310135175}
   attackZone: {fileID: 411304268733475250}
   <Horizontal>k__BackingField: 0
@@ -365,7 +444,7 @@ MonoBehaviour:
   <RunSpeed>k__BackingField: 4
   <JumpForce>k__BackingField: 6
   <SlideForce>k__BackingField: 12
-  <NormalDamage>k__BackingField: 200
+  <NormalDamage>k__BackingField: 50
   <IsGrounded>k__BackingField: 0
   <IsRunning>k__BackingField: 0
   <IsJumping>k__BackingField: 0
@@ -373,12 +452,13 @@ MonoBehaviour:
   <IsAttacking>k__BackingField: 0
   <IsSliding>k__BackingField: 0
   <IsHit>k__BackingField: 0
-  prefab: {fileID: 6742414189366080860, guid: de4deecb017f79c41b0ecf57ebf2c210, type: 3}
+  prefab: {fileID: 188372613910406520, guid: 2d0d3285dfe795042819f3120a017a41, type: 3}
   dustEffect: {fileID: 0}
   ghostEffect: {fileID: 0}
   <CanSpecial_01>k__BackingField: 1
   <CanSpecial_02>k__BackingField: 1
   <CanSlide>k__BackingField: 1
+  <CanMove>k__BackingField: 1
 --- !u!114 &6065127764925672525
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -26,6 +26,9 @@ public class PIdleState : IState<Player>
 
     private void GatherIdleInput(Player t)
     {
+        // Check when player is freezing
+        if (!t.CanMove) return;
+
         // Change to attack
         if (t.IsGrounded && !t.IsAttacking && Input.GetButtonDown("Attack"))
         {

@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class CSE_EndCutScene : CutSceneElementBase
 {
-    public override void Excecute()
+    public override void Execute()
     {
         cutsceneHandler.ReleaseAllElement();
-        if (cutsceneHandler.isOneTrigger) gameObject.SetActive(false);
     }
 
     public override void Release()

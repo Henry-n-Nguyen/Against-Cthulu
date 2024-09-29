@@ -34,12 +34,28 @@ public class AttackZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Damageable target = collision.GetComponent<Damageable>();
-        detectedTargetList.Add(target);
+        CollideWithCharacter(collision);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        EndCollideWithCharacter(collision);
+    }
+
+    private void CollideWithCharacter(Collider2D collision)
+    {
+        if (!collision.gameObject.CompareTag(S_Constant.TAG_PLAYER) && !collision.gameObject.CompareTag(S_Constant.TAG_ENEMY))
+            return;
+
+        Damageable target = collision.GetComponent<Damageable>();
+        detectedTargetList.Add(target);
+    }
+
+    private void EndCollideWithCharacter(Collider2D collision)
+    {
+        if (!collision.gameObject.CompareTag(S_Constant.TAG_PLAYER) && !collision.gameObject.CompareTag(S_Constant.TAG_ENEMY))
+            return;
+
         Damageable target = collision.GetComponent<Damageable>();
         detectedTargetList.Remove(target);
     }

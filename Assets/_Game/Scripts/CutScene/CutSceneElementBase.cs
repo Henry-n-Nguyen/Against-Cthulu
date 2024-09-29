@@ -18,7 +18,7 @@ public class CutSceneElementBase : MonoBehaviour
         cutsceneHandler = GetComponent<CutSceneHandler>();
     }
 
-    public virtual void Excecute() { }
+    public virtual void Execute() { }
 
     public virtual void Release() { }
 

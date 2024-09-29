@@ -13,16 +13,28 @@ public class CutSceneInitiator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(S_Constant.TAG_PLAYER))
-        {
-            cutsceneHandler.PlayNextElement();
-        }
+        CollideWithPlayer(collision);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        EndCollideWithPlayer(collision);
+    }
+
+    private void CollideWithPlayer(Collider2D collision)
+    {
         if (collision.gameObject.CompareTag(S_Constant.TAG_PLAYER))
         {
+            cutsceneHandler.isDetectedPlayer = true;
+            cutsceneHandler.PlayNextElement();
+        }
+    }
+
+    private void EndCollideWithPlayer(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag(S_Constant.TAG_PLAYER))
+        {
+            cutsceneHandler.isDetectedPlayer = false;
             cutsceneHandler.ReleaseAllElement();
         }
     }

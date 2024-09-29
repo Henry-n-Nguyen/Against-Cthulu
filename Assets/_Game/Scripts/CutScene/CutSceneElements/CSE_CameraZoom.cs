@@ -18,7 +18,7 @@ public class CSE_CameraZoom : CutSceneElementBase
     
     private float originalFOV;
 
-    public override void Excecute()
+    public override void Execute()
     {
         vCam = cutsceneHandler.vCam;
         vCam.Follow = null;
@@ -54,7 +54,7 @@ public class CSE_CameraZoom : CutSceneElementBase
     public override void Release()
     {
         vCam.m_Lens.FieldOfView = originalFOV;
-        vCam.Follow = GamePlayManager.instance.player.characterTF;
+        vCam.Follow = GamePlayManager.Ins.player.characterTF;
         if (zoomCameraCoroutine != null) StopCoroutine(zoomCameraCoroutine);
     }
 }

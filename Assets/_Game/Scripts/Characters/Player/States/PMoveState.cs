@@ -42,6 +42,13 @@ public class PMoveState : IState<Player>
 
     public void GatherMovementInput(Player t)
     {
+        // Check when player is freezing
+        if (!t.CanMove)
+        {
+            t.SetMove(Vector2.up * t.RbVelocity.y);
+            t.ChangeState(Player.IDLE_STATE);
+        }
+
         // Change to attack
         if (!t.IsAttacking && Input.GetButtonDown("Attack"))
         {

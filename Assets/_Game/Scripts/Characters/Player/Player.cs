@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using HuySpace;
+using TMPro;
 
 public class Player : AbstractCharacter
 {
@@ -25,6 +26,7 @@ public class Player : AbstractCharacter
     [field: SerializeField] public bool CanSpecial_01 { get; private set; } = true;
     [field: SerializeField] public bool CanSpecial_02 { get; private set; } = true;
     [field: SerializeField] public bool CanSlide { get; private set; } = true;
+    [field: SerializeField] public bool CanMove { get; private set; } = true;
 
     // private variable
     private IState<Player> currentState;
@@ -115,6 +117,11 @@ public class Player : AbstractCharacter
     {
         rb.velocity = characterTF.right * SlideForce;
         StartCoroutine(SetCooldown(CooldownState.Slide, 2f));
+    }
+
+    public void Freeze(bool value)
+    {
+        CanMove = !value;
     }
 
     public void SpawnGhostEffect()

@@ -2,14 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GamePlayManager : MonoBehaviour
+public class GamePlayManager : Singleton<GamePlayManager>
 {
-    public static GamePlayManager instance;
-
     public Player player;
-
-    private void Awake()
-    {
-        instance = this;
-    }
 }

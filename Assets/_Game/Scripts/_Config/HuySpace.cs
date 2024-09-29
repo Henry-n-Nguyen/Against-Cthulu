@@ -34,7 +34,13 @@ namespace HuySpace
         GhostEffect = 40,
         DustEffect = 41,
 
-        Magic = 50,
+        FireBall = 50,
+        DarkBall = 51,
+        IceSpike = 52,
+
+        EarthBump = 60,
+        EarthWall = 61,
+        DarkZone = 62,
     }
 
     public enum TextPosition
@@ -42,5 +48,17 @@ namespace HuySpace
         Top,
         Middle,
         Bottom,
+    }
+
+    public enum CS_UIType
+    {
+        FocusCam,
+        TransCam,
+    }
+
+    public enum MagicDeployType
+    {
+        Floating = 0,
+        InGround = 1,
     }
 }

@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Border All 10_0
+      name: _Settings
       rect:
         serializedVersion: 2
         x: 0
@@ -106,7 +106,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -121,7 +121,7 @@ TextureImporter:
       name: Border All 10_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 448
         width: 64
         height: 64
@@ -139,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Border All 10_2
+      name: _NameTag
       rect:
         serializedVersion: 2
         x: 128
@@ -349,7 +349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Border All 10_12
+      name: _DialogueWindow
       rect:
         serializedVersion: 2
         x: 128
@@ -580,7 +580,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Border All 10_23
+      name: _Avatar
       rect:
         serializedVersion: 2
         x: 192
@@ -589,7 +589,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 10, z: 10, w: 10}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1000,7 +1000,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Border All 10_43
+      name: _SkillFrame
       rect:
         serializedVersion: 2
         x: 192
@@ -1009,7 +1009,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1063,7 +1063,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Border All 10_46
+      name: _InventoryBorder
       rect:
         serializedVersion: 2
         x: 384
@@ -1072,7 +1072,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1126,16 +1126,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Border All 10_49
+      name: _SettingSelection
       rect:
         serializedVersion: 2
         x: 576
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1168,7 +1168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Border All 10_51
+      name: _HealthBar
       rect:
         serializedVersion: 2
         x: 64
@@ -1177,7 +1177,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1787,11 +1787,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Border All 10_0: 1628296084
       Border All 10_1: 1668777310
       Border All 10_10: 955968995
       Border All 10_11: -1330336566
-      Border All 10_12: 2026860446
       Border All 10_13: 1107216739
       Border All 10_14: -786114607
       Border All 10_15: -2001215906
@@ -1799,11 +1797,9 @@ TextureImporter:
       Border All 10_17: -2128207506
       Border All 10_18: 997536918
       Border All 10_19: -679433841
-      Border All 10_2: 1031595937
       Border All 10_20: 1025879612
       Border All 10_21: 1598656269
       Border All 10_22: -1212394483
-      Border All 10_23: -741892084
       Border All 10_24: -1580557274
       Border All 10_25: 1891734364
       Border All 10_26: -1723002139
@@ -1825,16 +1821,12 @@ TextureImporter:
       Border All 10_40: -586873525
       Border All 10_41: -1968596861
       Border All 10_42: -1459296074
-      Border All 10_43: 1692721357
       Border All 10_44: -1763707896
       Border All 10_45: -1387336919
-      Border All 10_46: 726647523
       Border All 10_47: -1243921473
       Border All 10_48: 1437546180
-      Border All 10_49: -449828185
       Border All 10_5: -992256121
       Border All 10_50: -23997418
-      Border All 10_51: -1087714903
       Border All 10_52: -100718369
       Border All 10_53: 1229271332
       Border All 10_54: -1186805890
@@ -1867,6 +1859,14 @@ TextureImporter:
       Border All 10_79: -1539906485
       Border All 10_8: 1620380098
       Border All 10_9: 1367453586
+      _Avatar: -741892084
+      _DialogueWindow: 2026860446
+      _HealthBar: -1087714903
+      _InventoryBorder: 726647523
+      _NameTag: 1031595937
+      _SettingSelection: -449828185
+      _Settings: 1628296084
+      _SkillFrame: 1692721357
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
