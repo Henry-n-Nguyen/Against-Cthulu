@@ -7,7 +7,6 @@ using HuySpace;
 public class CSE_TransitionScene : CutSceneElementBase
 {
     [SerializeField] private GameObject indicator;
-    [SerializeField] private Stage stage;
 
     private SpriteRenderer spriteRenderer;
     private Coroutine transitionCoroutine;
@@ -18,6 +17,9 @@ public class CSE_TransitionScene : CutSceneElementBase
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        isActivated = false;
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0.25f);
     }
 
     private void Update()
@@ -27,14 +29,18 @@ public class CSE_TransitionScene : CutSceneElementBase
 
     private void GatherInput()
     {
-        if (!stage.IsEndStage) { return; }
+        if (!StageManager.Ins.currentStage.IsEndStage) { return; }
 
-        if (stage.IsEndStage && !isActivated) Activate();
+        if (StageManager.Ins.currentStage.IsEndStage) Activate();
 
         if (playerDetected && Input.GetButtonDown("Interact"))
         {
             CutSceneUIManager.Ins.Execute(CS_UIType.TransCam);
-            GamePlayManager.Ins.player.TeleportTo(stage.spawnPoint.transform.position);
+            StageManager.Ins.NextStage();
+            CutSceneUIManager.Ins.Release(CS_UIType.TransCam);
+
+            if (transitionCoroutine != null) StopCoroutine(transitionCoroutine);
+
             transitionCoroutine = StartCoroutine(WaitAndAdvance());
         }
     }
@@ -54,7 +60,7 @@ public class CSE_TransitionScene : CutSceneElementBase
         if (collision.gameObject.CompareTag(S_Constant.TAG_PLAYER))
         {
             playerDetected = true;
-            if (stage.IsEndStage) ToggleIndicator(true);
+            if (StageManager.Ins.currentStage.IsEndStage) ToggleIndicator(true);
         }
     }
 
@@ -71,12 +77,6 @@ public class CSE_TransitionScene : CutSceneElementBase
     {
         isActivated = false;
         playerDetected = false;
-    }
-
-    public override void Release()
-    {
-        StopCoroutine(transitionCoroutine);
-        CutSceneUIManager.Ins.Release(CS_UIType.TransCam);
     }
 
     private void ToggleIndicator(bool show)

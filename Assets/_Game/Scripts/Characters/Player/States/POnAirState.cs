@@ -39,7 +39,7 @@ public class POnAirState : IState<Player>
 
         if (Mathf.Abs(t.Horizontal) > 0f)
         {
-            Vector2 moveVelocity = Vector2.right * t.Horizontal * t.RunSpeed + Vector2.up * t.RbVelocity.y;
+            Vector2 moveVelocity = Vector2.right * t.Horizontal * t.Speed + Vector2.up * t.RbVelocity.y;
             t.SetMove(moveVelocity);
         }
 
@@ -94,9 +94,17 @@ public class POnAirState : IState<Player>
         }
 
         // Change to jump-cast magic attack
-        if (Input.GetButtonDown("Special1"))
+        if (t.CanSpecial_01 && Input.GetButtonDown("Special1"))
         {
             t.SetBool(CharacterState.Attack, true);
+            t.SwapSpecial(PlayerMagicIndex.First);
+            t.ChangeState(Player.CAST_MAGIC_STATE);
+        }
+
+        if (t.CanSpecial_02 && Input.GetButtonDown("Special2"))
+        {
+            t.SetBool(CharacterState.Attack, true);
+            t.SwapSpecial(PlayerMagicIndex.Second);
             t.ChangeState(Player.CAST_MAGIC_STATE);
         }
 

@@ -11,20 +11,11 @@ public class PDeadState : IState<Player>
 
     public void OnExecute(Player t)
     {
-        GatherDeathInput(t);
+
     }
 
     public void OnExit(Player t)
     {
 
-    }
-
-    private void GatherDeathInput(Player t)
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            t.ChangeAnim(S_Constant.ANIM_IDLE);
-            t.ChangeState(Player.IDLE_STATE);
-        }
     }
 }

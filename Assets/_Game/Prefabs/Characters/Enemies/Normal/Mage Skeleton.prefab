@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 3100109047448744737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0.45, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -198,7 +198,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.01}
+  m_Size: {x: 0.02, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &6466854515235896191
 GameObject:
@@ -450,7 +450,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2025110535
-  m_SortingLayer: 4
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 401524351, guid: 8d7fd083ad59bcf47a13c6d319053e53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -568,21 +568,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b9e8b74389b5c4a84ce372bcfb5158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolType: 0
+  poolType: 312
   characterTF: {fileID: 6776011936999703298}
+  damageable: {fileID: 951931773171294965}
   characterCollide: {fileID: 4141061708732119763}
   anim: {fileID: 7485375233873104496}
   rb: {fileID: 5906396541254760971}
   shootTF: {fileID: 3987572472046877715}
+  inGroundShootTF: {fileID: 0}
   groundCheck: {fileID: 8697692045800570329}
   attackZone: {fileID: 8389172410953491187}
   <Horizontal>k__BackingField: 0
-  <Vertical>k__BackingField: 0
-  <WalkSpeed>k__BackingField: 2
-  <RunSpeed>k__BackingField: 4
-  <JumpForce>k__BackingField: 6
-  <SlideForce>k__BackingField: 12
-  <NormalDamage>k__BackingField: 5
+  <Speed>k__BackingField: 0
+  <JumpForce>k__BackingField: 0
+  <SlideForce>k__BackingField: 0
+  <NormalDamage>k__BackingField: 0
   <IsGrounded>k__BackingField: 0
   <IsRunning>k__BackingField: 0
   <IsJumping>k__BackingField: 0
@@ -590,7 +590,8 @@ MonoBehaviour:
   <IsAttacking>k__BackingField: 0
   <IsSliding>k__BackingField: 0
   <IsHit>k__BackingField: 0
-  prefab: {fileID: 6742414189366080860, guid: de4deecb017f79c41b0ecf57ebf2c210, type: 3}
+  currentMagicName: 50
+  currentMagic: {fileID: 0}
   wallCheck: {fileID: 7140024005642860254}
   detectZone: {fileID: 7798183842692297317}
   <isTouchingWall>k__BackingField: 0

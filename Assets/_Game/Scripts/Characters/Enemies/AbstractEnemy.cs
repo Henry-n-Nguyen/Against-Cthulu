@@ -38,6 +38,7 @@ public class AbstractEnemy : AbstractCharacter
     {
         CheckGround();
         CheckWall();
+        CheckCliff();
 
         currentState?.OnExecute(this);
     }
@@ -88,10 +89,23 @@ public class AbstractEnemy : AbstractCharacter
         ChangeState(E_IDLE_STATE);
     }
 
+    public void FacingPlayer()
+    {
+        Transform playerTF = GamePlayManager.Ins.player.characterTF;
+
+        if (playerTF.position.x < characterTF.position.x && Horizontal > 0
+            || playerTF.position.x > characterTF.position.x && Horizontal < 0)
+        {
+            Horizontal = -Horizontal;
+
+            Flip();
+        }
+    }
+
     // Check Function
     protected void CheckWall()
     {
-        isTouchingWall = Physics2D.OverlapAreaAll(wallCheck.bounds.min, wallCheck.bounds.max, G_Constant.WALL_LAYER).Length > 0;
+        isTouchingWall = Physics2D.OverlapArea(wallCheck.bounds.min, wallCheck.bounds.max, G_Constant.WALL_LAYER);
 
         if (isTouchingWall)
         {
@@ -100,13 +114,16 @@ public class AbstractEnemy : AbstractCharacter
             Horizontal = -Horizontal;
 
             Flip();
-
-            SetMove(characterTF.right * WalkSpeed + Vector3.up * RbVelocity.y);
         }
     }
 
     protected void CheckCliff()
     {
-        // TEST
+        if (!IsGrounded)
+        {
+            Horizontal = -Horizontal;
+
+            Flip();
+        }
     }
 }

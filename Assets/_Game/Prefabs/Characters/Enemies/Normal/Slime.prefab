@@ -276,8 +276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b9e8b74389b5c4a84ce372bcfb5158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolType: 2
+  poolType: 316
   characterTF: {fileID: 493537687526756880}
+  damageable: {fileID: 6624745630065371214}
   characterCollide: {fileID: 6313909375661806899}
   anim: {fileID: 232883170871459879}
   rb: {fileID: 4947014235236145042}
@@ -286,12 +287,10 @@ MonoBehaviour:
   groundCheck: {fileID: 2814939458257823040}
   attackZone: {fileID: 4613042822965289583}
   <Horizontal>k__BackingField: 0
-  <Vertical>k__BackingField: 0
-  <WalkSpeed>k__BackingField: 2
-  <RunSpeed>k__BackingField: 4
-  <JumpForce>k__BackingField: 6
-  <SlideForce>k__BackingField: 6
-  <NormalDamage>k__BackingField: 5
+  <Speed>k__BackingField: 0
+  <JumpForce>k__BackingField: 0
+  <SlideForce>k__BackingField: 0
+  <NormalDamage>k__BackingField: 0
   <IsGrounded>k__BackingField: 0
   <IsRunning>k__BackingField: 0
   <IsJumping>k__BackingField: 0
@@ -299,7 +298,8 @@ MonoBehaviour:
   <IsAttacking>k__BackingField: 0
   <IsSliding>k__BackingField: 0
   <IsHit>k__BackingField: 0
-  prefab: {fileID: 0}
+  currentMagicName: -1
+  currentMagic: {fileID: 0}
   wallCheck: {fileID: 7333567842871574099}
   detectZone: {fileID: 2370762116899336249}
   <isTouchingWall>k__BackingField: 0
@@ -348,7 +348,7 @@ Transform:
   m_GameObject: {fileID: 2400883309475316676}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0.45, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -397,7 +397,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.01}
+  m_Size: {x: 0.02, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &2591556811076027422
 GameObject:

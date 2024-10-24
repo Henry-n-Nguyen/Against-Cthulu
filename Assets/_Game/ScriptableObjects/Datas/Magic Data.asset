@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa547a9d0fbd134ca9509edc169c482, type: 3}
+  m_Name: Magic Data
+  m_EditorClassIdentifier: 
+  <magics>k__BackingField:
+  - {fileID: 188372613910406520, guid: 46dcadd006b78fd4aa44e844e80ed98a, type: 3}
+  - {fileID: 8592983697412672905, guid: ad5b15f63b4d73e4c9bba41c72765f0d, type: 3}
+  - {fileID: -5004124723049167424, guid: 93a352e9ee4ddce4682143d7d45bf9e0, type: 3}
+  - {fileID: 6742414189366080860, guid: 8093a676a6e8976459beaad2544d6a14, type: 3}
+  - {fileID: 6742414189366080860, guid: de4deecb017f79c41b0ecf57ebf2c210, type: 3}
+  - {fileID: 6742414189366080860, guid: 6c8946717dd471f48908f7ba46dc2318, type: 3}
+  - {fileID: 188372613910406520, guid: cbee500d1ab68f448a4f3063156dcef3, type: 3}
+  - {fileID: 188372613910406520, guid: 2d0d3285dfe795042819f3120a017a41, type: 3}
+  - {fileID: 3582757340859433865, guid: cafb29360024e4c4ab6aa15af9177adf, type: 3}
+  - {fileID: 5405849578772419364, guid: 650b6e1ce1229194480575159d96dac4, type: 3}

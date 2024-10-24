@@ -12,7 +12,7 @@ public class EHitState : IState<AbstractEnemy>
 
     public void OnExecute(AbstractEnemy t)
     {
-
+        
     }
 
     public void OnExit(AbstractEnemy t)

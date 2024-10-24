@@ -173,7 +173,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2025110535
-  m_SortingLayer: 4
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1921231583, guid: bce46abbe1462c841864f3d023c3483f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -291,21 +291,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b9e8b74389b5c4a84ce372bcfb5158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolType: 2
+  poolType: 301
   characterTF: {fileID: 8082211106173711557}
+  damageable: {fileID: 1963884653762262239}
   characterCollide: {fileID: 8059259949910115267}
   anim: {fileID: 3055029813276604856}
   rb: {fileID: 7446345572037013659}
   shootTF: {fileID: 0}
+  inGroundShootTF: {fileID: 0}
   groundCheck: {fileID: 1302020303335557096}
   attackZone: {fileID: 853945809963373005}
   <Horizontal>k__BackingField: 0
-  <Vertical>k__BackingField: 0
-  <WalkSpeed>k__BackingField: 2
-  <RunSpeed>k__BackingField: 4
-  <JumpForce>k__BackingField: 6
-  <SlideForce>k__BackingField: 6
-  <NormalDamage>k__BackingField: 5
+  <Speed>k__BackingField: 0
+  <JumpForce>k__BackingField: 0
+  <SlideForce>k__BackingField: 0
+  <NormalDamage>k__BackingField: 0
   <IsGrounded>k__BackingField: 0
   <IsRunning>k__BackingField: 0
   <IsJumping>k__BackingField: 0
@@ -313,7 +313,8 @@ MonoBehaviour:
   <IsAttacking>k__BackingField: 0
   <IsSliding>k__BackingField: 0
   <IsHit>k__BackingField: 0
-  prefab: {fileID: 0}
+  currentMagicName: -1
+  currentMagic: {fileID: 0}
   wallCheck: {fileID: 4715061296831278479}
   detectZone: {fileID: 4680153346374801283}
   <isTouchingWall>k__BackingField: 0
@@ -484,7 +485,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2025110535
-  m_SortingLayer: 4
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -615,7 +616,7 @@ Transform:
   m_GameObject: {fileID: 8492922421585116534}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -653,7 +654,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15, y: -0.65}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -664,5 +665,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.01}
+  m_Size: {x: 0.02, y: 1}
   m_EdgeRadius: 0

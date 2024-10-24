@@ -16,7 +16,7 @@ public class PMoveState : IState<Player>
 
         if (Mathf.Abs(t.Horizontal) > 0f)
         {
-            Vector2 moveVelocity = Vector2.right * t.Horizontal * t.RunSpeed + Vector2.up * t.RbVelocity.y;
+            Vector2 moveVelocity = Vector2.right * t.Horizontal * t.Speed + Vector2.up * t.RbVelocity.y;
             t.SetMove(moveVelocity);
         }
 
@@ -27,7 +27,7 @@ public class PMoveState : IState<Player>
     {
         if (!t.IsAttacking && !t.IsJumping && !t.IsHit && !t.IsSliding)
         {
-            if (Mathf.Abs(t.RbVelocity.x) >= t.RunSpeed - 0.5f)
+            if (Mathf.Abs(t.RbVelocity.x) >= t.Speed - 0.5f)
             {
                 t.ChangeAnim(S_Constant.ANIM_RUN_END);
             }
@@ -57,9 +57,17 @@ public class PMoveState : IState<Player>
         }
 
         // Change to cast magic
-        if (!t.IsAttacking && Input.GetButtonDown("Special1"))
+        if (t.CanSpecial_01 && !t.IsAttacking && Input.GetButtonDown("Special1"))
         {
             t.SetBool(CharacterState.Attack, true);
+            t.SwapSpecial(PlayerMagicIndex.First);
+            t.ChangeState(Player.CAST_MAGIC_STATE);
+        }
+
+        if (t.CanSpecial_02 && !t.IsAttacking && Input.GetButtonDown("Special2"))
+        {
+            t.SetBool(CharacterState.Attack, true);
+            t.SwapSpecial(PlayerMagicIndex.Second);
             t.ChangeState(Player.CAST_MAGIC_STATE);
         }
 

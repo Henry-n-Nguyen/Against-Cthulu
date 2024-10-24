@@ -38,7 +38,7 @@ public class PAttackState : IState<Player>
                 t.ChangeAnim(S_Constant.ANIM_ATTACK_RECOVER);
             }
 
-            if (timer > 1f)
+            if (timer > 1.5f)
             {
                 t.ChangeState(Player.IDLE_STATE);
             }

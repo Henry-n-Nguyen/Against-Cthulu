@@ -7,14 +7,13 @@ public class CutSceneHandler : MonoBehaviour
 {
     [Header("Check CutScene")]
     public bool isOneTrigger;
-    public bool freePlayer;
+    public bool freezePlayer;
     public bool isDetectedPlayer;
 
-    [Header("References")]
-    public Camera cam;
-    public CinemachineVirtualCamera vCam;
-
     [SerializeField] private CutSceneElementBase[] cutSceneElementBases;
+
+    [HideInInspector] public Camera cam;
+    [HideInInspector] public CinemachineVirtualCamera vCam;
 
     private int index = -1;
 
@@ -22,6 +21,8 @@ public class CutSceneHandler : MonoBehaviour
     {
         OnInit();
 
+        cam = GamePlayManager.Ins.cam;
+        vCam = GamePlayManager.Ins.vCam;
         cutSceneElementBases = GetComponents<CutSceneElementBase>();
     }
 
@@ -34,7 +35,7 @@ public class CutSceneHandler : MonoBehaviour
     {
         if (index >= 0 && index < cutSceneElementBases.Length)
         {
-            GamePlayManager.Ins.player.Freeze(freePlayer);
+            GamePlayManager.Ins.player.Freeze(freezePlayer);
             cutSceneElementBases[index].Execute();
         }
     }

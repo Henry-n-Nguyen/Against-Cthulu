@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: -2137702011
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -65962721, guid: 9d8b2a565a058ff4bafe3ddc66cfe2c0, type: 3}
+  m_Sprite: {fileID: -1652756466, guid: 9d8b2a565a058ff4bafe3ddc66cfe2c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.48, y: 0.48}
+  m_Size: {x: 0.64, y: 0.85333335}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -145,7 +145,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 0.64, y: 0.85333335}
-    newSize: {x: 0.48, y: 0.48}
+    newSize: {x: 0.64, y: 0.85333335}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -166,10 +166,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolType: 62
-  owner: {fileID: 0}
+  config: {fileID: 11400000, guid: ca1e3f7728315454c9952efcf26df63c, type: 2}
   magicTF: {fileID: 1527744983263679229}
   damage: 0
-  magicDeployType: 1
+  CD: 0
+  Multiplier: 0
+  DeployType: 1
   anim: {fileID: 2179698116175554595}
   speed: 12
   existTime: 1

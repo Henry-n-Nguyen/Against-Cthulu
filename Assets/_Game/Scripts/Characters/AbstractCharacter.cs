@@ -11,7 +11,8 @@ public class AbstractCharacter : GameUnit
 {
     // Reference Variables
     [Header("Character References")]
-    [SerializeField] public Transform characterTF;
+    public Transform characterTF;
+    public Damageable damageable;
 
     [SerializeField] protected BoxCollider2D characterCollide;
     [SerializeField] protected Animator anim;
@@ -31,13 +32,11 @@ public class AbstractCharacter : GameUnit
     // Bool Variables
     [field: Header("Basic Stats")]
     [field: SerializeField] public float Horizontal { get; protected set; }
-    [field: SerializeField] public float Vertical { get; protected set; }
-    [field: SerializeField] public float WalkSpeed { get; protected set; } = 2f;
-    [field: SerializeField] public float RunSpeed { get; protected set; } = 4f;
-    [field: SerializeField] public float JumpForce { get; protected set; } = 6f;
-    [field: SerializeField] public float SlideForce { get; protected set; } = 12f;
-    [field: SerializeField] public int NormalDamage { get; protected set; } = 5;
-    
+    [field: SerializeField] public float Speed { get; protected set; }
+    [field: SerializeField] public float JumpForce { get; protected set; }
+    [field: SerializeField] public float SlideForce { get; protected set; }
+    [field: SerializeField] public int NormalDamage { get; protected set; }
+
     [HideInInspector] public Vector2 RbVelocity { get { return rb.velocity; } protected set { RbVelocity = value; } }
 
     [field: Header("Boolean For Check")]
@@ -49,8 +48,9 @@ public class AbstractCharacter : GameUnit
     [field: SerializeField] public bool IsSliding { get; private set; } = false;
     [field: SerializeField] public bool IsHit { get; private set; } = false;
 
-    [Header("Magic")]
-    public Magic prefab;
+    [Header("PlayerMagicIndex")]
+    public MagicName currentMagicName;
+    public Magic currentMagic;
 
     void Start()
     {
@@ -141,34 +141,42 @@ public class AbstractCharacter : GameUnit
         characterTF.rotation = Quaternion.Euler(new Vector3(0, Horizontal > 0.01f ? 0 : 180, 0));
     }
 
-    public virtual void Attack()
-    {
-        List<Damageable> targetInRange = attackZone.GetTargetList();
-        foreach (Damageable target in targetInRange)
-        {
-            target.Hit(NormalDamage);
-        }
-    }
+    public virtual void Attack() { }
 
     public virtual void CastMagic() 
     {
-        Magic magic = SimplePool.Spawn<Magic>(prefab.poolType);
-        magic.Init(this);
+        currentMagic = SimplePool.Spawn<Magic>((PoolType)currentMagicName);
+        currentMagic.InitOwner(this);
         
-        switch (magic.magicDeployType)
+        switch (currentMagic.DeployType)
         {
             case MagicDeployType.Floating:
-                magic.Spawn(shootTF);
+                currentMagic.Spawn(shootTF);
                 break;
             case MagicDeployType.InGround:
-                magic.Spawn(inGroundShootTF);
+                currentMagic.Spawn(inGroundShootTF);
                 break;
         }
-
     }
+
+    public void Jump()
+    {
+        rb.velocity = Vector2.up * JumpForce;
+    }
+
     public void Jump(Vector2 jumpVector)
     {
         rb.velocity = Vector2.up * jumpVector.y * JumpForce + Vector2.right * jumpVector.x;
+    }
+
+    public void MoveForward()
+    {
+        rb.velocity = characterTF.right * Speed;
+    }
+
+    public void StopMove()
+    {
+        rb.velocity = Vector2.zero;
     }
 
     public void FallFromPlatform()

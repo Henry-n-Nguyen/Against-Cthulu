@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ParallaxBG : MonoBehaviour
 {
-    public ParallaxCamera parallaxCamera;
+    private ParallaxCamera parallaxCamera;
     List<ParallaxLayer> parallaxLayers = new List<ParallaxLayer>();
 
     void Start()
     {
         if (parallaxCamera == null)
-            parallaxCamera = Camera.main.GetComponent<ParallaxCamera>();
+            parallaxCamera = GamePlayManager.Ins.cam.GetComponent<ParallaxCamera>();
 
         if (parallaxCamera != null)
             parallaxCamera.onCameraTranslate += Move;
@@ -40,5 +40,10 @@ public class ParallaxBG : MonoBehaviour
         {
             layer.Move(delta);
         }
+    }
+
+    private void OnDestroy()
+    {
+        parallaxCamera.onCameraTranslate -= Move;
     }
 }

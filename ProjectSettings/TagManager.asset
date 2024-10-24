@@ -9,6 +9,8 @@ TagManager:
   - Wall
   - Magic
   - Floating
+  - Coin
+  - Diamond
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,8 @@ TagManager:
   - Effect
   - Magic
   - Environment
-  - 
-  - 
+  - NPC
+  - DropItem
   - 
   - 
   - 

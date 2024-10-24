@@ -6,6 +6,8 @@ using HuySpace;
 
 public class CutSceneUIManager : Singleton<CutSceneUIManager>
 {
+    public DialogueUI dialogueUI;
+
     private CutSceneUI[] uis;
 
     private void Start()

@@ -11,6 +11,7 @@ public class MagicSpawnObj : Magic
     private float timer = 0f;
 
     private bool isExist = true;
+    private bool needTimeToDmg = true;
 
     public override void CollideWithCharacter(Collider2D col)
     {
@@ -24,7 +25,8 @@ public class MagicSpawnObj : Magic
 
         if (damageable != null)
         {
-            damageable.Hit(damage);
+            if (needTimeToDmg) { needTimeToDmg = false; }
+            else damageable.Hit(Mathf.RoundToInt(damage * Multiplier));
         }
 
         isExist = false;
@@ -49,7 +51,7 @@ public class MagicSpawnObj : Magic
         {
             timer = 0f;
             isExist = false;
-            Despawn();
+            anim.SetTrigger(S_Constant.ANIM_DESPAWN);
         }
 
         float distance = speed * Time.deltaTime;
@@ -70,6 +72,7 @@ public class MagicSpawnObj : Magic
     public override void Despawn()
     {
         timer = 0f;
+        needTimeToDmg = true;
         base.Despawn();
     }
 }

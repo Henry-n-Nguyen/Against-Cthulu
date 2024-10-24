@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 9118767155362740736}
   - component: {fileID: 6974265464628697523}
   - component: {fileID: 6065127764925672525}
+  - component: {fileID: 4187730247074055578}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -431,6 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolType: 1
   characterTF: {fileID: 7500136526630895031}
+  damageable: {fileID: 6065127764925672525}
   characterCollide: {fileID: 9118767155362740736}
   anim: {fileID: 953927250855176786}
   rb: {fileID: 5345633441149430119}
@@ -439,12 +441,10 @@ MonoBehaviour:
   groundCheck: {fileID: 6995983577310135175}
   attackZone: {fileID: 411304268733475250}
   <Horizontal>k__BackingField: 0
-  <Vertical>k__BackingField: 0
-  <WalkSpeed>k__BackingField: 2
-  <RunSpeed>k__BackingField: 4
-  <JumpForce>k__BackingField: 6
-  <SlideForce>k__BackingField: 12
-  <NormalDamage>k__BackingField: 50
+  <Speed>k__BackingField: 0
+  <JumpForce>k__BackingField: 0
+  <SlideForce>k__BackingField: 0
+  <NormalDamage>k__BackingField: 0
   <IsGrounded>k__BackingField: 0
   <IsRunning>k__BackingField: 0
   <IsJumping>k__BackingField: 0
@@ -452,13 +452,13 @@ MonoBehaviour:
   <IsAttacking>k__BackingField: 0
   <IsSliding>k__BackingField: 0
   <IsHit>k__BackingField: 0
-  prefab: {fileID: 188372613910406520, guid: 2d0d3285dfe795042819f3120a017a41, type: 3}
-  dustEffect: {fileID: 0}
-  ghostEffect: {fileID: 0}
+  currentMagicName: 0
+  currentMagic: {fileID: 0}
   <CanSpecial_01>k__BackingField: 1
   <CanSpecial_02>k__BackingField: 1
   <CanSlide>k__BackingField: 1
   <CanMove>k__BackingField: 1
+  config: {fileID: 11400000, guid: e9ec64e001d76e84bb348813bbaee388, type: 2}
 --- !u!114 &6065127764925672525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,6 +477,18 @@ MonoBehaviour:
   timer: 0
   _maxHP: 100
   _HP: 100
+--- !u!114 &4187730247074055578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3740229879559345047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f261600e9f841c14d8aa1421fb5a6534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6712040161619821364
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,7 +26,7 @@ public class MagicBall : Magic
 
         if (damageable != null)
         {
-            damageable.Hit(damage);
+            damageable.Hit(Mathf.RoundToInt(damage * Multiplier));
         }
 
         isExist = false;

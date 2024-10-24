@@ -5,11 +5,27 @@ using UnityEngine;
 
 public class Magic : GameUnit
 {
-    [SerializeField] protected AbstractCharacter owner;
+    [Header("Config SO")]
+    [SerializeField] protected MagicConfigSO config;
+
+    [Header("References")]
     [SerializeField] protected Transform magicTF;
     [SerializeField] protected int damage;
 
-    public MagicDeployType magicDeployType;
+    [Header("Stats")]
+    public float CD;
+    public float Multiplier;
+    public MagicDeployType DeployType;
+    
+    protected AbstractCharacter owner;
+    private Sprite magicSprite;
+
+    private void Start()
+    {
+        magicSprite = GetComponent<SpriteRenderer>().sprite;
+
+        InitData();
+    }
 
     private void Update()
     {
@@ -34,7 +50,14 @@ public class Magic : GameUnit
         if (!col.gameObject.CompareTag(S_Constant.TAG_GROUND)) return;
     }
 
-    public void Init(AbstractCharacter caster)
+    private void InitData()
+    {
+        CD = config.CD;
+        Multiplier = config.Multiplier;
+        DeployType = config.DeployType;
+    }
+
+    public void InitOwner(AbstractCharacter caster)
     {
         owner = caster;
         damage = owner.NormalDamage;
@@ -55,5 +78,10 @@ public class Magic : GameUnit
     public virtual void Despawn()
     {
         SimplePool.Despawn(this);
+    }
+
+    public Sprite GetMagicSprite()
+    {
+        return magicSprite;
     }
 }

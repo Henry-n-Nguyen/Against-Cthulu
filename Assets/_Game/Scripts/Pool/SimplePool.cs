@@ -1,30 +1,4 @@
-﻿///
-/// Simple pooling for Unity.
-///   Author: Martin "quill18" Glaude (quill18@quill18.com)
-///   Latest Version: https://gist.github.com/quill18/5a7cfffae68892621267
-///   License: CC0 (http://creativecommons.org/publicdomain/zero/1.0/)
-///   UPDATES:
-/// 	2015-04-16:
-///         Support Minh tito CTO ABI games studio
-///         Advantage Linh soi Game developer
-///   UPDATES:
-///     2017-09-10
-///     - simple pool with gameobject
-///     - release game object
-///     2019-10-09
-///     - Pool Clamp to keep the quantity within a certain radiusSphere
-///     - Pool collect all to despawn all object comeback the pool
-///     - Spawn with generic T
-///     - Optimize pool
-///     2022-10-09
-///     - Pool with pool type from resources
-///     - pool with pool container
-///     2022-11-27
-///     - Remove clamp pool
-///     - Spawn in parent transform same instantiate(gameobject, transform)
-///     - Get list object is actived
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 using System;
 using HuySpace;
@@ -34,7 +8,7 @@ public static class SimplePool
     class Pool
     {
         //parent contain all pool member
-        Transform m_sRoot = null;
+        Transform m_root = null;
         //object is can collect back to pool
         bool m_collect;
         //list object in pool
@@ -47,13 +21,13 @@ public static class SimplePool
         public bool IsCollect { get => m_collect; }
         public HashSet<GameUnit> Active => m_active;
         public int Count => m_inactive.Count + m_active.Count;
-        public Transform Root => m_sRoot;
+        public Transform Root => m_root;
 
         // Constructor
         public Pool(GameUnit prefab, int initialQty, Transform parent, bool collect)
         {
             m_inactive = new Queue<GameUnit>(initialQty);
-            m_sRoot = parent;
+            m_root = parent;
             this.m_prefab = prefab;
             m_collect = collect;
             if (m_collect) m_active = new HashSet<GameUnit>();
@@ -75,7 +49,7 @@ public static class SimplePool
             GameUnit obj;
             if (m_inactive.Count == 0)
             {
-                obj = (GameUnit)GameObject.Instantiate(m_prefab, m_sRoot);
+                obj = (GameUnit)GameObject.Instantiate(m_prefab, m_root);
             }
             else
             {
@@ -124,7 +98,7 @@ public static class SimplePool
             m_inactive.Clear();
         }
 
-        //collect all unit comeback to pool
+        //collect all unit return to pool
         public void Collect()
         {
             foreach (var item in m_active)
@@ -136,10 +110,10 @@ public static class SimplePool
 
     public const int DEFAULT_POOL_SIZE = 3;
 
-    //dict for faster search from pool type to prefab
+    //dictionary for faster search from pool type to prefab
     static Dictionary<PoolType, GameUnit> poolTypes = new Dictionary<PoolType, GameUnit>();
 
-    //save member that is child transform other object
+    //save unit that is child transform other object
     static HashSet<int> memberInParent = new HashSet<int>();
 
     private static Transform root;
@@ -241,14 +215,12 @@ public static class SimplePool
     {
         return Spawn(GetPrefabByType(poolType), pos, rot) as T;
     }
+
     static public T Spawn<T>(PoolType poolType) where T : GameUnit
     {
         return Spawn<T>(GetPrefabByType(poolType));
     }
-    static public T Spawn<T>(GameUnit obj, Vector3 pos, Quaternion rot) where T : GameUnit
-    {
-        return Spawn(obj, pos, rot) as T;
-    }
+
     static public T Spawn<T>(GameUnit obj) where T : GameUnit
     {
         return Spawn(obj) as T;
@@ -269,12 +241,6 @@ public static class SimplePool
         unit.TF.localScale = localScale;
         memberInParent.Add(unit.GetInstanceID());
         return unit;
-    }
-
-    static public T Spawn<T> (PoolType poolType, Vector3 localPoint, Quaternion localRot, Transform parent) where T : GameUnit
-    {
-        GameUnit obj = GetPrefabByType(poolType);
-        return Spawn<T>(obj, localPoint, localRot, obj.TF.localScale, parent);
     }
 
     static public T Spawn<T> (PoolType poolType, Transform parent) where T : GameUnit
@@ -320,30 +286,6 @@ public static class SimplePool
             {
                 GameObject.Destroy(obj.gameObject);
             }
-        }
-    }
-    #endregion
-
-    #region Release
-    //destroy pool
-    static public void Release(GameUnit obj)
-    {
-        if (IsHasPool(obj))
-        {
-            GetPool(obj).Release();
-        }
-    }
-    static public void Release(PoolType poolType)
-    {
-        Release(GetPrefabByType(poolType));
-    }
-
-    //DESTROY ALL POOL
-    static public void ReleaseAll()
-    {
-        foreach (var item in poolInstance)
-        {
-            item.Value.Release();
         }
     }
     #endregion

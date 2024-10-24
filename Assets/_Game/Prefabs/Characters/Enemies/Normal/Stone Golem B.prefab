@@ -323,8 +323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b9e8b74389b5c4a84ce372bcfb5158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolType: 2
+  poolType: 318
   characterTF: {fileID: 4242143016890152782}
+  damageable: {fileID: 889811159087211075}
   characterCollide: {fileID: 3982289366025538732}
   anim: {fileID: 7368758269745353563}
   rb: {fileID: 4245187539642275681}
@@ -333,12 +334,10 @@ MonoBehaviour:
   groundCheck: {fileID: 4298806128191818070}
   attackZone: {fileID: 6725912066144591557}
   <Horizontal>k__BackingField: 0
-  <Vertical>k__BackingField: 0
-  <WalkSpeed>k__BackingField: 2
-  <RunSpeed>k__BackingField: 4
-  <JumpForce>k__BackingField: 6
-  <SlideForce>k__BackingField: 6
-  <NormalDamage>k__BackingField: 5
+  <Speed>k__BackingField: 0
+  <JumpForce>k__BackingField: 0
+  <SlideForce>k__BackingField: 0
+  <NormalDamage>k__BackingField: 0
   <IsGrounded>k__BackingField: 0
   <IsRunning>k__BackingField: 0
   <IsJumping>k__BackingField: 0
@@ -346,7 +345,8 @@ MonoBehaviour:
   <IsAttacking>k__BackingField: 0
   <IsSliding>k__BackingField: 0
   <IsHit>k__BackingField: 0
-  prefab: {fileID: 6742414189366080860, guid: 6c8946717dd471f48908f7ba46dc2318, type: 3}
+  currentMagicName: 52
+  currentMagic: {fileID: 0}
   wallCheck: {fileID: 3694635855010672556}
   detectZone: {fileID: 3942320599947970328}
   <isTouchingWall>k__BackingField: 0
@@ -487,7 +487,7 @@ Transform:
   m_GameObject: {fileID: 5857769849265315862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -525,7 +525,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.1}
+  m_Offset: {x: 0, y: -0.65}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -536,7 +536,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.01}
+  m_Size: {x: 0.02, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &7431517965899143465
 GameObject:

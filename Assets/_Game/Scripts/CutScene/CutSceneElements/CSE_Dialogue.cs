@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Linq;
+using HuySpace;
 
 public class CSE_Dialogue : CutSceneElementBase
 {
     // References
     [SerializeField] private GameObject indicator;
-    [SerializeField] private GameObject window;
-    [SerializeField] private TMP_Text nameTag;
-    [SerializeField] private TMP_Text dialogueText;
-    [SerializeField] private GameObject endSentenceSign;
     [SerializeField] private float writingSpeed;
 
     [TextArea][SerializeField] private List<string> dialogues = new List<string>();
 
     [SerializeField] private bool isCanInteract;
+
+    private DialogueUI dialogueUI;
 
     private Coroutine writingCoroutine;
 
@@ -54,7 +53,7 @@ public class CSE_Dialogue : CutSceneElementBase
         if (waitForNext && Input.GetButtonDown("Interact"))
         {
             waitForNext = false;
-            endSentenceSign.SetActive(waitForNext);
+            dialogueUI.endSentenceSign.SetActive(waitForNext);
 
             index++;
 
@@ -84,7 +83,9 @@ public class CSE_Dialogue : CutSceneElementBase
     {
         waitForNext = false;
 
-        nameTag.text = name;
+        dialogueUI = CutSceneUIManager.Ins.dialogueUI;
+
+        dialogueUI.nameTag.text = name;
 
         if (isCanInteract) ToggleIndicator(true);
         else StartDialogue();
@@ -98,7 +99,8 @@ public class CSE_Dialogue : CutSceneElementBase
 
     private void ToggleWindow(bool show)
     {
-        window.SetActive(show);
+        
+        dialogueUI.window.SetActive(show);
     }
     private void ToggleIndicator(bool show)
     {
@@ -125,7 +127,7 @@ public class CSE_Dialogue : CutSceneElementBase
     {
         index = i;
         charIndex = 0;
-        dialogueText.text = string.Empty;
+        dialogueUI.dialogueText.text = string.Empty;
 
         if (writingCoroutine != null) StopCoroutine(writingCoroutine);
         writingCoroutine = StartCoroutine(Writing());
@@ -153,13 +155,13 @@ public class CSE_Dialogue : CutSceneElementBase
             //Wait x seconds 
             yield return new WaitForSeconds(writingSpeed);
             //Write the character
-            dialogueText.text += currentDialogue[charIndex];
+            dialogueUI.dialogueText.text += currentDialogue[charIndex];
             //increase the character index
             charIndex++;
         }
 
         //End this sentence and wait for the next one
-        endSentenceSign.SetActive(waitForNext);
         waitForNext = true;
+        dialogueUI.endSentenceSign.SetActive(waitForNext);
     }
 }

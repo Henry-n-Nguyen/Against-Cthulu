@@ -37,14 +37,22 @@ public class PIdleState : IState<Player>
         }
 
         // Change to cast magic
-        if (t.IsGrounded && !t.IsAttacking && Input.GetButtonDown("Special1"))
+        if (t.CanSpecial_01 && !t.IsAttacking && Input.GetButtonDown("Special1"))
         {
             t.SetBool(CharacterState.Attack, true);
+            t.SwapSpecial(PlayerMagicIndex.First);
+            t.ChangeState(Player.CAST_MAGIC_STATE);
+        }
+
+        if (t.CanSpecial_02 && !t.IsAttacking && Input.GetButtonDown("Special2"))
+        {
+            t.SetBool(CharacterState.Attack, true);
+            t.SwapSpecial(PlayerMagicIndex.Second);
             t.ChangeState(Player.CAST_MAGIC_STATE);
         }
 
         // Change to move
-        if (t.IsGrounded && !t.IsAttacking && Input.GetButton("Horizontal") && Mathf.Abs(t.Horizontal) > 0.01f)
+        if (!t.IsAttacking && Input.GetButton("Horizontal") && Mathf.Abs(t.Horizontal) > 0.01f)
         {
             t.SetBool(CharacterState.Run, true);
             t.ChangeState(Player.MOVE_STATE);

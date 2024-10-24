@@ -40,6 +40,10 @@ public class S_Constant
 
     public const string ANIM_SLIDE = "slide";
 
+    public const string ANIM_BOSS_ATTACK_1 = "attack_1";
+    public const string ANIM_BOSS_ATTACK_2 = "attack_2";
+    public const string ANIM_BOSS_ATTACK_3 = "attack_3";
+
     // Trigger Others Anim Constants 
     public const string ANIM_TRIGGER = "trigger";
     public const string ANIM_DESPAWN = "despawn";
@@ -49,6 +53,9 @@ public class S_Constant
     public const string TAG_ENEMY = "Enemy";
     public const string TAG_GROUND = "Ground";
     public const string TAG_FLOATING = "Floating";
+
+    public const string TAG_DROP_ITEM_COIN = "Coin";
+    public const string TAG_DROP_ITEM_DIAMOND = "Diamond";
 
     // Public Layer
     public const string LAYER_GROUND = "Ground";

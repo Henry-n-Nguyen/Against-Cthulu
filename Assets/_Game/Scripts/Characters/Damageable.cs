@@ -29,7 +29,7 @@ public class Damageable : MonoBehaviour
     [Header("Float")]
     [SerializeField] private float timer = 0f;
 
-    public float invincibleTime { get; private set; } = 1f;
+    public float invincibleTime { get; private set; } = 0.25f;
 
     // Max HP
     [SerializeField] private float _maxHP = 100f;
@@ -61,34 +61,37 @@ public class Damageable : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        timer = 0f;
+    }
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            Hit(0);
-        }
-
         CheckInvincibleState();
     }
 
     public void Hit(int damage)
     {
-        if (IsAlive && !character.IsSliding && !isInvincible)
+        if (isInvincible || character.IsSliding || !IsAlive)
         {
-            _HP -= damage;
-            isInvincible = true;
+            return;
+        }
 
-            // If HP drops below 0, character is no longer alive
-            if (_HP <= 0)
-            {
-                IsAlive = false;
-                character.CallBackState();
-                character.Die();
-            }
-            else
-            {
-                if (!character.IsAttacking) character.Hit();
-            }
+        _HP -= damage;
+        isInvincible = true;
+
+        // If HP drops below 0, character is no longer alive
+        if (_HP <= 0)
+        {
+            _HP = 0;
+            IsAlive = false;
+            character.CallBackState();
+            character.Die();
+        }
+        else
+        {
+            if (!character.IsAttacking) character.Hit();
         }
     }
 
@@ -99,10 +102,16 @@ public class Damageable : MonoBehaviour
             if (timer > invincibleTime)
             {
                 isInvincible = false;
-                timer = 0;
+                timer = 0f;
             }
 
             timer += Time.deltaTime;
         }
+    }
+
+    public void Revive()
+    {
+        IsAlive = true;
+        HP = MaxHP;
     }
 }
