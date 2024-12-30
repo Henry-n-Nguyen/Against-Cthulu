@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c56459d658ec9946818652a871d3aee, type: 3}
+  m_Name: Laser Beam
+  m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: 2354335440015433656, guid: 9fc650d967231924abfe330645f1a821, type: 3}
+  <MagicName>k__BackingField: Laser Beam
+  <Description>k__BackingField: Shoots a laser beam forward
+  <CD>k__BackingField: 4
+  <Multiplier>k__BackingField: 2.5
+  <DeployType>k__BackingField: 0

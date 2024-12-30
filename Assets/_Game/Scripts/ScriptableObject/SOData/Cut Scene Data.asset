@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b4666efa47fbb4da0a34bde47b567e, type: 3}
+  m_Name: Cut Scene Data
+  m_EditorClassIdentifier: 
+  <CutScenes>k__BackingField:
+  - {fileID: 6019757590852620165, guid: d8c7ef2f17830874e81f01d6e920224b, type: 3}
+  - {fileID: 6019757590852620165, guid: ced6a93c75323e74faa5b1737234b651, type: 3}
+  - {fileID: 6019757590852620165, guid: 6f58e15b6d43996419b6a24d6aca13be, type: 3}

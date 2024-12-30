@@ -8,23 +8,27 @@ TagManager:
   - Ground
   - Wall
   - Magic
+  - Floating
+  - Coin
+  - Diamond
+  - Audio
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - Ground
-  - Wall
   - Player
   - Enemy
   - PlayerHitBox
   - EnemyHitBox
+  - Effect
   - Magic
-  - 
-  - 
-  - 
+  - Environment
+  - NPC
+  - DropItem
+  - CutSceneCamera
   - 
   - 
   - 
@@ -44,4 +48,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 3380526521
+    locked: 0
+  - name: Character
+    uniqueID: 2025110535
+    locked: 0
+  - name: Magic
+    uniqueID: 2157265285
+    locked: 0
+  - name: Effect
+    uniqueID: 3164104305
     locked: 0

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c56459d658ec9946818652a871d3aee, type: 3}
+  m_Name: Earth Wall Config
+  m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: -832082601, guid: af381270a38ce5c43ab5545c8d12655d, type: 3}
+  <MagicName>k__BackingField: Earth Wall
+  <Description>k__BackingField: Summons  a earth wall to enemies ahead
+  <CD>k__BackingField: 4
+  <Multiplier>k__BackingField: 2
+  <DeployType>k__BackingField: 1
