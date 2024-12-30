@@ -25,4 +25,9 @@ public class UI_MainMenu : UICanvas
         GamePlayManager.Ins.OutUI();
         CloseDirectly();
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

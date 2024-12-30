@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using HuySpace;
 
 public class UI_InGame : UICanvas
 {
@@ -19,16 +20,21 @@ public class UI_InGame : UICanvas
     [SerializeField] private Image skill_2_Icon;
     [SerializeField] private Image skill_2_CD_frame;
 
+    [SerializeField] private GameObject noticeText;
+
     private float hpLength;
 
     private UserData data;
 
     // Call before active Canvas
-    public override void Setup()
+    public override void Open()
     {
         hpLength = hpPanel.sizeDelta.x;
 
         data = UserDataManager.Ins.userData;
+
+        GamePlayManager.Ins.player.OnHaveUprades += UpdateMaxHealth;
+        GamePlayManager.Ins.player.OnHaveUprades += UpdateCurrentHealth;
         GamePlayManager.Ins.player.IsHitOrHealEvent += UpdateCurrentHealth;
         GamePlayManager.Ins.player.OnSkill_01_CooldownEvent += TriggerSkill_01_CD;
         GamePlayManager.Ins.player.OnSkill_02_CooldownEvent += TriggerSkill_02_CD;
@@ -36,20 +42,32 @@ public class UI_InGame : UICanvas
         GamePlayManager.Ins.OnCoinChanged += UpdateCoinText;
         GamePlayManager.Ins.OnDiamondChanged += UpdateDiamondText;
 
+        StageManager.Ins.OnEndNormalStage += DisplayNotice;
+        StageManager.Ins.OnNewNormalStage += NonDisplayNotice;
+
+        UpdateSkillIcon();
         UpdateMaxHealth();
         UpdateCurrentHealth();
         UpdateCoinText();
         UpdateDiamondText();
-    }
 
-    //Open canvas
-    public override void Open()
-    {
         base.Open();
     }
 
     public override void CloseDirectly()
     {
+        GamePlayManager.Ins.player.OnHaveUprades -= UpdateMaxHealth;
+        GamePlayManager.Ins.player.OnHaveUprades -= UpdateCurrentHealth;
+        GamePlayManager.Ins.player.IsHitOrHealEvent -= UpdateCurrentHealth;
+        GamePlayManager.Ins.player.OnSkill_01_CooldownEvent -= TriggerSkill_01_CD;
+        GamePlayManager.Ins.player.OnSkill_02_CooldownEvent -= TriggerSkill_02_CD;
+        GamePlayManager.Ins.player.OnSkill_Swap -= UpdateSkillIcon;
+        GamePlayManager.Ins.OnCoinChanged -= UpdateCoinText;
+        GamePlayManager.Ins.OnDiamondChanged -= UpdateDiamondText;
+
+        StageManager.Ins.OnEndNormalStage -= DisplayNotice;
+        StageManager.Ins.OnNewNormalStage -= NonDisplayNotice;
+
         base.CloseDirectly();
     }
 
@@ -68,26 +86,28 @@ public class UI_InGame : UICanvas
 
     private void UpdateCoinText()
     {
-        coinText.text = data.coin.ToString();
+        coinText.text = data.Coin.ToString();
     }
 
     private void UpdateDiamondText()
     {
-        diamondText.text = data.diamond.ToString();
+        diamondText.text = data.Diamond.ToString();
     }
 
     private void UpdateSkillIcon()
     {
-        if (GamePlayManager.Ins.player.special_1_icon != null) 
+        UserData data = UserDataManager.Ins.userData;
+
+        if (data.Skill_1 != null) 
         {
             skill_1_Icon.gameObject.SetActive(true);
-            skill_1_Icon.sprite = GamePlayManager.Ins.player.special_1_icon;
+            skill_1_Icon.sprite = GamePlayManager.Ins.player.magic_1.icon;
         }
 
-        if (GamePlayManager.Ins.player.special_2_icon != null)
+        if (data.Skill_2 != null)
         {
             skill_2_Icon.gameObject.SetActive(true);
-            skill_2_Icon.sprite = GamePlayManager.Ins.player.special_2_icon;
+            skill_2_Icon.sprite = GamePlayManager.Ins.player.magic_2.icon;
         }
     }
 
@@ -135,5 +155,20 @@ public class UI_InGame : UICanvas
 
         skill_2_CD_frame.gameObject.SetActive(false);
         skill_2_CD_frame.fillAmount = 1;
+    }
+
+    private void DisplayNotice()
+    {
+        noticeText.SetActive(true);
+    }
+
+    private void NonDisplayNotice()
+    {
+        noticeText.SetActive(false);
+    }
+
+    public void PauseGame()
+    {
+        GamePlayManager.Ins.OnPause();
     }
 }

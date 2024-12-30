@@ -584,7 +584,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 320
+        y: 322
         width: 64
         height: 64
       alignment: 0
@@ -832,7 +832,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Border All 10_35
+      name: _Equipment
       rect:
         serializedVersion: 2
         x: 320
@@ -841,7 +841,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 8, z: 8, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1812,7 +1812,6 @@ TextureImporter:
       Border All 10_32: 149257131
       Border All 10_33: -1189589454
       Border All 10_34: 694875856
-      Border All 10_35: 165893534
       Border All 10_36: -811194635
       Border All 10_37: -1618838058
       Border All 10_38: 745200593
@@ -1861,6 +1860,7 @@ TextureImporter:
       Border All 10_9: 1367453586
       _Avatar: -741892084
       _DialogueWindow: 2026860446
+      _Equipment: 165893534
       _HealthBar: -1087714903
       _InventoryBorder: 726647523
       _NameTag: 1031595937

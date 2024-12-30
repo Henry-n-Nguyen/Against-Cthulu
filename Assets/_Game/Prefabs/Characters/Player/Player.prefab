@@ -458,7 +458,6 @@ MonoBehaviour:
   <CanSpecial_02>k__BackingField: 1
   <CanSlide>k__BackingField: 1
   <CanMove>k__BackingField: 1
-  config: {fileID: 11400000, guid: e9ec64e001d76e84bb348813bbaee388, type: 2}
 --- !u!114 &6065127764925672525
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class UserDataManager : Singleton<UserDataManager>
     private const string KEY_USER_DATA = "UserData";
 
     public UserData userData;
+    public SettingData settingData;
 
     private void Awake()
     {

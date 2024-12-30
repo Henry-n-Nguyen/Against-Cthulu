@@ -40,6 +40,11 @@ namespace HuySpace
         Rogue_Boss = 12,
         Hashashin_Boss = 13,
 
+        Ice_Mage_Guard = 20,
+        Lightning_Mage_Guard = 21,
+        Fire_Mage_Guard = 22,
+        Cthulhu = 30,
+
         GhostEffect = 40,
         DustEffect = 41,
 
@@ -59,6 +64,13 @@ namespace HuySpace
         ThunderStrike = 80,
 
         Laser_Beam = 100,
+        IceCycle = 101,
+        LightningRain = 102,
+        FireSpiral = 103,
+
+        Fire_Skul = 110,
+        Ghost_Explode = 111,
+        Demon_Breath = 112,
 
         Collectable_Coin = 200,
         Collectable_Diamond = 201,
@@ -104,6 +116,13 @@ namespace HuySpace
         ThunderStrike = PoolType.ThunderStrike,
 
         Laser_Beam = PoolType.Laser_Beam,
+        IceCycle = PoolType.IceCycle,
+        LightningRain = PoolType.LightningRain,
+        FireSpiral = PoolType.FireSpiral,
+
+        Fire_Skul = PoolType.Fire_Skul,
+        Ghost_Explode = PoolType.Ghost_Explode,
+        Demon_Breath = PoolType.Demon_Breath,
     }
 
     public enum TextPosition
@@ -135,5 +154,35 @@ namespace HuySpace
         Shop_2 = 9,
         BossFight_Map_2 = 10,
         FinalBoss = 11,
+    }
+
+    public enum CutSceneType
+    {
+        CutScene_00 = 0,
+        CutScene_01 = 1,
+        CutScene_02 = 2,
+        CutScene_03 = 3,
+        CutScene_04 = 4,
+        CutScene_05 = 5,
+        Backstory = -1,
+    } 
+
+    public enum EquipmentType
+    {
+        Weapon,
+        Belt,
+    }
+
+    public enum SFX
+    {
+        Attack,
+        Chest_Open,
+        Collect_Drop,
+        Dash,
+        Hit,
+        Jump,
+        Landing, 
+        Special,
+        Walk,
     }
 }

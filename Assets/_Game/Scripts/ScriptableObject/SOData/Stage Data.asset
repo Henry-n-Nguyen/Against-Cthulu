@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d439138bdba7b344880cdf2584c4657, type: 3}
+  m_Name: Stage Data
+  m_EditorClassIdentifier: 
+  <tutorialStages>k__BackingField:
+  - {fileID: -6698640911568804299, guid: b2afacd6400bc0c48827df28ff63f733, type: 3}
+  - {fileID: -5171169447172044871, guid: 3b9d644447257fb48bfddb08823cf7a1, type: 3}
+  - {fileID: 8993665032995620613, guid: b9bba171c6514e24abe12c77929f76f5, type: 3}
+  <stagesMap1>k__BackingField:
+  - {fileID: -3281237969968551204, guid: 29e9d93e69c9fe849afd955c140eb64f, type: 3}
+  - {fileID: -7889209357629926113, guid: 21afee46e140b0441a12639a453b889e, type: 3}
+  - {fileID: -1809106342641435617, guid: af5f67ceebff3a94eb65411b9525da49, type: 3}
+  - {fileID: 4908833661332418407, guid: 440e0e152637b6046ae8a675da8ae254, type: 3}
+  - {fileID: 7226090942507616212, guid: 2d8a2951617334b4aa504520deddf46a, type: 3}
+  - {fileID: -8942042521005422674, guid: 8808566a3e5995b4d9410eeb2f000b61, type: 3}
+  <bossStageMap1>k__BackingField: {fileID: 8481722216898203087, guid: b1e69cec01a80ec4d9c147f9fa15a0fe, type: 3}
+  <stagesMap2>k__BackingField:
+  - {fileID: 2672289555743064162, guid: 67a7c5c19f98370429ecfb25be0e622c, type: 3}
+  - {fileID: 5711529646430947964, guid: 67ed4936f0483b74298b73b3805d5c98, type: 3}
+  - {fileID: -1541961308465883412, guid: fd015e6be344420419d0175eb705529c, type: 3}
+  - {fileID: -7426667362929046001, guid: 7d8f67ad81e07bd41924c30ffb9a66a8, type: 3}
+  - {fileID: 4700333922700075826, guid: 516548ad79e163e4b87053a8994859ef, type: 3}
+  - {fileID: 3604995009876440439, guid: c3bc80ed201836b4cabc9263ca2226b9, type: 3}
+  <bossStageMap2>k__BackingField: {fileID: 4770364781523503418, guid: c53cf4715a6e9c04faa4e69ff18578ec, type: 3}
+  <shopStage>k__BackingField: {fileID: 961027345618408058, guid: 7c004d9ae683cca4ca9fae3211bbf75b, type: 3}
+  <hallStage>k__BackingField: {fileID: 961027345618408058, guid: a4f479eec9516c140baf8afc971e05cc, type: 3}
+  <finalBossStage>k__BackingField: {fileID: 5243124247438348179, guid: 51226a7db21bdb747ac0fcba75fed634, type: 3}

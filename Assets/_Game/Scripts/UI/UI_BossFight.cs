@@ -15,8 +15,10 @@ public class UI_BossFight : UICanvas
 
     private float hpLength;
 
-    public override void Setup()
+    public override void Open()
     {
+        base.Open();
+
         hpLength = hpPanel.sizeDelta.x;
 
         bossStage = StageManager.Ins.currentStage.GetComponent<BossStage>();
@@ -26,11 +28,6 @@ public class UI_BossFight : UICanvas
         portrait.sprite = bossStage.bossEnemy.Portrait;
         nameText.text = bossStage.bossEnemy.Name;
         currentHpText.text = bossStage.bossEnemy.damageable.HP.ToString();
-    }
-
-    public override void Open()
-    {
-        base.Open();
 
         destroyOnClose = true;
     }

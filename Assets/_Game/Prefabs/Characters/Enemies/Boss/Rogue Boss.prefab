@@ -303,7 +303,7 @@ MonoBehaviour:
   wallCheck: {fileID: 124679226956750865}
   detectZone: {fileID: 3192246849047080166}
   <isTouchingWall>k__BackingField: 0
-  config: {fileID: 11400000, guid: 1aa6e0277cfa3f3439a3c283b9406d5c, type: 2}
+  config: {fileID: 11400000, guid: 06c9f9c0c99ec0140b7fbf9c87fd804c, type: 2}
   attack_1: -1
   attack_2: -1
   attack_3: -1

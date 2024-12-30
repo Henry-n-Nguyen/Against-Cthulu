@@ -58,4 +58,9 @@ public class UICanvas : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    public virtual void Hide()
+    {
+        gameObject.SetActive(false);
+    }
 }

@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cebe530c9133b8e45bb2e1771d8b6094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
+  character: {fileID: 5111934010171242299}
   isInvincible: 0
   _isAlive: 1
   timer: 0

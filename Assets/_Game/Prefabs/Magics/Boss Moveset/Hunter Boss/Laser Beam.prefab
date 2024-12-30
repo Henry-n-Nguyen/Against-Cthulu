@@ -169,6 +169,8 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: 1cc277d10c54f0c4faf12e75fb0a97bb, type: 2}
   magicTF: {fileID: 1527744983263679229}
   damage: 0
+  icon: {fileID: -362970111, guid: 90f895093f6f1384b9f469ba6e1c93ba, type: 3}
+  description: 
   CD: 0
   Multiplier: 0
   DeployType: 0

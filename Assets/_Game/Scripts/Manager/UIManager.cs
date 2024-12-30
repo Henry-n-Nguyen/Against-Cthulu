@@ -9,7 +9,9 @@ public class UIManager : Singleton<UIManager>
 
     [SerializeField] Transform holder;
 
-    [SerializeField] UICanvas[] canvases;
+    public DialogueUI dialogueUI;
+
+    [SerializeField] private UICanvas[] canvases;
 
     private void Awake()
     {

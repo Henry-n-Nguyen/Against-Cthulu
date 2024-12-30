@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a931607b44edff4996fd379752615d1, type: 3}
+  m_Name: Normal Enemy Data
+  m_EditorClassIdentifier: 
+  <norEnemies>k__BackingField:
+  - {fileID: 1304628085827008615, guid: e8f9c2912f048a6458efe880d102bdaa, type: 3}
+  - {fileID: 5779842619035535304, guid: ad83341c389682843b8e0d217449beb4, type: 3}
+  - {fileID: 7952004048501072041, guid: 4acc5eef26489f445b02669c70ef583a, type: 3}
+  - {fileID: 4591206891481178627, guid: 39f20fb22b2744542a780a8c31015ff2, type: 3}
+  - {fileID: 5208374981240336476, guid: e73680c5afd56a94ba837f88ca99917f, type: 3}
+  - {fileID: 4139269947114081954, guid: a616077095a5966418e96fa44f08a7e9, type: 3}
+  - {fileID: 6299127662797497810, guid: 0d3f9f5e4aa089a409c6010b5e60077c, type: 3}
+  - {fileID: 542767300900580234, guid: d909f568f050ddb4fb80f7c1f1235312, type: 3}
+  - {fileID: 548294173266026700, guid: 64149eb955127fe4e825401fffdb74ee, type: 3}
+  - {fileID: 8004240234483237811, guid: 48f2f532600995346a41f01f7a910d06, type: 3}
+  - {fileID: 7305416162630199090, guid: d693bed46e3369444a24da63137a98ba, type: 3}
+  - {fileID: 9168969435476207586, guid: 8f8c38cfc977a0948b0fe9134264acf4, type: 3}
+  - {fileID: 5111934010171242299, guid: 4644d895a7c9b6948861dae33346a4f9, type: 3}
+  - {fileID: 2022237996437454895, guid: 8d90f6c49ce43d5439e48504c175b618, type: 3}
+  - {fileID: 70247544272392143, guid: 3a6f724d774ce1d40abef88b4fb033b0, type: 3}
+  - {fileID: 1590902849494262113, guid: 4395734fcf0e0b74c8500efad960be55, type: 3}
+  - {fileID: 1480499992284959335, guid: bfebb336275de1444bd52888ea6acafb, type: 3}
+  - {fileID: 4261645016189521482, guid: 48d33ba4f2e1d6f4f91dc0cb1f7f810c, type: 3}
+  - {fileID: 1420343458966984514, guid: f27bc7cb457f055458db0a2a9fb8390c, type: 3}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c56459d658ec9946818652a871d3aee, type: 3}
+  m_Name: Dark Ball Config
+  m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: 1959422287, guid: 658be2aeb675b1e46b4a02867c74475b, type: 3}
+  <MagicName>k__BackingField: Dark Ball
+  <Description>k__BackingField: Casts a dark magic ball forward
+  <CD>k__BackingField: 3
+  <Multiplier>k__BackingField: 1.5
+  <DeployType>k__BackingField: 0
