@@ -555,7 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 0
   data: {fileID: 11400000, guid: ccf89d5e5cf529f429b2bf89f5450576, type: 2}
-  cs_Type: 0
+  cs_Type: 3
 --- !u!114 &7998506039106194902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3755,7 +3755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 0
   data: {fileID: 11400000, guid: ccf89d5e5cf529f429b2bf89f5450576, type: 2}
-  cs_Type: 0
+  cs_Type: 4
 --- !u!114 &3656810023094848678
 MonoBehaviour:
   m_ObjectHideFlags: 0

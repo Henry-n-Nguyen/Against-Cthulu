@@ -286,12 +286,12 @@ GameObject:
   - component: {fileID: 6008256179827852689}
   - component: {fileID: 7998506039106194902}
   m_Layer: 13
-  m_Name: Cutscene_00
+  m_Name: Cutscene_05
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9041276985630723024
 Transform:
   m_ObjectHideFlags: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 0
   data: {fileID: 11400000, guid: ccf89d5e5cf529f429b2bf89f5450576, type: 2}
-  cs_Type: 0
+  cs_Type: 5
 --- !u!114 &7998506039106194902
 MonoBehaviour:
   m_ObjectHideFlags: 0
