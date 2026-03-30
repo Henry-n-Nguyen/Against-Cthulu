@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -83,6 +84,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -96,6 +99,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 638646014225245846
   textureAssetName: 
@@ -105,6 +110,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +132,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -146,6 +153,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -166,6 +174,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -186,6 +195,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -206,6 +216,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -226,6 +237,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -246,6 +258,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -266,6 +279,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -286,6 +300,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -306,6 +321,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -326,6 +342,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -346,6 +363,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -366,6 +384,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -386,6 +405,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -406,6 +426,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -426,6 +447,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -446,6 +468,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -466,6 +489,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -486,6 +510,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -506,6 +531,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -526,6 +552,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -546,6 +573,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -566,6 +594,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -586,6 +615,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -606,6 +636,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -626,6 +657,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -646,6 +678,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -666,6 +699,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -686,6 +720,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -706,6 +741,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -726,6 +762,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -746,6 +783,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -766,6 +804,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -786,6 +825,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -806,6 +846,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -826,6 +867,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -846,6 +888,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -866,6 +909,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -886,6 +930,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -906,6 +951,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -926,6 +972,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -946,6 +993,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -966,6 +1014,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -986,6 +1035,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -1006,6 +1056,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -1026,6 +1077,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -1046,6 +1098,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -1066,6 +1119,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -1086,6 +1140,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -1106,6 +1161,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -1126,6 +1182,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -1146,6 +1203,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -1166,6 +1224,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -1186,6 +1245,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -1206,6 +1266,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -1226,6 +1287,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -1246,6 +1308,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -1266,6 +1329,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -1286,6 +1350,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -1306,6 +1371,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -1326,6 +1392,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -1346,6 +1413,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -1366,6 +1434,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -1386,6 +1455,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -1406,6 +1476,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -1426,6 +1497,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -1446,6 +1518,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -1466,6 +1539,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -1486,6 +1560,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -1506,6 +1581,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -1526,6 +1602,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -1546,6 +1623,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -1566,6 +1644,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -1586,6 +1665,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -1606,6 +1686,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -1626,6 +1707,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -1646,6 +1728,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -1666,6 +1749,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -1686,6 +1770,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -1706,6 +1791,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -1726,6 +1812,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -1746,6 +1833,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -1766,6 +1854,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -1786,6 +1875,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -1806,6 +1896,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -1826,6 +1917,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -1846,6 +1938,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -1866,6 +1959,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -1886,6 +1980,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -1906,6 +2001,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -1926,6 +2022,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -1946,6 +2043,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -1966,6 +2064,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -1986,6 +2085,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -2006,6 +2106,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -2026,6 +2127,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -2046,6 +2148,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -2066,6 +2169,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -2086,6 +2190,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -2106,6 +2211,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -2126,6 +2232,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -2146,6 +2253,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -2166,6 +2274,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -2186,6 +2295,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -2206,6 +2316,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -2226,6 +2337,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -2246,6 +2358,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -2266,6 +2379,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -2286,6 +2400,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -2306,6 +2421,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -2326,6 +2442,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -2346,6 +2463,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -2366,6 +2484,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -2386,6 +2505,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -2406,6 +2526,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -2426,6 +2547,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -2446,6 +2568,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -2466,6 +2589,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -2486,6 +2610,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -2506,6 +2631,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -2526,6 +2652,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -2546,6 +2673,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -2566,6 +2694,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -2586,6 +2715,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -2606,6 +2736,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -2626,6 +2757,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -2646,6 +2778,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -2666,6 +2799,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -2686,6 +2820,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -2706,6 +2841,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -2726,6 +2862,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -2746,6 +2883,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -2766,6 +2904,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -2786,6 +2925,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -2806,6 +2946,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -2826,6 +2967,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -2846,6 +2988,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -2866,6 +3009,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -2886,6 +3030,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -2906,6 +3051,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -2926,6 +3072,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -2946,6 +3093,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -2966,6 +3114,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -2986,6 +3135,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -3006,6 +3156,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -3026,6 +3177,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -3046,6 +3198,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -3066,6 +3219,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -3086,6 +3240,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -3106,6 +3261,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -3126,6 +3282,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -3146,6 +3303,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -3166,6 +3324,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -3186,6 +3345,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -3206,6 +3366,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -3226,6 +3387,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -3246,6 +3408,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -3266,6 +3429,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -3286,6 +3450,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -3306,6 +3471,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -3326,6 +3492,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -3346,6 +3513,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -3366,6 +3534,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -3386,6 +3555,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -3406,6 +3576,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -3426,6 +3597,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -3446,6 +3618,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -3466,6 +3639,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -3486,6 +3660,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -3506,6 +3681,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -3526,6 +3702,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -3546,6 +3723,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -3566,6 +3744,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -3586,6 +3765,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -3606,6 +3786,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -3626,6 +3807,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -3646,6 +3828,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -3666,6 +3849,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -3686,6 +3870,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -3706,6 +3891,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -3726,6 +3912,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -3746,6 +3933,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -3766,6 +3954,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -3786,6 +3975,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -3806,6 +3996,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 596
@@ -3826,6 +4017,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 892
@@ -3846,6 +4038,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1188
@@ -3866,6 +4059,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1484
@@ -3886,6 +4080,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 1780
@@ -3906,6 +4101,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2076
@@ -3926,6 +4122,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2372
@@ -3946,6 +4143,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2668
@@ -3966,6 +4164,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 2964
@@ -3986,6 +4185,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3260
@@ -4006,6 +4206,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 3556
@@ -4026,6 +4227,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -4046,6 +4248,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 300
@@ -4062,1584 +4265,1787 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 300, y: 2044}
   spriteSheetImportData: []
+  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -199715594
+    uuid:
+      value0: 2801503310
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -1493463986
     name: metal_bladekeeper_FREE_v1.1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: metal_bladekeeper_FREE_v1.1_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 149b04a1f69b8ae4782aabc6fcc525c3
-    - name: metal_bladekeeper_FREE_v1.1_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 112f95d13c0e3774e9e1847161abffa8
-    - name: metal_bladekeeper_FREE_v1.1_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8628f49d3f35d40409cf8cdeb498a61d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: d78ee63f39e41084eb79ad7ff18236ad
-    - name: metal_bladekeeper_FREE_v1.1_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: dae8a1e5833b58e4c917e03d9ecf3ee8
-    - name: metal_bladekeeper_FREE_v1.1_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 9b840681988129649b300a54a6558cad
-    - name: metal_bladekeeper_FREE_v1.1_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 2dcf5bfab23b81c47ae69cf72a543e5f
-    - name: metal_bladekeeper_FREE_v1.1_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 9fe787677ce14c24e9ab2d4544a9f4b7
-    - name: metal_bladekeeper_FREE_v1.1_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 729d8e4f40e23034184b116e6f48aa89
-    - name: metal_bladekeeper_FREE_v1.1_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 41ccec4dadd08eb4f99920fe1d2d4a3e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 59a5223a0b6e86a418d0a34bf16d5a96
-    - name: metal_bladekeeper_FREE_v1.1_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 4988ec5582d772a4e80ed5cf8190a8f1
-    - name: metal_bladekeeper_FREE_v1.1_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 39e65d18ca6bb1e479ac84ec75242488
-    - name: metal_bladekeeper_FREE_v1.1_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 9167638c2a8bcbc428dcbf2052518d68
-    - name: metal_bladekeeper_FREE_v1.1_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: fd95c9bd0c9be644eba024814b539bf0
-    - name: metal_bladekeeper_FREE_v1.1_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 66be10561cd2ce14e953a53bf2e4bed7
-    - name: metal_bladekeeper_FREE_v1.1_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 99fa7329abb2ca14aaaf38c207ba671e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_17
+    - name: Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 1ba3883fb069bbf40a94ccff77fb4ac2
-    - name: metal_bladekeeper_FREE_v1.1_Frame_18
+    - name: Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 60154a66faa70584b83c2f10e621ff60
-    - name: metal_bladekeeper_FREE_v1.1_Frame_19
+    - name: Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 08bdf8c1d99e3c946956b5bc0227fdff
-    - name: metal_bladekeeper_FREE_v1.1_Frame_20
+    - name: Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 5db920d60ad8bb6448b9cdf798d5560b
-    - name: metal_bladekeeper_FREE_v1.1_Frame_21
+    - name: Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 886257f619f830a43b8babffcea692c9
-    - name: metal_bladekeeper_FREE_v1.1_Frame_22
+    - name: Frame_22
       frameIndex: 22
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 517a8e3151c1ec74195e50d522592885
-    - name: metal_bladekeeper_FREE_v1.1_Frame_23
+    - name: Frame_23
       frameIndex: 23
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 7b8adb677f186bd4fb22dd0e980ee67e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_24
+    - name: Frame_24
       frameIndex: 24
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 90d87b3c91d4c2c45a3ec5aa0de4d726
-    - name: metal_bladekeeper_FREE_v1.1_Frame_25
+    - name: Frame_25
       frameIndex: 25
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 425926644041d1b4bb6f8ccefbb542a5
-    - name: metal_bladekeeper_FREE_v1.1_Frame_26
+    - name: Frame_26
       frameIndex: 26
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: cbbe9b75fab487342b6f8f3596d2370a
-    - name: metal_bladekeeper_FREE_v1.1_Frame_27
+    - name: Frame_27
       frameIndex: 27
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: a2b8d8cb8e1fec249ba06b876a672e95
-    - name: metal_bladekeeper_FREE_v1.1_Frame_28
+    - name: Frame_28
       frameIndex: 28
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 9016a149e11c6974a91bc4328478325f
-    - name: metal_bladekeeper_FREE_v1.1_Frame_29
+    - name: Frame_29
       frameIndex: 29
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6d69214329a5d364886fc6c2360ba11c
-    - name: metal_bladekeeper_FREE_v1.1_Frame_30
+    - name: Frame_30
       frameIndex: 30
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 2e902efa5281b6446802beb7659b19b4
-    - name: metal_bladekeeper_FREE_v1.1_Frame_31
+    - name: Frame_31
       frameIndex: 31
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: bd817cec4b1f751439704e6cdc9f45b2
-    - name: metal_bladekeeper_FREE_v1.1_Frame_32
+    - name: Frame_32
       frameIndex: 32
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 32f68e531b32f2b4587d6c6f9be3d65d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_33
+    - name: Frame_33
       frameIndex: 33
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8795359c514c1b54f83579f3c7d18b55
-    - name: metal_bladekeeper_FREE_v1.1_Frame_34
+    - name: Frame_34
       frameIndex: 34
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 9d1917c90fd2a3541a1c85e4d10c11c4
-    - name: metal_bladekeeper_FREE_v1.1_Frame_35
+    - name: Frame_35
       frameIndex: 35
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 78d6330a2b9d0804b80fcfc31b6d5b38
-    - name: metal_bladekeeper_FREE_v1.1_Frame_36
+    - name: Frame_36
       frameIndex: 36
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 2e3727e920cd0c1438d7f664dafd3154
-    - name: metal_bladekeeper_FREE_v1.1_Frame_37
+    - name: Frame_37
       frameIndex: 37
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b12d65e5839a0b54ba49f2a93480102a
-    - name: metal_bladekeeper_FREE_v1.1_Frame_38
+    - name: Frame_38
       frameIndex: 38
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 5f0a5584aba66b24f97f498cdfbf4181
-    - name: metal_bladekeeper_FREE_v1.1_Frame_39
+    - name: Frame_39
       frameIndex: 39
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b897b53d7317bdd4b9dace98b2d50a57
-    - name: metal_bladekeeper_FREE_v1.1_Frame_40
+    - name: Frame_40
       frameIndex: 40
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 9d2ea351dab8afa4baaa64d055be5fd6
-    - name: metal_bladekeeper_FREE_v1.1_Frame_41
+    - name: Frame_41
       frameIndex: 41
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 405924dd05070bc4c9a893a06076696b
-    - name: metal_bladekeeper_FREE_v1.1_Frame_42
+    - name: Frame_42
       frameIndex: 42
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8100cd75aaf81974499344caf6e75648
-    - name: metal_bladekeeper_FREE_v1.1_Frame_43
+    - name: Frame_43
       frameIndex: 43
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: c3993171c7f1bbc4b8589da992ef54af
-    - name: metal_bladekeeper_FREE_v1.1_Frame_44
+    - name: Frame_44
       frameIndex: 44
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 91d709ab3fb872948bc931eb38183c50
-    - name: metal_bladekeeper_FREE_v1.1_Frame_45
+    - name: Frame_45
       frameIndex: 45
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b8025fb2cbb6e0c49871f39c9d2ea850
-    - name: metal_bladekeeper_FREE_v1.1_Frame_46
+    - name: Frame_46
       frameIndex: 46
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 1fc71301b18f41749b0eac5038d307e4
-    - name: metal_bladekeeper_FREE_v1.1_Frame_47
+    - name: Frame_47
       frameIndex: 47
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: be21c8856b7d66c4091b3dab7348379c
-    - name: metal_bladekeeper_FREE_v1.1_Frame_48
+    - name: Frame_48
       frameIndex: 48
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: c50d205ae7959124aa8539a6f012fc52
-    - name: metal_bladekeeper_FREE_v1.1_Frame_49
+    - name: Frame_49
       frameIndex: 49
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 09da65036fe8fd24b8b510af262eacfa
-    - name: metal_bladekeeper_FREE_v1.1_Frame_50
+    - name: Frame_50
       frameIndex: 50
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b8c0812351edeec429a718dab018e3fb
-    - name: metal_bladekeeper_FREE_v1.1_Frame_51
+    - name: Frame_51
       frameIndex: 51
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: d26649d33ac08b44e933787b31c45f5a
-    - name: metal_bladekeeper_FREE_v1.1_Frame_52
+    - name: Frame_52
       frameIndex: 52
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 1930383d37884fd4e81f4e9c049ce430
-    - name: metal_bladekeeper_FREE_v1.1_Frame_53
+    - name: Frame_53
       frameIndex: 53
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6bdb2e76760d0a144b9ed55572482f01
-    - name: metal_bladekeeper_FREE_v1.1_Frame_54
+    - name: Frame_54
       frameIndex: 54
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 4b7e55de3537bc546beb88b3ddfd158a
-    - name: metal_bladekeeper_FREE_v1.1_Frame_55
+    - name: Frame_55
       frameIndex: 55
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8aa90e65a7c5bb548b72084c1a821378
-    - name: metal_bladekeeper_FREE_v1.1_Frame_56
+    - name: Frame_56
       frameIndex: 56
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: d5bbc878c135c1d42a332d144b64b216
-    - name: metal_bladekeeper_FREE_v1.1_Frame_57
+    - name: Frame_57
       frameIndex: 57
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 2f3b379c8d0058b40b21c81b2c98db0f
-    - name: metal_bladekeeper_FREE_v1.1_Frame_58
+    - name: Frame_58
       frameIndex: 58
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 1f5047d03a02cb54fa016f18b15492ac
-    - name: metal_bladekeeper_FREE_v1.1_Frame_59
+    - name: Frame_59
       frameIndex: 59
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 2ff66cdeebf23234ab3cea8c45c9a8fc
-    - name: metal_bladekeeper_FREE_v1.1_Frame_60
+    - name: Frame_60
       frameIndex: 60
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 7962d22fafd8b6343ae2d8f2201eaafe
-    - name: metal_bladekeeper_FREE_v1.1_Frame_61
+    - name: Frame_61
       frameIndex: 61
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 802d97a16a43ebb40928478446fc0920
-    - name: metal_bladekeeper_FREE_v1.1_Frame_62
+    - name: Frame_62
       frameIndex: 62
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 08390dd1ea99a444e8b9466e88e2e714
-    - name: metal_bladekeeper_FREE_v1.1_Frame_63
+    - name: Frame_63
       frameIndex: 63
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: a71ab4c59fbda1c4792514b506a2c45e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_64
+    - name: Frame_64
       frameIndex: 64
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: a0b6a74e063068d478fa23319b9e8e02
-    - name: metal_bladekeeper_FREE_v1.1_Frame_65
+    - name: Frame_65
       frameIndex: 65
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 3795cc5b43373ef4b9b7eff754d97642
-    - name: metal_bladekeeper_FREE_v1.1_Frame_66
+    - name: Frame_66
       frameIndex: 66
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: f1031ed0b8ed3e947b75766d52ca05c5
-    - name: metal_bladekeeper_FREE_v1.1_Frame_67
+    - name: Frame_67
       frameIndex: 67
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: da72ae4c9e4bfcb4dbedb1354b79ca6e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_68
+    - name: Frame_68
       frameIndex: 68
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: c2097161b6c830248ae7fa34ab519ade
-    - name: metal_bladekeeper_FREE_v1.1_Frame_69
+    - name: Frame_69
       frameIndex: 69
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 145314ba170d76a4d8f5eacd2946c381
-    - name: metal_bladekeeper_FREE_v1.1_Frame_70
+    - name: Frame_70
       frameIndex: 70
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ae17fd861c4df4b4b9123043b32a862b
-    - name: metal_bladekeeper_FREE_v1.1_Frame_71
+    - name: Frame_71
       frameIndex: 71
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: dc4f99e759474af458871680405980c3
-    - name: metal_bladekeeper_FREE_v1.1_Frame_72
+    - name: Frame_72
       frameIndex: 72
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 08f6d01fcc23cd445a8a1897a77080e8
-    - name: metal_bladekeeper_FREE_v1.1_Frame_73
+    - name: Frame_73
       frameIndex: 73
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 7c6c035203672e646a3f9c2c000275e7
-    - name: metal_bladekeeper_FREE_v1.1_Frame_74
+    - name: Frame_74
       frameIndex: 74
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b0fadc879505657408892215df7b1894
-    - name: metal_bladekeeper_FREE_v1.1_Frame_75
+    - name: Frame_75
       frameIndex: 75
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ed64a0ba3fea1b84d8280943b43d630e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_76
+    - name: Frame_76
       frameIndex: 76
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 504cf7fe5a12e6843af16626a8a2ce1d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_77
+    - name: Frame_77
       frameIndex: 77
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 918663a696ea0eb4ea5b3e91c0772721
-    - name: metal_bladekeeper_FREE_v1.1_Frame_78
+    - name: Frame_78
       frameIndex: 78
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: fa1c05f2ab6119e48801964a6c2de3d0
-    - name: metal_bladekeeper_FREE_v1.1_Frame_79
+    - name: Frame_79
       frameIndex: 79
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b4be10556590ce14f913d20cebdeded9
-    - name: metal_bladekeeper_FREE_v1.1_Frame_80
+    - name: Frame_80
       frameIndex: 80
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6a5ef1e885fd435408d8c3f9160609cc
-    - name: metal_bladekeeper_FREE_v1.1_Frame_81
+    - name: Frame_81
       frameIndex: 81
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6afd6ac2ed9284d4997477d915817cd2
-    - name: metal_bladekeeper_FREE_v1.1_Frame_82
+    - name: Frame_82
       frameIndex: 82
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: a785257b21c2cc246934f110819bd6f5
-    - name: metal_bladekeeper_FREE_v1.1_Frame_83
+    - name: Frame_83
       frameIndex: 83
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 38bcce9514d6f274db347bfde711ec71
-    - name: metal_bladekeeper_FREE_v1.1_Frame_84
+    - name: Frame_84
       frameIndex: 84
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: baeb84e60ee5e57469cdcd9e8cc8478c
-    - name: metal_bladekeeper_FREE_v1.1_Frame_85
+    - name: Frame_85
       frameIndex: 85
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 5301d6ce7a3c45e4fb071d6d20cce451
-    - name: metal_bladekeeper_FREE_v1.1_Frame_86
+    - name: Frame_86
       frameIndex: 86
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: dbb30e0eca61780419b73a9054fc2a22
-    - name: metal_bladekeeper_FREE_v1.1_Frame_87
+    - name: Frame_87
       frameIndex: 87
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 1a82a2efe5079424fa1b242767bc2168
-    - name: metal_bladekeeper_FREE_v1.1_Frame_88
+    - name: Frame_88
       frameIndex: 88
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 392dbc245830eb64aa5f671c3213501c
-    - name: metal_bladekeeper_FREE_v1.1_Frame_89
+    - name: Frame_89
       frameIndex: 89
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b43a9310d4a66c2439dd30e9a599bf8e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_90
+    - name: Frame_90
       frameIndex: 90
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: e0b777d8111e36145a49b46e301e3020
-    - name: metal_bladekeeper_FREE_v1.1_Frame_91
+    - name: Frame_91
       frameIndex: 91
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 3323eccb4149dcf47b05dc6cbee9a8b1
-    - name: metal_bladekeeper_FREE_v1.1_Frame_92
+    - name: Frame_92
       frameIndex: 92
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 3510fee45752b9a4ea549c1f61a3d373
-    - name: metal_bladekeeper_FREE_v1.1_Frame_93
+    - name: Frame_93
       frameIndex: 93
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b52212898c09bdd40b32460b39ef5aa3
-    - name: metal_bladekeeper_FREE_v1.1_Frame_94
+    - name: Frame_94
       frameIndex: 94
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: bbd7a4b344a8e3e488057e9fc19e8594
-    - name: metal_bladekeeper_FREE_v1.1_Frame_95
+    - name: Frame_95
       frameIndex: 95
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 5fb2cb1088558514fa6eff9adb3d34a2
-    - name: metal_bladekeeper_FREE_v1.1_Frame_96
+    - name: Frame_96
       frameIndex: 96
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: e04e436461a870c43bf2007c21f212cb
-    - name: metal_bladekeeper_FREE_v1.1_Frame_97
+    - name: Frame_97
       frameIndex: 97
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: f2fcad1538371e4408f2d3d9d238d0e6
-    - name: metal_bladekeeper_FREE_v1.1_Frame_98
+    - name: Frame_98
       frameIndex: 98
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 58882cdce4369974cbc1c715e41d9376
-    - name: metal_bladekeeper_FREE_v1.1_Frame_99
+    - name: Frame_99
       frameIndex: 99
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: a8bed03b04e2afe40bfcb2a7415b79cf
-    - name: metal_bladekeeper_FREE_v1.1_Frame_100
+    - name: Frame_100
       frameIndex: 100
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ec71375b0caaf984aaf2c3b7a033d8ac
-    - name: metal_bladekeeper_FREE_v1.1_Frame_101
+    - name: Frame_101
       frameIndex: 101
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: bab2728db1adc2e49a8359bc822c3ee6
-    - name: metal_bladekeeper_FREE_v1.1_Frame_102
+    - name: Frame_102
       frameIndex: 102
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6d17c853f844fdb45bb500eae8f6cf80
-    - name: metal_bladekeeper_FREE_v1.1_Frame_103
+    - name: Frame_103
       frameIndex: 103
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: a0343338feca38546a981f36ba5e9a4d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_104
+    - name: Frame_104
       frameIndex: 104
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 20cb823353099314fb84e70993cc8900
-    - name: metal_bladekeeper_FREE_v1.1_Frame_105
+    - name: Frame_105
       frameIndex: 105
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 94f8c7ad512d24543b8b8e0d5eeed5dd
-    - name: metal_bladekeeper_FREE_v1.1_Frame_106
+    - name: Frame_106
       frameIndex: 106
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ac4760282cfd252488f6bfb6238b7862
-    - name: metal_bladekeeper_FREE_v1.1_Frame_107
+    - name: Frame_107
       frameIndex: 107
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 0a5d2dd4d0cf15f46bdb1e6f021fdd74
-    - name: metal_bladekeeper_FREE_v1.1_Frame_108
+    - name: Frame_108
       frameIndex: 108
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ba1ab8901aeba6d48a72e7993a102945
-    - name: metal_bladekeeper_FREE_v1.1_Frame_109
+    - name: Frame_109
       frameIndex: 109
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: a955f3bbcc443de4ca085d1268d3ef5d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_110
+    - name: Frame_110
       frameIndex: 110
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 820ebde584f28034aa466f35379f483e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_111
+    - name: Frame_111
       frameIndex: 111
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6254d57ecd1bdb54da4a6003269a66d5
-    - name: metal_bladekeeper_FREE_v1.1_Frame_112
+    - name: Frame_112
       frameIndex: 112
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 9b1c802dd31f125428d6c2b067961cff
-    - name: metal_bladekeeper_FREE_v1.1_Frame_113
+    - name: Frame_113
       frameIndex: 113
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 86d2937e52f016e41b82752db836ae4b
-    - name: metal_bladekeeper_FREE_v1.1_Frame_114
+    - name: Frame_114
       frameIndex: 114
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 3a5de3ebeec0995498ad59c22f817185
-    - name: metal_bladekeeper_FREE_v1.1_Frame_115
+    - name: Frame_115
       frameIndex: 115
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 00827a0bd8ee3124b9e2de04d76d341e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_116
+    - name: Frame_116
       frameIndex: 116
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6519026492dedb24997e7377f269a40d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_117
+    - name: Frame_117
       frameIndex: 117
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8569044f89cff944eb254b111736913e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_118
+    - name: Frame_118
       frameIndex: 118
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: d2137f446d7d97d4f80c1f6768f67230
-    - name: metal_bladekeeper_FREE_v1.1_Frame_119
+    - name: Frame_119
       frameIndex: 119
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 24503299c39af3f4d91d9fac65e55aed
-    - name: metal_bladekeeper_FREE_v1.1_Frame_120
+    - name: Frame_120
       frameIndex: 120
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: aef1c80726644044f8c997cf63b9f269
-    - name: metal_bladekeeper_FREE_v1.1_Frame_121
+    - name: Frame_121
       frameIndex: 121
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 1b29fc9a34682994889b0ae1033376df
-    - name: metal_bladekeeper_FREE_v1.1_Frame_122
+    - name: Frame_122
       frameIndex: 122
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 62be7ae63aa53764eb4d4752fa89bb2a
-    - name: metal_bladekeeper_FREE_v1.1_Frame_123
+    - name: Frame_123
       frameIndex: 123
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ee2720bd53085fd48b4c31c1c7b34d9e
-    - name: metal_bladekeeper_FREE_v1.1_Frame_124
+    - name: Frame_124
       frameIndex: 124
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b7fc41315c76e424790f45ee541cd460
-    - name: metal_bladekeeper_FREE_v1.1_Frame_125
+    - name: Frame_125
       frameIndex: 125
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 37ff8d2a69025f041a88686ffe3821d0
-    - name: metal_bladekeeper_FREE_v1.1_Frame_126
+    - name: Frame_126
       frameIndex: 126
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 78ac9b752dd8cc34f8b0352751686a38
-    - name: metal_bladekeeper_FREE_v1.1_Frame_127
+    - name: Frame_127
       frameIndex: 127
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8aec0f72bd0412346992699703477272
-    - name: metal_bladekeeper_FREE_v1.1_Frame_128
+    - name: Frame_128
       frameIndex: 128
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: bbad2d5e670a2ac40a56ed18051308ef
-    - name: metal_bladekeeper_FREE_v1.1_Frame_129
+    - name: Frame_129
       frameIndex: 129
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ba4d4890662033644b326aa46461c7ea
-    - name: metal_bladekeeper_FREE_v1.1_Frame_130
+    - name: Frame_130
       frameIndex: 130
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: bd594f92824662446953d462df0f5b01
-    - name: metal_bladekeeper_FREE_v1.1_Frame_131
+    - name: Frame_131
       frameIndex: 131
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 23aa8704a6b7ba14eb65204b52fdc769
-    - name: metal_bladekeeper_FREE_v1.1_Frame_132
+    - name: Frame_132
       frameIndex: 132
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 72b78704b22f7894a8efcab16d687c76
-    - name: metal_bladekeeper_FREE_v1.1_Frame_133
+    - name: Frame_133
       frameIndex: 133
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 66e1bf5032180d64b88b0ada6c0c234a
-    - name: metal_bladekeeper_FREE_v1.1_Frame_134
+    - name: Frame_134
       frameIndex: 134
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 23836522c7f06a94fbe1181d485807d7
-    - name: metal_bladekeeper_FREE_v1.1_Frame_135
+    - name: Frame_135
       frameIndex: 135
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 3969f66ee30e98944a8c81e336825da7
-    - name: metal_bladekeeper_FREE_v1.1_Frame_136
+    - name: Frame_136
       frameIndex: 136
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: bbeb3d1a834d46a40b3d54b7a1dfa80d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_137
+    - name: Frame_137
       frameIndex: 137
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: d70dc0e65c6a8fb44979c1f8e0e54182
-    - name: metal_bladekeeper_FREE_v1.1_Frame_138
+    - name: Frame_138
       frameIndex: 138
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 58ad72853d2cebd469762596000952ce
-    - name: metal_bladekeeper_FREE_v1.1_Frame_139
+    - name: Frame_139
       frameIndex: 139
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6cca4a453e5246f43979f98025d09449
-    - name: metal_bladekeeper_FREE_v1.1_Frame_140
+    - name: Frame_140
       frameIndex: 140
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b166a22d217a81946ab36122bc2b5edf
-    - name: metal_bladekeeper_FREE_v1.1_Frame_141
+    - name: Frame_141
       frameIndex: 141
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: a9c1056bc6e2b014ea3f275940581df8
-    - name: metal_bladekeeper_FREE_v1.1_Frame_142
+    - name: Frame_142
       frameIndex: 142
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: e9e35697650bcbe4dad3b94d2edc7375
-    - name: metal_bladekeeper_FREE_v1.1_Frame_143
+    - name: Frame_143
       frameIndex: 143
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: cc3c5ba5d0fb2f54d858cd360ebd9ebc
-    - name: metal_bladekeeper_FREE_v1.1_Frame_144
+    - name: Frame_144
       frameIndex: 144
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: eaf04a18f24ec874a86200e970c0729d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_145
+    - name: Frame_145
       frameIndex: 145
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 92ef4287444420f41bc867fb67036ff2
-    - name: metal_bladekeeper_FREE_v1.1_Frame_146
+    - name: Frame_146
       frameIndex: 146
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 4c8942aef3b45d1478b1fec5e855fc17
-    - name: metal_bladekeeper_FREE_v1.1_Frame_147
+    - name: Frame_147
       frameIndex: 147
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 96132ffe42b73254798fee0e1b3b3f1d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_148
+    - name: Frame_148
       frameIndex: 148
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: eeaa8690aa899c7449a05564a486398b
-    - name: metal_bladekeeper_FREE_v1.1_Frame_149
+    - name: Frame_149
       frameIndex: 149
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: d9c0e4c686fa2ca4298b97b7487615e4
-    - name: metal_bladekeeper_FREE_v1.1_Frame_150
+    - name: Frame_150
       frameIndex: 150
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8727da63a1c7522489bffbe4b751cc78
-    - name: metal_bladekeeper_FREE_v1.1_Frame_151
+    - name: Frame_151
       frameIndex: 151
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 0f4afb4abd2757d44912f836d7198e37
-    - name: metal_bladekeeper_FREE_v1.1_Frame_152
+    - name: Frame_152
       frameIndex: 152
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: f4081bce55d25fb459718920dbeae7c5
-    - name: metal_bladekeeper_FREE_v1.1_Frame_153
+    - name: Frame_153
       frameIndex: 153
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 7b28e84a2e1037440bf404d715d7aafa
-    - name: metal_bladekeeper_FREE_v1.1_Frame_154
+    - name: Frame_154
       frameIndex: 154
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: f0d6a25a51b83ad4e84923b52306ea0c
-    - name: metal_bladekeeper_FREE_v1.1_Frame_155
+    - name: Frame_155
       frameIndex: 155
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8cc475b54ce3c234d91a92bf5da3b23f
-    - name: metal_bladekeeper_FREE_v1.1_Frame_156
+    - name: Frame_156
       frameIndex: 156
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 2d289e45d7beabb4bba81104bb861ca9
-    - name: metal_bladekeeper_FREE_v1.1_Frame_157
+    - name: Frame_157
       frameIndex: 157
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b00b631b20b9e3842968d772a87a38b7
-    - name: metal_bladekeeper_FREE_v1.1_Frame_158
+    - name: Frame_158
       frameIndex: 158
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: f62f1b62b00857947892046f6652e168
-    - name: metal_bladekeeper_FREE_v1.1_Frame_159
+    - name: Frame_159
       frameIndex: 159
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 60a5e99895071ec4d8fc188104bb5e13
-    - name: metal_bladekeeper_FREE_v1.1_Frame_160
+    - name: Frame_160
       frameIndex: 160
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 7ff95595062686c419daa734dceebd93
-    - name: metal_bladekeeper_FREE_v1.1_Frame_161
+    - name: Frame_161
       frameIndex: 161
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 456c26eaef2da744683fa52d9298c555
-    - name: metal_bladekeeper_FREE_v1.1_Frame_162
+    - name: Frame_162
       frameIndex: 162
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 603b714cf572b6e4b900bbf1bd9ca5e2
-    - name: metal_bladekeeper_FREE_v1.1_Frame_163
+    - name: Frame_163
       frameIndex: 163
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 0ca6b3029b82ba046a0544c6e60a7b72
-    - name: metal_bladekeeper_FREE_v1.1_Frame_164
+    - name: Frame_164
       frameIndex: 164
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 59647a8671a5b324cb2acde93b62a559
-    - name: metal_bladekeeper_FREE_v1.1_Frame_165
+    - name: Frame_165
       frameIndex: 165
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 8970a1b50a78bdc4d85d8b6bd5f893b2
-    - name: metal_bladekeeper_FREE_v1.1_Frame_166
+    - name: Frame_166
       frameIndex: 166
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 238b1dc6394874546a941eb8280d3a47
-    - name: metal_bladekeeper_FREE_v1.1_Frame_167
+    - name: Frame_167
       frameIndex: 167
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: e996a358847114d468fd64bee42e4ee9
-    - name: metal_bladekeeper_FREE_v1.1_Frame_168
+    - name: Frame_168
       frameIndex: 168
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 50d7cd777a9121b44a0c59a05c3c27b9
-    - name: metal_bladekeeper_FREE_v1.1_Frame_169
+    - name: Frame_169
       frameIndex: 169
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: f9541a06e99085c4e887d2189da367f8
-    - name: metal_bladekeeper_FREE_v1.1_Frame_170
+    - name: Frame_170
       frameIndex: 170
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 99f6616f9f549c245a6ccc2a33440aef
-    - name: metal_bladekeeper_FREE_v1.1_Frame_171
+    - name: Frame_171
       frameIndex: 171
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: df3a363dfc3cda64db57041f7421ad7f
-    - name: metal_bladekeeper_FREE_v1.1_Frame_172
+    - name: Frame_172
       frameIndex: 172
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: d526fe44d8be3f048b5d613743fab8a4
-    - name: metal_bladekeeper_FREE_v1.1_Frame_173
+    - name: Frame_173
       frameIndex: 173
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 7243312897032cc48b8d882cdf8beaa4
-    - name: metal_bladekeeper_FREE_v1.1_Frame_174
+    - name: Frame_174
       frameIndex: 174
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 42b4b3341d48fd14f8c89f31757c3f33
-    - name: metal_bladekeeper_FREE_v1.1_Frame_175
+    - name: Frame_175
       frameIndex: 175
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 46a0989a160b2b8468d8cd97e5cee037
-    - name: metal_bladekeeper_FREE_v1.1_Frame_176
+    - name: Frame_176
       frameIndex: 176
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: b9712c6bc3491af4aa12a1e0494dc942
-    - name: metal_bladekeeper_FREE_v1.1_Frame_177
+    - name: Frame_177
       frameIndex: 177
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 6779abb6370c7b641a499fd4b46a31ff
-    - name: metal_bladekeeper_FREE_v1.1_Frame_178
+    - name: Frame_178
       frameIndex: 178
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: df677cf45e37dc047ae7796de1a67e11
-    - name: metal_bladekeeper_FREE_v1.1_Frame_179
+    - name: Frame_179
       frameIndex: 179
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 62982825006e14940aee67fe33e80f49
-    - name: metal_bladekeeper_FREE_v1.1_Frame_180
+    - name: Frame_180
       frameIndex: 180
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: bca9e3770626f3e4c93aca0d7854552d
-    - name: metal_bladekeeper_FREE_v1.1_Frame_181
+    - name: Frame_181
       frameIndex: 181
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 5761741a2ba7d094c98ac5ac712c46a7
-    - name: metal_bladekeeper_FREE_v1.1_Frame_182
+    - name: Frame_182
       frameIndex: 182
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 642c73f35941cfb41ade9d957a384eef
-    - name: metal_bladekeeper_FREE_v1.1_Frame_183
+    - name: Frame_183
       frameIndex: 183
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 00a623a86edd69940aafc2e6be5255b7
-    - name: metal_bladekeeper_FREE_v1.1_Frame_184
+    - name: Frame_184
       frameIndex: 184
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 55b627795ed28df4da6716eb0084a7d2
-    - name: metal_bladekeeper_FREE_v1.1_Frame_185
+    - name: Frame_185
       frameIndex: 185
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ad88b0428e1496744ad02a5100e0ec9b
-    - name: metal_bladekeeper_FREE_v1.1_Frame_186
+    - name: Frame_186
       frameIndex: 186
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 82e89c13a7a5be14b850b73ea4903747
-    - name: metal_bladekeeper_FREE_v1.1_Frame_187
+    - name: Frame_187
       frameIndex: 187
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 460347ac41c420c4d8a181ac35483865
-    - name: metal_bladekeeper_FREE_v1.1_Frame_188
+    - name: Frame_188
       frameIndex: 188
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 2897489bcfbb6a44f90fff78556af9ea
-    - name: metal_bladekeeper_FREE_v1.1_Frame_189
+    - name: Frame_189
       frameIndex: 189
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 79466ec03f0687b4bb14e511912892a5
-    - name: metal_bladekeeper_FREE_v1.1_Frame_190
+    - name: Frame_190
       frameIndex: 190
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: f788bab6b938fbf4591d53605dfad990
-    - name: metal_bladekeeper_FREE_v1.1_Frame_191
+    - name: Frame_191
       frameIndex: 191
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: e5f55482a7fb70847baee8e6ae8d7287
-    - name: metal_bladekeeper_FREE_v1.1_Frame_192
+    - name: Frame_192
       frameIndex: 192
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 476462489bd870541b4b812944594d82
-    - name: metal_bladekeeper_FREE_v1.1_Frame_193
+    - name: Frame_193
       frameIndex: 193
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 08c0593949c0eef41b4bc2f4d9038aff
-    - name: metal_bladekeeper_FREE_v1.1_Frame_194
+    - name: Frame_194
       frameIndex: 194
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: ce046f054ca56ea48ac63918be04ed81
-    - name: metal_bladekeeper_FREE_v1.1_Frame_195
+    - name: Frame_195
       frameIndex: 195
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 288
         height: 128
       spriteId: 71aed9b781031d543bb64acb43b0afb1
-    - name: metal_bladekeeper_FREE_v1.1_Frame_196
+    - name: Frame_196
       frameIndex: 196
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
@@ -5647,7 +6053,10 @@ ScriptedImporter:
         height: 128
       spriteId: 86d0cbdfa9080ef408e2b6b711a8468d
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
+  tileSets: []
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -5677,3 +6086,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 288, y: 128}
+  previousTextureSize: {x: 4096, y: 4096}

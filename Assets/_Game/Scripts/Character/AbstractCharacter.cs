@@ -37,7 +37,7 @@ public class AbstractCharacter : GameUnit
     [field: SerializeField] public float SlideForce { get; protected set; }
     [field: SerializeField] public int NormalDamage { get; protected set; }
 
-    [HideInInspector] public Vector2 RbVelocity { get { return rb.velocity; } protected set { RbVelocity = value; } }
+    [HideInInspector] public Vector2 RbVelocity { get { return rb.linearVelocity; } protected set { RbVelocity = value; } }
 
     [field: Header("Boolean For Check")]
     [field: SerializeField] public bool IsGrounded { get; private set; } = false;
@@ -161,22 +161,22 @@ public class AbstractCharacter : GameUnit
 
     public void Jump()
     {
-        rb.velocity = Vector2.up * JumpForce;
+        rb.linearVelocity = Vector2.up * JumpForce;
     }
 
     public void Jump(Vector2 jumpVector)
     {
-        rb.velocity = Vector2.up * jumpVector.y * JumpForce + Vector2.right * jumpVector.x;
+        rb.linearVelocity = Vector2.up * jumpVector.y * JumpForce + Vector2.right * jumpVector.x;
     }
 
     public void MoveForward()
     {
-        rb.velocity = characterTF.right * Speed;
+        rb.linearVelocity = characterTF.right * Speed;
     }
 
     public void StopMove()
     {
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
     }
 
     public void FallFromPlatform()
@@ -193,7 +193,7 @@ public class AbstractCharacter : GameUnit
 
     public void SetMove(Vector2 velocity)
     {
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
     }
 
     public void SetBool(CharacterState state, bool value)

@@ -220,7 +220,7 @@ public class Player : AbstractCharacter
 
     public void Slide()
     {
-        rb.velocity = characterTF.right * SlideForce;
+        rb.linearVelocity = characterTF.right * SlideForce;
         StartCoroutine(SetCooldown(CooldownState.Slide, 2f * (1 - ReduceCooldown)));
     }
 

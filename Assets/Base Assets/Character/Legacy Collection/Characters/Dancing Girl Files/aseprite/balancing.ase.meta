@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -83,6 +84,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -96,6 +99,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   textureAssetName: 
@@ -105,6 +110,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +132,7 @@ ScriptedImporter:
     pivot: {x: 0.8559322, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 139
@@ -146,6 +153,7 @@ ScriptedImporter:
     pivot: {x: 0.8508772, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 70
@@ -166,6 +174,7 @@ ScriptedImporter:
     pivot: {x: 0.81896544, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 145
@@ -186,6 +195,7 @@ ScriptedImporter:
     pivot: {x: 0.83620685, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -206,6 +216,7 @@ ScriptedImporter:
     pivot: {x: 0.7786885, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 76
@@ -226,6 +237,7 @@ ScriptedImporter:
     pivot: {x: 0.8050847, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 72
@@ -246,6 +258,7 @@ ScriptedImporter:
     pivot: {x: 0.8203125, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -266,6 +279,7 @@ ScriptedImporter:
     pivot: {x: 0.8583333, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -282,72 +296,86 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 59}
   spriteSheetImportData: []
+  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 685433847
+    uuid:
+      value0: 3972137107
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -322830189
     name: balancing
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: balancing_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: -31
         y: 0
         width: 59
         height: 44
       spriteId: c5120d7d36bfb7b49b348ddbb4e949de
-    - name: balancing_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: -29
         y: 0
         width: 57
         height: 46
       spriteId: f1c492f320ad1f14d8a3ae0e202df542
-    - name: balancing_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: -28
         y: 0
         width: 58
         height: 47
       spriteId: 3630d2c0204c1c4458bb42749607bd12
-    - name: balancing_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: -29
         y: 0
         width: 58
         height: 46
       spriteId: 0608dd57c26c6bc429c1e1b3d899ecee
-    - name: balancing_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: -28
         y: 0
         width: 61
         height: 45
       spriteId: e756de6af420d3141ba86fede1bda763
-    - name: balancing_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: -28
         y: 0
         width: 59
         height: 45
       spriteId: a41fb5c28df985d44898efd8231ef20d
-    - name: balancing_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: -33
         y: 0
         width: 64
         height: 47
       spriteId: 6efd86568105c9f42a9fc1e74923e983
-    - name: balancing_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: -32
         y: 0
@@ -355,9 +383,13 @@ ScriptedImporter:
         height: 45
       spriteId: 920bd516f8a0a714b91f7bb4dc92b328
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
+  tileSets: []
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 39, y: 53}
+  previousTextureSize: {x: 256, y: 256}
